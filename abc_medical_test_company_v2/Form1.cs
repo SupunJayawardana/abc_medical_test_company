@@ -178,5 +178,14 @@ namespace abc_medical_test_company_v2
             showSubmenu(panel_notificationSubmenu);
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
