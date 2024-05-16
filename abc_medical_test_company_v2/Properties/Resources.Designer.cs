@@ -63,6 +63,36 @@ namespace abc_medical_test_company_v2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _f80a9b18_4285_48f8_a511_78aa2a32d830 {
+            get {
+                object obj = ResourceManager.GetObject("_f80a9b18-4285-48f8-a511-78aa2a32d830", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Acer_Wallpaper_02_3840x2400 {
+            get {
+                object obj = ResourceManager.GetObject("Acer_Wallpaper_02_3840x2400", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Contacts {
+            get {
+                object obj = ResourceManager.GetObject("Contacts", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap For_You {
             get {
                 object obj = ResourceManager.GetObject("For You", resourceCulture);

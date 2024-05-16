@@ -121,4 +121,13 @@
   <data name="For You" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\For You.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_f80a9b18-4285-48f8-a511-78aa2a32d830" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_f80a9b18-4285-48f8-a511-78aa2a32d830.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Acer_Wallpaper_02_3840x2400" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Acer_Wallpaper_02_3840x2400.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Contacts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Contacts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
