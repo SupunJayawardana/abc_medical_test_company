@@ -31,9 +31,16 @@
             this.panel_main = new System.Windows.Forms.Panel();
             this.panel_footer = new System.Windows.Forms.Panel();
             this.panel_cover = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel_header = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel_slide = new System.Windows.Forms.Panel();
+            this.panel_notificationSubmenu = new System.Windows.Forms.Panel();
+            this.btn_notifyEmail = new System.Windows.Forms.Button();
+            this.btn_notifySms = new System.Windows.Forms.Button();
+            this.btn_notification = new System.Windows.Forms.Button();
             this.panel_reportsSubmenu = new System.Windows.Forms.Panel();
+            this.btn_rptTestAnlz = new System.Windows.Forms.Button();
             this.btn_rptDocCom = new System.Windows.Forms.Button();
             this.btn_rptDIncome = new System.Windows.Forms.Button();
             this.btn_reports = new System.Windows.Forms.Button();
@@ -52,57 +59,98 @@
             this.btn_userReg = new System.Windows.Forms.Button();
             this.btn_user = new System.Windows.Forms.Button();
             this.panel_logo = new System.Windows.Forms.Panel();
-            this.btn_rptTestAnlz = new System.Windows.Forms.Button();
-            this.panel_notificationSubmenu = new System.Windows.Forms.Panel();
-            this.btn_notifyEmail = new System.Windows.Forms.Button();
-            this.btn_notifySms = new System.Windows.Forms.Button();
-            this.btn_notification = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel_main.SuspendLayout();
+            this.panel_footer.SuspendLayout();
+            this.panel_cover.SuspendLayout();
+            this.panel_header.SuspendLayout();
             this.panel_slide.SuspendLayout();
+            this.panel_notificationSubmenu.SuspendLayout();
             this.panel_reportsSubmenu.SuspendLayout();
             this.panel_paymentSubmenu.SuspendLayout();
             this.panel_testSubmenu.SuspendLayout();
             this.panel_patientSubmenu.SuspendLayout();
             this.panel_userSubmenu.SuspendLayout();
-            this.panel_notificationSubmenu.SuspendLayout();
+            this.panel_logo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_main
             // 
+            this.panel_main.Controls.Add(this.pictureBox2);
             this.panel_main.Controls.Add(this.panel_footer);
             this.panel_main.Controls.Add(this.panel_cover);
             this.panel_main.Controls.Add(this.panel_header);
             this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_main.Location = new System.Drawing.Point(278, 0);
             this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(1020, 577);
+            this.panel_main.Size = new System.Drawing.Size(704, 577);
             this.panel_main.TabIndex = 1;
             // 
             // panel_footer
             // 
             this.panel_footer.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel_footer.Controls.Add(this.label8);
             this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_footer.Location = new System.Drawing.Point(0, 514);
+            this.panel_footer.Location = new System.Drawing.Point(0, 532);
             this.panel_footer.Name = "panel_footer";
-            this.panel_footer.Size = new System.Drawing.Size(1020, 63);
+            this.panel_footer.Size = new System.Drawing.Size(704, 45);
             this.panel_footer.TabIndex = 2;
             // 
             // panel_cover
             // 
             this.panel_cover.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel_cover.Controls.Add(this.pictureBox3);
+            this.panel_cover.Controls.Add(this.label7);
+            this.panel_cover.Controls.Add(this.label6);
+            this.panel_cover.Controls.Add(this.label5);
+            this.panel_cover.Controls.Add(this.label4);
+            this.panel_cover.Controls.Add(this.label3);
             this.panel_cover.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_cover.Location = new System.Drawing.Point(0, 63);
             this.panel_cover.Name = "panel_cover";
-            this.panel_cover.Size = new System.Drawing.Size(1020, 63);
+            this.panel_cover.Size = new System.Drawing.Size(704, 63);
             this.panel_cover.TabIndex = 1;
+            this.panel_cover.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_cover_Paint);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(98, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 16);
+            this.label3.TabIndex = 0;
             // 
             // panel_header
             // 
+            this.panel_header.BackColor = System.Drawing.Color.LightGray;
+            this.panel_header.Controls.Add(this.label2);
             this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_header.Location = new System.Drawing.Point(0, 0);
             this.panel_header.Name = "panel_header";
-            this.panel_header.Size = new System.Drawing.Size(1020, 63);
+            this.panel_header.Size = new System.Drawing.Size(704, 63);
             this.panel_header.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkGreen;
+            this.label2.Location = new System.Drawing.Point(15, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(371, 29);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Welcome To ABC Health Care ";
             // 
             // panel_slide
             // 
@@ -127,6 +175,68 @@
             this.panel_slide.Size = new System.Drawing.Size(278, 577);
             this.panel_slide.TabIndex = 0;
             // 
+            // panel_notificationSubmenu
+            // 
+            this.panel_notificationSubmenu.BackColor = System.Drawing.Color.DarkGreen;
+            this.panel_notificationSubmenu.Controls.Add(this.btn_notifyEmail);
+            this.panel_notificationSubmenu.Controls.Add(this.btn_notifySms);
+            this.panel_notificationSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_notificationSubmenu.Location = new System.Drawing.Point(0, 865);
+            this.panel_notificationSubmenu.Name = "panel_notificationSubmenu";
+            this.panel_notificationSubmenu.Size = new System.Drawing.Size(257, 100);
+            this.panel_notificationSubmenu.TabIndex = 14;
+            // 
+            // btn_notifyEmail
+            // 
+            this.btn_notifyEmail.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_notifyEmail.FlatAppearance.BorderSize = 0;
+            this.btn_notifyEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_notifyEmail.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_notifyEmail.ForeColor = System.Drawing.Color.White;
+            this.btn_notifyEmail.Location = new System.Drawing.Point(0, 48);
+            this.btn_notifyEmail.Name = "btn_notifyEmail";
+            this.btn_notifyEmail.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btn_notifyEmail.Size = new System.Drawing.Size(257, 48);
+            this.btn_notifyEmail.TabIndex = 3;
+            this.btn_notifyEmail.Text = "Email Notification";
+            this.btn_notifyEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_notifyEmail.UseVisualStyleBackColor = true;
+            this.btn_notifyEmail.Click += new System.EventHandler(this.btn_notifyEmail_Click);
+            // 
+            // btn_notifySms
+            // 
+            this.btn_notifySms.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_notifySms.FlatAppearance.BorderSize = 0;
+            this.btn_notifySms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_notifySms.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_notifySms.ForeColor = System.Drawing.Color.White;
+            this.btn_notifySms.Location = new System.Drawing.Point(0, 0);
+            this.btn_notifySms.Name = "btn_notifySms";
+            this.btn_notifySms.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btn_notifySms.Size = new System.Drawing.Size(257, 48);
+            this.btn_notifySms.TabIndex = 2;
+            this.btn_notifySms.Text = "SMS Notification";
+            this.btn_notifySms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_notifySms.UseVisualStyleBackColor = true;
+            this.btn_notifySms.Click += new System.EventHandler(this.btn_notifySms_Click);
+            // 
+            // btn_notification
+            // 
+            this.btn_notification.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_notification.FlatAppearance.BorderSize = 0;
+            this.btn_notification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_notification.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_notification.ForeColor = System.Drawing.Color.White;
+            this.btn_notification.Location = new System.Drawing.Point(0, 817);
+            this.btn_notification.Name = "btn_notification";
+            this.btn_notification.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btn_notification.Size = new System.Drawing.Size(257, 48);
+            this.btn_notification.TabIndex = 13;
+            this.btn_notification.Text = "Notification";
+            this.btn_notification.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_notification.UseVisualStyleBackColor = true;
+            this.btn_notification.Click += new System.EventHandler(this.btn_notification_Click);
+            // 
             // panel_reportsSubmenu
             // 
             this.panel_reportsSubmenu.BackColor = System.Drawing.Color.DarkGreen;
@@ -138,6 +248,23 @@
             this.panel_reportsSubmenu.Name = "panel_reportsSubmenu";
             this.panel_reportsSubmenu.Size = new System.Drawing.Size(257, 149);
             this.panel_reportsSubmenu.TabIndex = 12;
+            // 
+            // btn_rptTestAnlz
+            // 
+            this.btn_rptTestAnlz.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_rptTestAnlz.FlatAppearance.BorderSize = 0;
+            this.btn_rptTestAnlz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_rptTestAnlz.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_rptTestAnlz.ForeColor = System.Drawing.Color.White;
+            this.btn_rptTestAnlz.Location = new System.Drawing.Point(0, 96);
+            this.btn_rptTestAnlz.Name = "btn_rptTestAnlz";
+            this.btn_rptTestAnlz.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btn_rptTestAnlz.Size = new System.Drawing.Size(257, 48);
+            this.btn_rptTestAnlz.TabIndex = 4;
+            this.btn_rptTestAnlz.Text = "Test Analysis";
+            this.btn_rptTestAnlz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_rptTestAnlz.UseVisualStyleBackColor = true;
+            this.btn_rptTestAnlz.Click += new System.EventHandler(this.btn_rptTestAnlz_Click);
             // 
             // btn_rptDocCom
             // 
@@ -405,90 +532,120 @@
             // 
             // panel_logo
             // 
+            this.panel_logo.Controls.Add(this.pictureBox1);
+            this.panel_logo.Controls.Add(this.label1);
             this.panel_logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_logo.Location = new System.Drawing.Point(0, 0);
             this.panel_logo.Name = "panel_logo";
             this.panel_logo.Size = new System.Drawing.Size(257, 126);
             this.panel_logo.TabIndex = 0;
             // 
-            // btn_rptTestAnlz
+            // label1
             // 
-            this.btn_rptTestAnlz.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_rptTestAnlz.FlatAppearance.BorderSize = 0;
-            this.btn_rptTestAnlz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_rptTestAnlz.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_rptTestAnlz.ForeColor = System.Drawing.Color.White;
-            this.btn_rptTestAnlz.Location = new System.Drawing.Point(0, 96);
-            this.btn_rptTestAnlz.Name = "btn_rptTestAnlz";
-            this.btn_rptTestAnlz.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_rptTestAnlz.Size = new System.Drawing.Size(257, 48);
-            this.btn_rptTestAnlz.TabIndex = 4;
-            this.btn_rptTestAnlz.Text = "Test Analysis";
-            this.btn_rptTestAnlz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_rptTestAnlz.UseVisualStyleBackColor = true;
-            this.btn_rptTestAnlz.Click += new System.EventHandler(this.btn_rptTestAnlz_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Mistral", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(77, 88);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(115, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ABC Health Care";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel_notificationSubmenu
+            // label4
             // 
-            this.panel_notificationSubmenu.BackColor = System.Drawing.Color.DarkGreen;
-            this.panel_notificationSubmenu.Controls.Add(this.btn_notifyEmail);
-            this.panel_notificationSubmenu.Controls.Add(this.btn_notifySms);
-            this.panel_notificationSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_notificationSubmenu.Location = new System.Drawing.Point(0, 865);
-            this.panel_notificationSubmenu.Name = "panel_notificationSubmenu";
-            this.panel_notificationSubmenu.Size = new System.Drawing.Size(257, 100);
-            this.panel_notificationSubmenu.TabIndex = 14;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(440, 12);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 15);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Welcome :";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // btn_notifyEmail
+            // label5
             // 
-            this.btn_notifyEmail.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_notifyEmail.FlatAppearance.BorderSize = 0;
-            this.btn_notifyEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_notifyEmail.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_notifyEmail.ForeColor = System.Drawing.Color.White;
-            this.btn_notifyEmail.Location = new System.Drawing.Point(0, 48);
-            this.btn_notifyEmail.Name = "btn_notifyEmail";
-            this.btn_notifyEmail.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_notifyEmail.Size = new System.Drawing.Size(257, 48);
-            this.btn_notifyEmail.TabIndex = 3;
-            this.btn_notifyEmail.Text = "Email Notification";
-            this.btn_notifyEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_notifyEmail.UseVisualStyleBackColor = true;
-            this.btn_notifyEmail.Click += new System.EventHandler(this.btn_notifyEmail_Click);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(529, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(85, 15);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "administrater";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // btn_notifySms
+            // label6
             // 
-            this.btn_notifySms.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_notifySms.FlatAppearance.BorderSize = 0;
-            this.btn_notifySms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_notifySms.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_notifySms.ForeColor = System.Drawing.Color.White;
-            this.btn_notifySms.Location = new System.Drawing.Point(0, 0);
-            this.btn_notifySms.Name = "btn_notifySms";
-            this.btn_notifySms.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_notifySms.Size = new System.Drawing.Size(257, 48);
-            this.btn_notifySms.TabIndex = 2;
-            this.btn_notifySms.Text = "SMS Notification";
-            this.btn_notifySms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_notifySms.UseVisualStyleBackColor = true;
-            this.btn_notifySms.Click += new System.EventHandler(this.btn_notifySms_Click);
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(467, 35);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 15);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "role  :";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // btn_notification
+            // label7
             // 
-            this.btn_notification.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_notification.FlatAppearance.BorderSize = 0;
-            this.btn_notification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_notification.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_notification.ForeColor = System.Drawing.Color.White;
-            this.btn_notification.Location = new System.Drawing.Point(0, 817);
-            this.btn_notification.Name = "btn_notification";
-            this.btn_notification.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_notification.Size = new System.Drawing.Size(257, 48);
-            this.btn_notification.TabIndex = 13;
-            this.btn_notification.Text = "Notification";
-            this.btn_notification.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_notification.UseVisualStyleBackColor = true;
-            this.btn_notification.Click += new System.EventHandler(this.btn_notification_Click);
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(530, 35);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(85, 15);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "administrater";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::abc_medical_test_company_v2.Properties.Resources.Acer_Wallpaper_02_3840x2400;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 126);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(704, 406);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox3.Image = global::abc_medical_test_company_v2.Properties.Resources.Contacts;
+            this.pictureBox3.Location = new System.Drawing.Point(629, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(75, 63);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::abc_medical_test_company_v2.Properties.Resources.For_You;
+            this.pictureBox1.Location = new System.Drawing.Point(101, 32);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(281, 13);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(113, 20);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "© asthraksha";
+            this.label8.Click += new System.EventHandler(this.label4_Click);
             // 
             // frm_main
             // 
@@ -496,21 +653,31 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(1298, 577);
+            this.ClientSize = new System.Drawing.Size(982, 577);
             this.Controls.Add(this.panel_main);
             this.Controls.Add(this.panel_slide);
             this.Name = "frm_main";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Main Form";
             this.Load += new System.EventHandler(this.frm_main_Load);
             this.panel_main.ResumeLayout(false);
+            this.panel_footer.ResumeLayout(false);
+            this.panel_footer.PerformLayout();
+            this.panel_cover.ResumeLayout(false);
+            this.panel_cover.PerformLayout();
+            this.panel_header.ResumeLayout(false);
+            this.panel_header.PerformLayout();
             this.panel_slide.ResumeLayout(false);
+            this.panel_notificationSubmenu.ResumeLayout(false);
             this.panel_reportsSubmenu.ResumeLayout(false);
             this.panel_paymentSubmenu.ResumeLayout(false);
             this.panel_testSubmenu.ResumeLayout(false);
             this.panel_patientSubmenu.ResumeLayout(false);
             this.panel_userSubmenu.ResumeLayout(false);
-            this.panel_notificationSubmenu.ResumeLayout(false);
+            this.panel_logo.ResumeLayout(false);
+            this.panel_logo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -546,8 +713,17 @@
         private System.Windows.Forms.Button btn_notifyEmail;
         private System.Windows.Forms.Button btn_notifySms;
         private System.Windows.Forms.Button btn_notification;
-
-
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label8;
     }
 }
 
