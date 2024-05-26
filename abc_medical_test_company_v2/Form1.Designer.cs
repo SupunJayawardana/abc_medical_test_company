@@ -29,8 +29,15 @@
         private void InitializeComponent()
         {
             this.panel_main = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel_footer = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel_cover = new System.Windows.Forms.Panel();
+            this.picboxUser = new System.Windows.Forms.PictureBox();
+            this.lblUserrole = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblusername = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel_header = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -59,18 +66,13 @@
             this.btn_userReg = new System.Windows.Forms.Button();
             this.btn_user = new System.Windows.Forms.Button();
             this.panel_logo = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel_main.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel_footer.SuspendLayout();
             this.panel_cover.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxUser)).BeginInit();
             this.panel_header.SuspendLayout();
             this.panel_slide.SuspendLayout();
             this.panel_notificationSubmenu.SuspendLayout();
@@ -80,13 +82,12 @@
             this.panel_patientSubmenu.SuspendLayout();
             this.panel_userSubmenu.SuspendLayout();
             this.panel_logo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_main
             // 
+            this.panel_main.AutoSize = true;
             this.panel_main.Controls.Add(this.pictureBox2);
             this.panel_main.Controls.Add(this.panel_footer);
             this.panel_main.Controls.Add(this.panel_cover);
@@ -94,34 +95,110 @@
             this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_main.Location = new System.Drawing.Point(278, 0);
             this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(704, 577);
+            this.panel_main.Size = new System.Drawing.Size(799, 577);
             this.panel_main.TabIndex = 1;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::abc_medical_test_company_v2.Properties.Resources.Acer_Wallpaper_02_3840x2400;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 126);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(799, 420);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
             // 
             // panel_footer
             // 
             this.panel_footer.BackColor = System.Drawing.Color.ForestGreen;
             this.panel_footer.Controls.Add(this.label8);
             this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_footer.Location = new System.Drawing.Point(0, 532);
+            this.panel_footer.Location = new System.Drawing.Point(0, 546);
             this.panel_footer.Name = "panel_footer";
-            this.panel_footer.Size = new System.Drawing.Size(704, 45);
+            this.panel_footer.Size = new System.Drawing.Size(799, 31);
             this.panel_footer.TabIndex = 2;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(353, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(119, 15);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "© asthraksha 2024";
             // 
             // panel_cover
             // 
             this.panel_cover.BackColor = System.Drawing.Color.ForestGreen;
-            this.panel_cover.Controls.Add(this.pictureBox3);
-            this.panel_cover.Controls.Add(this.label7);
+            this.panel_cover.Controls.Add(this.picboxUser);
+            this.panel_cover.Controls.Add(this.lblUserrole);
             this.panel_cover.Controls.Add(this.label6);
-            this.panel_cover.Controls.Add(this.label5);
+            this.panel_cover.Controls.Add(this.lblusername);
             this.panel_cover.Controls.Add(this.label4);
             this.panel_cover.Controls.Add(this.label3);
             this.panel_cover.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_cover.Location = new System.Drawing.Point(0, 63);
             this.panel_cover.Name = "panel_cover";
-            this.panel_cover.Size = new System.Drawing.Size(704, 63);
+            this.panel_cover.Size = new System.Drawing.Size(799, 63);
             this.panel_cover.TabIndex = 1;
-            this.panel_cover.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_cover_Paint);
+            // 
+            // picboxUser
+            // 
+            this.picboxUser.Dock = System.Windows.Forms.DockStyle.Right;
+            this.picboxUser.Image = global::abc_medical_test_company_v2.Properties.Resources.Contacts;
+            this.picboxUser.Location = new System.Drawing.Point(724, 0);
+            this.picboxUser.Name = "picboxUser";
+            this.picboxUser.Size = new System.Drawing.Size(75, 63);
+            this.picboxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picboxUser.TabIndex = 2;
+            this.picboxUser.TabStop = false;
+            // 
+            // lblUserrole
+            // 
+            this.lblUserrole.AutoSize = true;
+            this.lblUserrole.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserrole.ForeColor = System.Drawing.Color.White;
+            this.lblUserrole.Location = new System.Drawing.Point(617, 33);
+            this.lblUserrole.Name = "lblUserrole";
+            this.lblUserrole.Size = new System.Drawing.Size(85, 15);
+            this.lblUserrole.TabIndex = 1;
+            this.lblUserrole.Text = "administrater";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(554, 33);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 15);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "role  :";
+            // 
+            // lblusername
+            // 
+            this.lblusername.AutoSize = true;
+            this.lblusername.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusername.ForeColor = System.Drawing.Color.White;
+            this.lblusername.Location = new System.Drawing.Point(616, 10);
+            this.lblusername.Name = "lblusername";
+            this.lblusername.Size = new System.Drawing.Size(85, 15);
+            this.lblusername.TabIndex = 1;
+            this.lblusername.Text = "administrater";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(527, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 15);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Welcome :";
             // 
             // label3
             // 
@@ -138,7 +215,7 @@
             this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_header.Location = new System.Drawing.Point(0, 0);
             this.panel_header.Name = "panel_header";
-            this.panel_header.Size = new System.Drawing.Size(704, 63);
+            this.panel_header.Size = new System.Drawing.Size(799, 63);
             this.panel_header.TabIndex = 0;
             // 
             // label2
@@ -540,6 +617,18 @@
             this.panel_logo.Size = new System.Drawing.Size(257, 126);
             this.panel_logo.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::abc_medical_test_company_v2.Properties.Resources.For_You;
+            this.pictureBox1.Location = new System.Drawing.Point(101, 32);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -552,118 +641,25 @@
             this.label1.Text = "ABC Health Care";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(440, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 15);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Welcome :";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(529, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 15);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "administrater";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(467, 35);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 15);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "role  :";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(530, 35);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 15);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "administrater";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::abc_medical_test_company_v2.Properties.Resources.Acer_Wallpaper_02_3840x2400;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 126);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(704, 406);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox3.Image = global::abc_medical_test_company_v2.Properties.Resources.Contacts;
-            this.pictureBox3.Location = new System.Drawing.Point(629, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(75, 63);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::abc_medical_test_company_v2.Properties.Resources.For_You;
-            this.pictureBox1.Location = new System.Drawing.Point(101, 32);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(281, 13);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(113, 20);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "© asthraksha";
-            this.label8.Click += new System.EventHandler(this.label4_Click);
-            // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(982, 577);
+            this.ClientSize = new System.Drawing.Size(1077, 577);
             this.Controls.Add(this.panel_main);
             this.Controls.Add(this.panel_slide);
             this.Name = "frm_main";
-            this.Text = "Main Form";
+            this.Text = "MAIN FORM";
             this.Load += new System.EventHandler(this.frm_main_Load);
             this.panel_main.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel_footer.ResumeLayout(false);
             this.panel_footer.PerformLayout();
             this.panel_cover.ResumeLayout(false);
             this.panel_cover.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxUser)).EndInit();
             this.panel_header.ResumeLayout(false);
             this.panel_header.PerformLayout();
             this.panel_slide.ResumeLayout(false);
@@ -675,10 +671,9 @@
             this.panel_userSubmenu.ResumeLayout(false);
             this.panel_logo.ResumeLayout(false);
             this.panel_logo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -718,11 +713,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblUserrole;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblusername;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox picboxUser;
         private System.Windows.Forms.Label label8;
     }
 }
