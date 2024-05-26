@@ -62,6 +62,7 @@ namespace abc_medical_test_company_v2
 
         private void btn_userReg_Click(object sender, EventArgs e)
         {
+            openChildForm(new frm_userReg());
             //.....
             //mycode
 
@@ -70,6 +71,7 @@ namespace abc_medical_test_company_v2
 
         private void btn_patientReg_Click(object sender, EventArgs e)
         {
+            openChildForm(new frm_patient());
             //.....
             //mycode
 
@@ -177,40 +179,21 @@ namespace abc_medical_test_company_v2
         {
             showSubmenu(panel_notificationSubmenu);
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
         {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel_main.Controls.Add(childForm);
+            panel_main.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
 
         }
 
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel_cover_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
