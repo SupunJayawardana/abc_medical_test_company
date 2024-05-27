@@ -12,9 +12,16 @@ namespace abc_medical_test_company_v2
 {
     public partial class frm_patient : Form
     {
-        public frm_patient()
+        private frm_main mainForm;
+        public frm_patient(frm_main main)
         {
             InitializeComponent();
+            mainForm = main;
+        }
+
+        private void btninvoice_Click(object sender, EventArgs e)
+        {
+            mainForm.openChildForm(new frm_invoice());
         }
     }
 }

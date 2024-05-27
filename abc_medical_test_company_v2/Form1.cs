@@ -71,7 +71,7 @@ namespace abc_medical_test_company_v2
 
         private void btn_patientReg_Click(object sender, EventArgs e)
         {
-            openChildForm(new frm_patient());
+            openChildForm(new frm_patient(this));
             //.....
             //mycode
 
@@ -183,8 +183,8 @@ namespace abc_medical_test_company_v2
         {
             showSubmenu(panel_notificationSubmenu);
         }
-        private Form activeForm = null;
-        private void openChildForm(Form childForm)
+        public Form activeForm = null;
+        public void openChildForm(Form childForm)
         {
             if (activeForm != null)
                 activeForm.Close();

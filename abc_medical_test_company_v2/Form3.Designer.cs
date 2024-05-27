@@ -44,10 +44,11 @@
             this.dgv_userReg = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.panel_footer = new System.Windows.Forms.Panel();
-            this.txtaddress = new System.Windows.Forms.TextBox();
-            this.panel_header = new System.Windows.Forms.Panel();
-            this.cmbsearch = new System.Windows.Forms.ComboBox();
             this.btnsearch = new System.Windows.Forms.Button();
+            this.cmbsearch = new System.Windows.Forms.ComboBox();
+            this.txtaddress = new System.Windows.Forms.TextBox();
+            this.btninvoice = new System.Windows.Forms.Button();
+            this.panel_header = new System.Windows.Forms.Panel();
             this.panel_mainUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_userReg)).BeginInit();
             this.panel_footer.SuspendLayout();
@@ -221,6 +222,7 @@
             this.panel_footer.Controls.Add(this.lblemail);
             this.panel_footer.Controls.Add(this.lblfname);
             this.panel_footer.Controls.Add(this.btnDelete);
+            this.panel_footer.Controls.Add(this.btninvoice);
             this.panel_footer.Controls.Add(this.btnUpdate);
             this.panel_footer.Controls.Add(this.btnAdd);
             this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -228,34 +230,6 @@
             this.panel_footer.Name = "panel_footer";
             this.panel_footer.Size = new System.Drawing.Size(800, 148);
             this.panel_footer.TabIndex = 5;
-            // 
-            // txtaddress
-            // 
-            this.txtaddress.Location = new System.Drawing.Point(363, 62);
-            this.txtaddress.Multiline = true;
-            this.txtaddress.Name = "txtaddress";
-            this.txtaddress.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtaddress.Size = new System.Drawing.Size(168, 56);
-            this.txtaddress.TabIndex = 2;
-            // 
-            // panel_header
-            // 
-            this.panel_header.BackColor = System.Drawing.Color.ForestGreen;
-            this.panel_header.Controls.Add(this.label1);
-            this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_header.Location = new System.Drawing.Point(0, 0);
-            this.panel_header.Name = "panel_header";
-            this.panel_header.Size = new System.Drawing.Size(800, 42);
-            this.panel_header.TabIndex = 3;
-            // 
-            // cmbsearch
-            // 
-            this.cmbsearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbsearch.FormattingEnabled = true;
-            this.cmbsearch.Location = new System.Drawing.Point(562, 9);
-            this.cmbsearch.Name = "cmbsearch";
-            this.cmbsearch.Size = new System.Drawing.Size(121, 24);
-            this.cmbsearch.TabIndex = 4;
             // 
             // btnsearch
             // 
@@ -269,6 +243,49 @@
             this.btnsearch.TabIndex = 5;
             this.btnsearch.Text = "Search";
             this.btnsearch.UseVisualStyleBackColor = false;
+            // 
+            // cmbsearch
+            // 
+            this.cmbsearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbsearch.FormattingEnabled = true;
+            this.cmbsearch.Location = new System.Drawing.Point(562, 9);
+            this.cmbsearch.Name = "cmbsearch";
+            this.cmbsearch.Size = new System.Drawing.Size(121, 24);
+            this.cmbsearch.TabIndex = 4;
+            // 
+            // txtaddress
+            // 
+            this.txtaddress.Location = new System.Drawing.Point(363, 62);
+            this.txtaddress.Multiline = true;
+            this.txtaddress.Name = "txtaddress";
+            this.txtaddress.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtaddress.Size = new System.Drawing.Size(168, 56);
+            this.txtaddress.TabIndex = 2;
+            // 
+            // btninvoice
+            // 
+            this.btninvoice.BackColor = System.Drawing.Color.Maroon;
+            this.btninvoice.FlatAppearance.BorderSize = 0;
+            this.btninvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btninvoice.Font = new System.Drawing.Font("DejaVu Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btninvoice.ForeColor = System.Drawing.Color.White;
+            this.btninvoice.Location = new System.Drawing.Point(537, 39);
+            this.btninvoice.Name = "btninvoice";
+            this.btninvoice.Size = new System.Drawing.Size(52, 103);
+            this.btninvoice.TabIndex = 0;
+            this.btninvoice.Text = "Invoice";
+            this.btninvoice.UseVisualStyleBackColor = false;
+            this.btninvoice.Click += new System.EventHandler(this.btninvoice_Click);
+            // 
+            // panel_header
+            // 
+            this.panel_header.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel_header.Controls.Add(this.label1);
+            this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_header.Location = new System.Drawing.Point(0, 0);
+            this.panel_header.Name = "panel_header";
+            this.panel_header.Size = new System.Drawing.Size(800, 42);
+            this.panel_header.TabIndex = 3;
             // 
             // frm_patient
             // 
@@ -313,5 +330,6 @@
         private System.Windows.Forms.Panel panel_header;
         private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.ComboBox cmbsearch;
+        private System.Windows.Forms.Button btninvoice;
     }
 }
