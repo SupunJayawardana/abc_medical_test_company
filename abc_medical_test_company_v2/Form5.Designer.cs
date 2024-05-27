@@ -1,6 +1,6 @@
 ﻿namespace abc_medical_test_company_v2
 {
-    partial class Form5
+    partial class frm_addtrslt
     {
         /// <summary>
         /// Required designer variable.
@@ -399,7 +399,7 @@
             this.txtResult.Size = new System.Drawing.Size(215, 151);
             this.txtResult.TabIndex = 24;
             // 
-            // Form5
+            // frm_addtrslt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -407,8 +407,8 @@
             this.Controls.Add(this.panel_footer);
             this.Controls.Add(this.panel_mainUser);
             this.Controls.Add(this.panel_header);
-            this.Name = "Form5";
-            this.Text = "Form5";
+            this.Name = "frm_addtrslt";
+            this.Text = "ADD TEST RESULTS";
             this.panel_header.ResumeLayout(false);
             this.panel_header.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_userReg)).EndInit();

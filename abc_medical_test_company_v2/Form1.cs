@@ -89,6 +89,7 @@ namespace abc_medical_test_company_v2
 
         private void btn_addResult_Click(object sender, EventArgs e)
         {
+            openChildForm(new frm_addtrslt());
             //.....
             //mycode
 
