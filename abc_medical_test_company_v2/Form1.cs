@@ -98,6 +98,7 @@ namespace abc_medical_test_company_v2
 
         private void btn_testView_Click(object sender, EventArgs e)
         {
+            openChildForm(new frm_trsltview());
             //.....
             //mycode
 
@@ -106,6 +107,7 @@ namespace abc_medical_test_company_v2
 
         private void btn_paymentView_Click(object sender, EventArgs e)
         {
+            openChildForm(new frm_paymentview());
             //.....
             //mycode
 
