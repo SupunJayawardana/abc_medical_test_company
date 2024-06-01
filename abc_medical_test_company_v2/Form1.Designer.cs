@@ -95,7 +95,7 @@
             this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_main.Location = new System.Drawing.Point(278, 0);
             this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(799, 577);
+            this.panel_main.Size = new System.Drawing.Size(1049, 678);
             this.panel_main.TabIndex = 1;
             // 
             // pictureBox2
@@ -104,7 +104,7 @@
             this.pictureBox2.Image = global::abc_medical_test_company_v2.Properties.Resources.Acer_Wallpaper_02_3840x2400;
             this.pictureBox2.Location = new System.Drawing.Point(0, 126);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(799, 420);
+            this.pictureBox2.Size = new System.Drawing.Size(1049, 521);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -114,9 +114,9 @@
             this.panel_footer.BackColor = System.Drawing.Color.ForestGreen;
             this.panel_footer.Controls.Add(this.label8);
             this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_footer.Location = new System.Drawing.Point(0, 546);
+            this.panel_footer.Location = new System.Drawing.Point(0, 647);
             this.panel_footer.Name = "panel_footer";
-            this.panel_footer.Size = new System.Drawing.Size(799, 31);
+            this.panel_footer.Size = new System.Drawing.Size(1049, 31);
             this.panel_footer.TabIndex = 2;
             // 
             // label8
@@ -124,7 +124,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(353, 9);
+            this.label8.Location = new System.Drawing.Point(474, 7);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(119, 15);
             this.label8.TabIndex = 1;
@@ -142,16 +142,16 @@
             this.panel_cover.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_cover.Location = new System.Drawing.Point(0, 63);
             this.panel_cover.Name = "panel_cover";
-            this.panel_cover.Size = new System.Drawing.Size(799, 63);
+            this.panel_cover.Size = new System.Drawing.Size(1049, 63);
             this.panel_cover.TabIndex = 1;
             // 
             // picboxUser
             // 
             this.picboxUser.Dock = System.Windows.Forms.DockStyle.Right;
             this.picboxUser.Image = global::abc_medical_test_company_v2.Properties.Resources.Contacts;
-            this.picboxUser.Location = new System.Drawing.Point(724, 0);
+            this.picboxUser.Location = new System.Drawing.Point(978, 0);
             this.picboxUser.Name = "picboxUser";
-            this.picboxUser.Size = new System.Drawing.Size(75, 63);
+            this.picboxUser.Size = new System.Drawing.Size(71, 63);
             this.picboxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picboxUser.TabIndex = 2;
             this.picboxUser.TabStop = false;
@@ -161,7 +161,7 @@
             this.lblUserrole.AutoSize = true;
             this.lblUserrole.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserrole.ForeColor = System.Drawing.Color.White;
-            this.lblUserrole.Location = new System.Drawing.Point(617, 33);
+            this.lblUserrole.Location = new System.Drawing.Point(865, 35);
             this.lblUserrole.Name = "lblUserrole";
             this.lblUserrole.Size = new System.Drawing.Size(85, 15);
             this.lblUserrole.TabIndex = 1;
@@ -172,7 +172,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(554, 33);
+            this.label6.Location = new System.Drawing.Point(802, 35);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 15);
             this.label6.TabIndex = 1;
@@ -183,7 +183,7 @@
             this.lblusername.AutoSize = true;
             this.lblusername.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblusername.ForeColor = System.Drawing.Color.White;
-            this.lblusername.Location = new System.Drawing.Point(616, 10);
+            this.lblusername.Location = new System.Drawing.Point(864, 12);
             this.lblusername.Name = "lblusername";
             this.lblusername.Size = new System.Drawing.Size(85, 15);
             this.lblusername.TabIndex = 1;
@@ -194,7 +194,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(527, 10);
+            this.label4.Location = new System.Drawing.Point(775, 12);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 15);
             this.label4.TabIndex = 1;
@@ -215,7 +215,7 @@
             this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_header.Location = new System.Drawing.Point(0, 0);
             this.panel_header.Name = "panel_header";
-            this.panel_header.Size = new System.Drawing.Size(799, 63);
+            this.panel_header.Size = new System.Drawing.Size(1049, 63);
             this.panel_header.TabIndex = 0;
             // 
             // label2
@@ -249,7 +249,7 @@
             this.panel_slide.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_slide.Location = new System.Drawing.Point(0, 0);
             this.panel_slide.Name = "panel_slide";
-            this.panel_slide.Size = new System.Drawing.Size(278, 577);
+            this.panel_slide.Size = new System.Drawing.Size(278, 678);
             this.panel_slide.TabIndex = 0;
             // 
             // panel_notificationSubmenu
@@ -647,7 +647,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(1077, 577);
+            this.ClientSize = new System.Drawing.Size(1327, 678);
             this.Controls.Add(this.panel_main);
             this.Controls.Add(this.panel_slide);
             this.Name = "frm_main";

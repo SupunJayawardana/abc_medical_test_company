@@ -16,5 +16,10 @@ namespace abc_medical_test_company_v2
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

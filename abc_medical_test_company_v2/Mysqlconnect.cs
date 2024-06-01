@@ -7,8 +7,7 @@ using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 using System.Data;
 
-
-namespace abc_medical_test_company_v2
+namespace WindowsFormsApplication11
 {
     class Mysqlconnect
     {
@@ -18,157 +17,172 @@ namespace abc_medical_test_company_v2
         private string database;
         private string uid;
         private string password;
-        //Constructor
-    public Mysqlconnect()
-    {
-        Initialize();
-    }
-    //Initialize values
-    private void Initialize()
-    {
-        server = "localhost";
-        database = "test1.2";
-        uid = "root";
-        password = "1234";
-        string connectionString;
-        connectionString = "SERVER=" + server + ";" + "DATABASE=" +
-        database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
 
-        connection = new MySqlConnection(connectionString);
-    }
-    //open connection to database
-    private bool OpenConnection()
-    {
-        try
+        public Mysqlconnect()
         {
-            connection.Open();
-            return true;
+            Initialize();
         }
-        catch (MySqlException ex)
+
+        private void Initialize()
         {
-            //When handling errors, you can your application's response based 
-            //on the error number.
-            //The two most common error numbers when connecting are as follows:
-            //0: Cannot connect to server.
-            //1045: Invalid user name and/or password.
-            switch (ex.Number)
+            server = "localhost";
+            database = "test1.2";
+            uid = "root";
+            password = "1234";
+
+            var connectionString = new MySqlConnectionStringBuilder
             {
-                case 0:
-                    MessageBox.Show("Cannot connect to server.  Contact administrator");
-                    break;
+                Server = server,
+                Database = database,
+                UserID = uid,
+                Password = password,
+            }.ToString();
 
-                case 1045:
-                    MessageBox.Show("Invalid username/password, please try again");
-                    break;
+            connection = new MySqlConnection(connectionString);
+        }
+
+        private bool OpenConnection()
+        {
+            try
+            {
+                connection.Open();
+                return true;
             }
-            return false;
-        }
-    }
+            catch (MySqlException ex)
+            {
+                switch (ex.Number)
+                {
+                    case 0:
+                        MessageBox.Show("Cannot connect to server. Contact administrator");
+                        break;
 
-    //Close connection
-    private bool CloseConnection()
-    {
-        try
+                    case 1045:
+                        MessageBox.Show("Invalid username/password, please try again");
+                        break;
+
+                    default:
+                        MessageBox.Show($"Error: {ex.Message}");
+                        break;
+                }
+                return false;
+            }
+        }
+
+        private bool CloseConnection()
         {
-            connection.Close();
-            return true;
+            try
+            {
+                connection.Close();
+                return true;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
         }
-        catch (MySqlException ex)
+
+        public void Insert(string query)
         {
-            MessageBox.Show(ex.Message);
-            return false;
+            if (this.OpenConnection())
+            {
+                using (var cmd = new MySqlCommand(query, connection))
+                {
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
+                    catch (MySqlException ex)
+                    {
+                        MessageBox.Show($"Error: {ex.Message}");
+                    }
+                    finally
+                    {
+                        this.CloseConnection();
+                    }
+                }
+            }
         }
-    }
 
-    //Insert statement
-    public void Insert(string query)
-    {
-        //open connection
-        if (this.OpenConnection() == true)
+        public void Update(string query)
         {
-            //create command and assign the query and connection from the constructor
-            MySqlCommand cmd = new MySqlCommand(query, connection);
-
-            //Execute command
-            cmd.ExecuteNonQuery();
-
-            //close connection
-            this.CloseConnection();
+            if (this.OpenConnection())
+            {
+                using (var cmd = new MySqlCommand(query, connection))
+                {
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
+                    catch (MySqlException ex)
+                    {
+                        MessageBox.Show($"Error: {ex.Message}");
+                    }
+                    finally
+                    {
+                        this.CloseConnection();
+                    }
+                }
+            }
         }
-    }
 
-    //Update statement
-    public void Update(string query)
-    {
-         //open connection
-        if (this.OpenConnection() == true)
+        public void Delete(string query)
         {
-            //create command and assign the query and connection from the constructor
-            MySqlCommand cmd = new MySqlCommand(query, connection);
-
-            //Execute command
-            cmd.ExecuteNonQuery();
-
-            //close connection
-            this.CloseConnection();
+            if (this.OpenConnection())
+            {
+                using (var cmd = new MySqlCommand(query, connection))
+                {
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
+                    catch (MySqlException ex)
+                    {
+                        MessageBox.Show($"Error: {ex.Message}");
+                    }
+                    finally
+                    {
+                        this.CloseConnection();
+                    }
+                }
+            }
         }
-    }
 
-    //Delete statement
-    public void Delete(string query)
-    {
-        //open connection
-        if (this.OpenConnection() == true)
+        public void Select(string query)
         {
-            //create command and assign the query and connection from the constructor
-            MySqlCommand cmd = new MySqlCommand(query, connection);
-
-            //Execute command
-            cmd.ExecuteNonQuery();
-
-            //close connection
-            this.CloseConnection();
+            if (this.OpenConnection())
+            {
+                using (var cmd = new MySqlCommand(query, connection))
+                {
+                    try
+                    {
+                        using (var dataReader = cmd.ExecuteReader())
+                        {
+                            dtable = new DataTable();
+                            dtable.Load(dataReader);
+                        }
+                    }
+                    catch (MySqlException ex)
+                    {
+                        MessageBox.Show($"Error: {ex.Message}");
+                    }
+                    finally
+                    {
+                        this.CloseConnection();
+                    }
+                }
+            }
         }
-    }
-    
-    //Select statement
-    public void Select(string query)
-    {
-        //Open connection
-        if (this.OpenConnection() == true)
+
+        // Backup and Restore methods can be implemented as needed
+        public void Backup()
         {
-            //Create Command
-            MySqlCommand cmd = new MySqlCommand(query, connection);
-            //Create a data reader and Execute the command
-            MySqlDataReader dataReader = cmd.ExecuteReader();
-
-            dtable = new DataTable();
-            dtable.Load(dataReader);
-
-            //close Data Reader
-            dataReader.Close();
-
-            //close Connection
-            this.CloseConnection();
-
-            //return list to be displayed
-            
+            // Implementation here
         }
-        else
+
+        public void Restore()
         {
-            //return list;
+            // Implementation here
         }
-    }
-
-    
-    //Backup
-    public void Backup()
-    {
-    }
-
-    //Restore
-    public void Restore()
-    {
-    }
     }
 }
