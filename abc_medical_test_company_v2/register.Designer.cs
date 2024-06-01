@@ -1,6 +1,6 @@
 ﻿namespace abc_medical_test_company_v2
 {
-    partial class register
+    partial class frmregister
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.panel_main = new System.Windows.Forms.Panel();
-            this.panel_header = new System.Windows.Forms.Panel();
-            this.panel_footer = new System.Windows.Forms.Panel();
-            this.panel_left = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_right = new System.Windows.Forms.Panel();
             this.cmbrole = new System.Windows.Forms.ComboBox();
             this.lblrole = new System.Windows.Forms.Label();
@@ -50,12 +44,18 @@
             this.lblpassword = new System.Windows.Forms.Label();
             this.txtusername = new System.Windows.Forms.TextBox();
             this.lblusername = new System.Windows.Forms.Label();
+            this.panel_left = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel_footer = new System.Windows.Forms.Panel();
+            this.btn_register = new System.Windows.Forms.Button();
+            this.panel_header = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel_main.SuspendLayout();
-            this.panel_header.SuspendLayout();
-            this.panel_footer.SuspendLayout();
+            this.panel_right.SuspendLayout();
             this.panel_left.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel_right.SuspendLayout();
+            this.panel_footer.SuspendLayout();
+            this.panel_header.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_main
@@ -69,66 +69,6 @@
             this.panel_main.Name = "panel_main";
             this.panel_main.Size = new System.Drawing.Size(466, 450);
             this.panel_main.TabIndex = 0;
-            // 
-            // panel_header
-            // 
-            this.panel_header.Controls.Add(this.label1);
-            this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_header.Location = new System.Drawing.Point(0, 0);
-            this.panel_header.Name = "panel_header";
-            this.panel_header.Size = new System.Drawing.Size(466, 58);
-            this.panel_header.TabIndex = 0;
-            // 
-            // panel_footer
-            // 
-            this.panel_footer.Controls.Add(this.button2);
-            this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_footer.Location = new System.Drawing.Point(0, 398);
-            this.panel_footer.Name = "panel_footer";
-            this.panel_footer.Size = new System.Drawing.Size(466, 52);
-            this.panel_footer.TabIndex = 1;
-            // 
-            // panel_left
-            // 
-            this.panel_left.Controls.Add(this.pictureBox1);
-            this.panel_left.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_left.Location = new System.Drawing.Point(0, 58);
-            this.panel_left.Name = "panel_left";
-            this.panel_left.Size = new System.Drawing.Size(203, 340);
-            this.panel_left.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("DejaVu Sans Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(123, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 26);
-            this.label1.TabIndex = 39;
-            this.label1.Text = "User Registration";
-            // 
-            // button2
-            // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(363, 8);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 32);
-            this.button2.TabIndex = 40;
-            this.button2.Text = "Register";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::abc_medical_test_company_v2.Properties.Resources.Contacts;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 44);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(197, 290);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 41;
-            this.pictureBox1.TabStop = false;
             // 
             // panel_right
             // 
@@ -308,7 +248,68 @@
             this.lblusername.Text = "Username ";
             this.lblusername.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // register
+            // panel_left
+            // 
+            this.panel_left.Controls.Add(this.pictureBox1);
+            this.panel_left.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_left.Location = new System.Drawing.Point(0, 58);
+            this.panel_left.Name = "panel_left";
+            this.panel_left.Size = new System.Drawing.Size(203, 340);
+            this.panel_left.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::abc_medical_test_company_v2.Properties.Resources.Contacts;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 44);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(197, 290);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 41;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel_footer
+            // 
+            this.panel_footer.Controls.Add(this.btn_register);
+            this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_footer.Location = new System.Drawing.Point(0, 398);
+            this.panel_footer.Name = "panel_footer";
+            this.panel_footer.Size = new System.Drawing.Size(466, 52);
+            this.panel_footer.TabIndex = 1;
+            // 
+            // btn_register
+            // 
+            this.btn_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_register.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_register.ForeColor = System.Drawing.Color.White;
+            this.btn_register.Location = new System.Drawing.Point(363, 8);
+            this.btn_register.Name = "btn_register";
+            this.btn_register.Size = new System.Drawing.Size(91, 32);
+            this.btn_register.TabIndex = 40;
+            this.btn_register.Text = "Register";
+            this.btn_register.UseVisualStyleBackColor = true;
+            this.btn_register.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // panel_header
+            // 
+            this.panel_header.Controls.Add(this.label1);
+            this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_header.Location = new System.Drawing.Point(0, 0);
+            this.panel_header.Name = "panel_header";
+            this.panel_header.Size = new System.Drawing.Size(466, 58);
+            this.panel_header.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("DejaVu Sans Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(123, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(216, 26);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "User Registration";
+            // 
+            // frmregister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -316,18 +317,17 @@
             this.ClientSize = new System.Drawing.Size(466, 450);
             this.Controls.Add(this.panel_main);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "register";
+            this.Name = "frmregister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "register";
-            this.Load += new System.EventHandler(this.register_Load);
             this.panel_main.ResumeLayout(false);
-            this.panel_header.ResumeLayout(false);
-            this.panel_header.PerformLayout();
-            this.panel_footer.ResumeLayout(false);
-            this.panel_left.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel_right.ResumeLayout(false);
             this.panel_right.PerformLayout();
+            this.panel_left.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel_footer.ResumeLayout(false);
+            this.panel_header.ResumeLayout(false);
+            this.panel_header.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -338,7 +338,7 @@
         private System.Windows.Forms.Panel panel_left;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel_footer;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_register;
         private System.Windows.Forms.Panel panel_header;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel_right;

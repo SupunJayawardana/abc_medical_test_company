@@ -10,16 +10,23 @@ using System.Windows.Forms;
 
 namespace abc_medical_test_company_v2
 {
-    public partial class login : Form
+    public partial class frmlogin : Form
     {
-        public login()
+      frmregister Uregister =new frmregister();
+        public frmlogin()
         {
             InitializeComponent();
         }
 
-        private void btn_Close_Click(object sender, EventArgs e)
+        private void Btn_register_Click(object sender, EventArgs e)
         {
+            Uregister.Show();    
             this.Close();
+        }
+
+        private void Btn_Close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

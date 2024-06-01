@@ -61,9 +61,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(407, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 26);
+            this.label1.Size = new System.Drawing.Size(226, 26);
             this.label1.TabIndex = 0;
-            this.label1.Text = "User Registration";
+            this.label1.Text = "User Management";
             // 
             // panel_mainUser
             // 

@@ -1,6 +1,6 @@
 ﻿namespace abc_medical_test_company_v2
 {
-    partial class login
+    partial class frmlogin
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.panel_main = new System.Windows.Forms.Panel();
             this.panel_right = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_login = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txt_Password = new System.Windows.Forms.TextBox();
             this.txt_Username = new System.Windows.Forms.TextBox();
@@ -42,7 +42,7 @@
             this.panel_footer = new System.Windows.Forms.Panel();
             this.btn_Close = new System.Windows.Forms.Button();
             this.panel_header = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_register = new System.Windows.Forms.Button();
             this.panel_main.SuspendLayout();
             this.panel_right.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -67,7 +67,7 @@
             // panel_right
             // 
             this.panel_right.BackColor = System.Drawing.Color.ForestGreen;
-            this.panel_right.Controls.Add(this.button1);
+            this.panel_right.Controls.Add(this.btn_login);
             this.panel_right.Controls.Add(this.pictureBox2);
             this.panel_right.Controls.Add(this.txt_Password);
             this.panel_right.Controls.Add(this.txt_Username);
@@ -79,19 +79,18 @@
             this.panel_right.Size = new System.Drawing.Size(342, 363);
             this.panel_right.TabIndex = 3;
             // 
-            // button1
+            // btn_login
             // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Green;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(113, 301);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 32);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btn_Close_Click);
+            this.btn_login.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_login.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_login.ForeColor = System.Drawing.Color.White;
+            this.btn_login.Location = new System.Drawing.Point(113, 301);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(75, 32);
+            this.btn_login.TabIndex = 0;
+            this.btn_login.Text = "Login";
+            this.btn_login.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
@@ -202,40 +201,40 @@
             this.btn_Close.TabIndex = 0;
             this.btn_Close.Text = "Close";
             this.btn_Close.UseVisualStyleBackColor = true;
-            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
+            this.btn_Close.Click += new System.EventHandler(this.Btn_Close_Click);
             // 
             // panel_header
             // 
             this.panel_header.BackColor = System.Drawing.Color.ForestGreen;
-            this.panel_header.Controls.Add(this.button2);
+            this.panel_header.Controls.Add(this.btn_register);
             this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_header.Location = new System.Drawing.Point(0, 0);
             this.panel_header.Name = "panel_header";
             this.panel_header.Size = new System.Drawing.Size(693, 50);
             this.panel_header.TabIndex = 0;
             // 
-            // button2
+            // btn_register
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(596, 8);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 32);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Register";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.btn_Close_Click);
+            this.btn_register.FlatAppearance.BorderSize = 0;
+            this.btn_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_register.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_register.ForeColor = System.Drawing.Color.White;
+            this.btn_register.Location = new System.Drawing.Point(596, 8);
+            this.btn_register.Name = "btn_register";
+            this.btn_register.Size = new System.Drawing.Size(91, 32);
+            this.btn_register.TabIndex = 0;
+            this.btn_register.Text = "Register";
+            this.btn_register.UseVisualStyleBackColor = true;
+            this.btn_register.Click += new System.EventHandler(this.Btn_register_Click);
             // 
-            // login
+            // frmlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(693, 459);
             this.Controls.Add(this.panel_main);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "login";
+            this.Name = "frmlogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
             this.panel_main.ResumeLayout(false);
@@ -263,8 +262,8 @@
         private System.Windows.Forms.TextBox txt_Username;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_register;
+        private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_Password;
