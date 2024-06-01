@@ -7,7 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using WindowsFormsApplication11;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace abc_medical_test_company_v2
 {
@@ -45,21 +48,28 @@ namespace abc_medical_test_company_v2
                 MessageBox.Show("No data found.");
             }
         }
-
+       int id;
         private void dgv_userReg_SelectionChanged(object sender, EventArgs e)
         {
             if (dgv_userReg.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = dgv_userReg.SelectedRows[0];
+                
+               id = Convert.ToInt32(selectedRow.Cells["id"].Value); // Assuming you have an 'id' column for unique identification
 
-                txtusername.Text = selectedRow.Cells["username"].Value.ToString();
-                txtpassword.Text = selectedRow.Cells["password"].Value.ToString();
-                txtfname.Text = selectedRow.Cells["first_name"].Value.ToString();
-                txtlname.Text = selectedRow.Cells["last_name"].Value.ToString();
-                txtemail.Text = selectedRow.Cells["email"].Value.ToString();
-                txttelno.Text = selectedRow.Cells["mobile"].Value.ToString();
+                /* txtusername.Text = selectedRow.Cells["username"].Value.ToString();
+                 txtpassword.Text = selectedRow.Cells["password"].Value.ToString();
+                 txtfname.Text = selectedRow.Cells["first_name"].Value.ToString();
+                 txtlname.Text = selectedRow.Cells["last_name"].Value.ToString();
+                 txtemail.Text = selectedRow.Cells["email"].Value.ToString();
+                 txttelno.Text = selectedRow.Cells["mobile"].Value.ToString();*/
                 cmbrole.Text = selectedRow.Cells["role"].Value.ToString();
                 cmbstatus.Text = selectedRow.Cells["status_id"].Value.ToString();
+
+                // Convert status_id to text representation
+                string statusId = selectedRow.Cells["status_id"].Value.ToString();
+                cmbstatus.Text = statusId == "1" ? "Active" : statusId == "2" ? "Inactive" : "";
+
             }
         }
 
@@ -96,17 +106,17 @@ namespace abc_medical_test_company_v2
 
         private void btnclear_Click(object sender, EventArgs e)
         {
-            txtusername.Clear();
+           /* txtusername.Clear();
             txtpassword.Clear();
             txtfname.Clear();
             txtlname.Clear();
             txtemail.Clear();
-            txttelno.Clear();
+            txttelno.Clear();*/
             cmbrole.SelectedIndex = -1;
             //cmbsearch.SelectedIndex = -1;
             cmbstatus.SelectedIndex = -1;
         }
-
+        /*
         private void btnAdd_Click(object sender, EventArgs e)
         {
             AddDataToAdmin();
@@ -114,7 +124,7 @@ namespace abc_medical_test_company_v2
 
         private void AddDataToAdmin()
         {
-            string username = txtusername.Text;
+           /* string username = txtusername.Text;
             string password = txtpassword.Text;
             string fname = txtfname.Text;
             string lname = txtlname.Text;
@@ -126,6 +136,27 @@ namespace abc_medical_test_company_v2
             string sql = $"INSERT INTO admin (username, password, first_name, last_name, email, mobile, role, status_id) VALUES ('{username}', '{password}', '{fname}', '{lname}', '{email}', '{telno}', '{role}', '{status}')";
             dbObj1.Insert(sql);
             RefreshDataGridView();
+        }*/
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            UpdateDatatoAdmin();
+        }
+        private void UpdateDatatoAdmin()
+        {
+            if (dgv_userReg.SelectedRows.Count > 0)
+            {
+               
+                string role = cmbrole.Text;
+                int status = cmbstatus.Text == "Active" ? 1 : 2;
+
+                string sql = $"UPDATE admin SET role = '{role}', status_id = {status} WHERE id = {id}";
+                dbObj1.Update(sql);
+                RefreshDataGridView();
+            }
+            else
+            {
+                MessageBox.Show("No row selected.");
+            }
         }
     }
 }
