@@ -38,7 +38,6 @@
             this.panel_header = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtaddress = new System.Windows.Forms.TextBox();
-            this.dgv_userReg = new System.Windows.Forms.DataGridView();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -61,8 +60,6 @@
             this.lblResult = new System.Windows.Forms.Label();
             this.txtResult = new System.Windows.Forms.TextBox();
             this.panel_header.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_userReg)).BeginInit();
-            this.panel_mainUser.SuspendLayout();
             this.panel_footer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +69,7 @@
             this.btnsearch.FlatAppearance.BorderSize = 0;
             this.btnsearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsearch.ForeColor = System.Drawing.Color.White;
-            this.btnsearch.Location = new System.Drawing.Point(692, 127);
+            this.btnsearch.Location = new System.Drawing.Point(918, 432);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.Size = new System.Drawing.Size(101, 24);
             this.btnsearch.TabIndex = 5;
@@ -83,7 +80,7 @@
             // 
             this.cmbsearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbsearch.FormattingEnabled = true;
-            this.cmbsearch.Location = new System.Drawing.Point(595, 95);
+            this.cmbsearch.Location = new System.Drawing.Point(821, 400);
             this.cmbsearch.Name = "cmbsearch";
             this.cmbsearch.Size = new System.Drawing.Size(198, 24);
             this.cmbsearch.TabIndex = 4;
@@ -139,7 +136,7 @@
             this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_header.Location = new System.Drawing.Point(0, 0);
             this.panel_header.Name = "panel_header";
-            this.panel_header.Size = new System.Drawing.Size(800, 42);
+            this.panel_header.Size = new System.Drawing.Size(1031, 42);
             this.panel_header.TabIndex = 6;
             // 
             // label1
@@ -162,18 +159,6 @@
             this.txtaddress.Size = new System.Drawing.Size(176, 59);
             this.txtaddress.TabIndex = 2;
             // 
-            // dgv_userReg
-            // 
-            this.dgv_userReg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgv_userReg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_userReg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_userReg.Location = new System.Drawing.Point(0, 0);
-            this.dgv_userReg.Name = "dgv_userReg";
-            this.dgv_userReg.RowHeadersWidth = 51;
-            this.dgv_userReg.RowTemplate.Height = 24;
-            this.dgv_userReg.Size = new System.Drawing.Size(800, 408);
-            this.dgv_userReg.TabIndex = 2;
-            // 
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.Red;
@@ -181,7 +166,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("DejaVu Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(597, 227);
+            this.btnDelete.Location = new System.Drawing.Point(823, 532);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(88, 39);
             this.btnDelete.TabIndex = 0;
@@ -195,7 +180,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("DejaVu Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(597, 162);
+            this.btnUpdate.Location = new System.Drawing.Point(823, 467);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(88, 59);
             this.btnUpdate.TabIndex = 0;
@@ -209,7 +194,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("DejaVu Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(691, 162);
+            this.btnAdd.Location = new System.Drawing.Point(917, 467);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(101, 104);
             this.btnAdd.TabIndex = 0;
@@ -218,11 +203,10 @@
             // 
             // panel_mainUser
             // 
-            this.panel_mainUser.Controls.Add(this.dgv_userReg);
             this.panel_mainUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_mainUser.Location = new System.Drawing.Point(0, 42);
             this.panel_mainUser.Name = "panel_mainUser";
-            this.panel_mainUser.Size = new System.Drawing.Size(800, 408);
+            this.panel_mainUser.Size = new System.Drawing.Size(1031, 589);
             this.panel_mainUser.TabIndex = 7;
             // 
             // panel_footer
@@ -255,9 +239,9 @@
             this.panel_footer.Controls.Add(this.lblResult);
             this.panel_footer.Controls.Add(this.txtResult);
             this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_footer.Location = new System.Drawing.Point(0, 175);
+            this.panel_footer.Location = new System.Drawing.Point(0, 45);
             this.panel_footer.Name = "panel_footer";
-            this.panel_footer.Size = new System.Drawing.Size(800, 275);
+            this.panel_footer.Size = new System.Drawing.Size(1031, 586);
             this.panel_footer.TabIndex = 8;
             this.panel_footer.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_footer_Paint);
             // 
@@ -384,7 +368,7 @@
             // 
             this.lblResult.AutoSize = true;
             this.lblResult.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(313, 119);
+            this.lblResult.Location = new System.Drawing.Point(22, 310);
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(50, 15);
             this.lblResult.TabIndex = 23;
@@ -392,7 +376,7 @@
             // 
             // txtResult
             // 
-            this.txtResult.Location = new System.Drawing.Point(369, 116);
+            this.txtResult.Location = new System.Drawing.Point(78, 307);
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
             this.txtResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -403,7 +387,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1031, 631);
             this.Controls.Add(this.panel_footer);
             this.Controls.Add(this.panel_mainUser);
             this.Controls.Add(this.panel_header);
@@ -411,8 +395,6 @@
             this.Text = "ADD TEST RESULTS";
             this.panel_header.ResumeLayout(false);
             this.panel_header.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_userReg)).EndInit();
-            this.panel_mainUser.ResumeLayout(false);
             this.panel_footer.ResumeLayout(false);
             this.panel_footer.PerformLayout();
             this.ResumeLayout(false);
@@ -431,7 +413,6 @@
         private System.Windows.Forms.Panel panel_header;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtaddress;
-        private System.Windows.Forms.DataGridView dgv_userReg;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAdd;

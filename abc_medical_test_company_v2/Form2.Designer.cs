@@ -130,9 +130,9 @@
             this.panel_footer.Controls.Add(this.btnUpdate);
             this.panel_footer.Controls.Add(this.btnAdd);
             this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_footer.Location = new System.Drawing.Point(0, 254);
+            this.panel_footer.Location = new System.Drawing.Point(0, 221);
             this.panel_footer.Name = "panel_footer";
-            this.panel_footer.Size = new System.Drawing.Size(1031, 377);
+            this.panel_footer.Size = new System.Drawing.Size(1031, 410);
             this.panel_footer.TabIndex = 2;
             // 
             // btnclear
