@@ -124,7 +124,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(474, 7);
+            this.label8.Location = new System.Drawing.Point(373, 7);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(119, 15);
             this.label8.TabIndex = 1;

@@ -43,6 +43,7 @@
             this.btn_Close = new System.Windows.Forms.Button();
             this.panel_header = new System.Windows.Forms.Panel();
             this.btn_register = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel_main.SuspendLayout();
             this.panel_right.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -91,6 +92,7 @@
             this.btn_login.TabIndex = 0;
             this.btn_login.Text = "Login";
             this.btn_login.UseVisualStyleBackColor = true;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // pictureBox2
             // 
@@ -182,6 +184,7 @@
             // panel_footer
             // 
             this.panel_footer.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel_footer.Controls.Add(this.label8);
             this.panel_footer.Controls.Add(this.btn_Close);
             this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_footer.Location = new System.Drawing.Point(0, 413);
@@ -227,6 +230,17 @@
             this.btn_register.UseVisualStyleBackColor = true;
             this.btn_register.Click += new System.EventHandler(this.Btn_register_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(287, 16);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(119, 15);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "© asthraksha 2024";
+            // 
             // frmlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -245,6 +259,7 @@
             this.panel_left.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel_footer.ResumeLayout(false);
+            this.panel_footer.PerformLayout();
             this.panel_header.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -267,5 +282,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_Password;
+        private System.Windows.Forms.Label label8;
     }
 }

@@ -59,6 +59,37 @@ namespace abc_medical_test_company_v2
             LogForm.Show();
             this.Hide();
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            LogForm.Show();
+            this.Hide();
+        }
+
+        private void txtpassword_TextChanged(object sender, EventArgs e)
+        {
+            string username="";
+            string check = "";
+            string sql;
+
+            username = txtusername.Text;
+
+            sql = "SELECT username FROM Admin WHERE username = ('" + username + "')";
+
+            dbObj1.Select(sql);
+            if (dbObj1.dtable.Rows.Count > 0)
+            {
+                check = dbObj1.dtable.Rows[0]["username"].ToString();
+            }
+
+            if (check == username)
+            {
+                
+                txtusername.Clear();
+                txtpassword.Clear();
+                MessageBox.Show("already existed username,choose another");
+            }
+        }
     }
 }
 
