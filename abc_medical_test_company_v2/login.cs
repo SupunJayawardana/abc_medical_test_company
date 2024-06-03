@@ -12,7 +12,8 @@ namespace abc_medical_test_company_v2
 {
     public partial class frmlogin : Form
     {
-      frmregister Uregister =new frmregister();
+        private frmregister uregister;
+
         public frmlogin()
         {
             InitializeComponent();
@@ -20,8 +21,12 @@ namespace abc_medical_test_company_v2
 
         private void Btn_register_Click(object sender, EventArgs e)
         {
-            Uregister.Show();    
-            this.Close();
+            if (uregister == null || uregister.IsDisposed)
+            {
+                uregister = new frmregister(this);
+            }
+            uregister.Show();
+            this.Hide();
         }
 
         private void Btn_Close_Click(object sender, EventArgs e)
@@ -30,3 +35,4 @@ namespace abc_medical_test_company_v2
         }
     }
 }
+
