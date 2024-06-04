@@ -45,7 +45,7 @@ namespace abc_medical_test_company_v2
             string email = txtemail.Text;
             string telno = txttelno.Text;
             string role = cmbrole.Text;
-            string status = "2";
+            string status = "1";
 
             string sql = $"INSERT INTO admin (username, password, first_name, last_name, email, mobile, role, status_id) VALUES ('{username}', '{password}', '{fname}', '{lname}', '{email}', '{telno}', '{role}', '{status}')";
             dbObj1.Insert(sql);
@@ -57,7 +57,7 @@ namespace abc_medical_test_company_v2
             MessageBox.Show("Register Complete. Wait till Admin Confirmation to Login");
 
             LogForm.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

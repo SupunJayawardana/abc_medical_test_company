@@ -21,5 +21,10 @@ namespace abc_medical_test_company_v2
         {
 
         }
+
+        private void frm_addtrslt_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
