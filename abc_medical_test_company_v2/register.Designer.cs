@@ -69,7 +69,7 @@
             this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_main.Location = new System.Drawing.Point(0, 0);
             this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(466, 450);
+            this.panel_main.Size = new System.Drawing.Size(540, 541);
             this.panel_main.TabIndex = 0;
             // 
             // panel_right
@@ -91,29 +91,29 @@
             this.panel_right.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_right.Location = new System.Drawing.Point(203, 58);
             this.panel_right.Name = "panel_right";
-            this.panel_right.Size = new System.Drawing.Size(263, 340);
+            this.panel_right.Size = new System.Drawing.Size(337, 431);
             this.panel_right.TabIndex = 3;
             // 
             // cmbrole
             // 
             this.cmbrole.BackColor = System.Drawing.Color.DarkGreen;
             this.cmbrole.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbrole.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbrole.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbrole.ForeColor = System.Drawing.Color.White;
             this.cmbrole.FormattingEnabled = true;
-            this.cmbrole.Location = new System.Drawing.Point(6, 311);
+            this.cmbrole.Location = new System.Drawing.Point(18, 394);
             this.cmbrole.Name = "cmbrole";
-            this.cmbrole.Size = new System.Drawing.Size(168, 23);
+            this.cmbrole.Size = new System.Drawing.Size(263, 32);
             this.cmbrole.TabIndex = 51;
             // 
             // lblrole
             // 
             this.lblrole.AutoSize = true;
-            this.lblrole.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrole.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblrole.ForeColor = System.Drawing.Color.White;
-            this.lblrole.Location = new System.Drawing.Point(6, 292);
+            this.lblrole.Location = new System.Drawing.Point(18, 368);
             this.lblrole.Name = "lblrole";
-            this.lblrole.Size = new System.Drawing.Size(41, 18);
+            this.lblrole.Size = new System.Drawing.Size(54, 24);
             this.lblrole.TabIndex = 50;
             this.lblrole.Text = "Role";
             this.lblrole.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -121,51 +121,51 @@
             // txtlname
             // 
             this.txtlname.BackColor = System.Drawing.Color.DarkGreen;
-            this.txtlname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtlname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtlname.ForeColor = System.Drawing.Color.White;
-            this.txtlname.Location = new System.Drawing.Point(6, 173);
+            this.txtlname.Location = new System.Drawing.Point(18, 214);
             this.txtlname.Name = "txtlname";
-            this.txtlname.Size = new System.Drawing.Size(168, 23);
+            this.txtlname.Size = new System.Drawing.Size(263, 31);
             this.txtlname.TabIndex = 44;
             // 
             // txttelno
             // 
             this.txttelno.BackColor = System.Drawing.Color.DarkGreen;
-            this.txttelno.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttelno.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttelno.ForeColor = System.Drawing.Color.White;
-            this.txttelno.Location = new System.Drawing.Point(6, 265);
+            this.txttelno.Location = new System.Drawing.Point(18, 334);
             this.txttelno.Name = "txttelno";
-            this.txttelno.Size = new System.Drawing.Size(168, 23);
+            this.txttelno.Size = new System.Drawing.Size(263, 31);
             this.txttelno.TabIndex = 45;
             // 
             // txtemail
             // 
             this.txtemail.BackColor = System.Drawing.Color.DarkGreen;
-            this.txtemail.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtemail.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtemail.ForeColor = System.Drawing.Color.White;
-            this.txtemail.Location = new System.Drawing.Point(6, 219);
+            this.txtemail.Location = new System.Drawing.Point(18, 274);
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(168, 23);
+            this.txtemail.Size = new System.Drawing.Size(263, 31);
             this.txtemail.TabIndex = 46;
             // 
             // txtfname
             // 
             this.txtfname.BackColor = System.Drawing.Color.DarkGreen;
-            this.txtfname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtfname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtfname.ForeColor = System.Drawing.Color.White;
-            this.txtfname.Location = new System.Drawing.Point(6, 127);
+            this.txtfname.Location = new System.Drawing.Point(18, 154);
             this.txtfname.Name = "txtfname";
-            this.txtfname.Size = new System.Drawing.Size(168, 23);
+            this.txtfname.Size = new System.Drawing.Size(263, 31);
             this.txtfname.TabIndex = 47;
             // 
             // lbllname
             // 
             this.lbllname.AutoSize = true;
-            this.lbllname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbllname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbllname.ForeColor = System.Drawing.Color.White;
-            this.lbllname.Location = new System.Drawing.Point(6, 154);
+            this.lbllname.Location = new System.Drawing.Point(18, 188);
             this.lbllname.Name = "lbllname";
-            this.lbllname.Size = new System.Drawing.Size(88, 18);
+            this.lbllname.Size = new System.Drawing.Size(117, 24);
             this.lbllname.TabIndex = 38;
             this.lbllname.Text = "Last Name";
             this.lbllname.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -173,11 +173,11 @@
             // lbltelno
             // 
             this.lbltelno.AutoSize = true;
-            this.lbltelno.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltelno.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltelno.ForeColor = System.Drawing.Color.White;
-            this.lbltelno.Location = new System.Drawing.Point(6, 246);
+            this.lbltelno.Location = new System.Drawing.Point(18, 308);
             this.lbltelno.Name = "lbltelno";
-            this.lbltelno.Size = new System.Drawing.Size(84, 18);
+            this.lbltelno.Size = new System.Drawing.Size(110, 24);
             this.lbltelno.TabIndex = 39;
             this.lbltelno.Text = "Mobile No";
             this.lbltelno.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -185,11 +185,11 @@
             // lblemail
             // 
             this.lblemail.AutoSize = true;
-            this.lblemail.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblemail.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblemail.ForeColor = System.Drawing.Color.White;
-            this.lblemail.Location = new System.Drawing.Point(6, 200);
+            this.lblemail.Location = new System.Drawing.Point(18, 248);
             this.lblemail.Name = "lblemail";
-            this.lblemail.Size = new System.Drawing.Size(50, 18);
+            this.lblemail.Size = new System.Drawing.Size(65, 24);
             this.lblemail.TabIndex = 40;
             this.lblemail.Text = "Email";
             this.lblemail.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -197,11 +197,11 @@
             // lblfname
             // 
             this.lblfname.AutoSize = true;
-            this.lblfname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblfname.ForeColor = System.Drawing.Color.White;
-            this.lblfname.Location = new System.Drawing.Point(6, 108);
+            this.lblfname.Location = new System.Drawing.Point(18, 128);
             this.lblfname.Name = "lblfname";
-            this.lblfname.Size = new System.Drawing.Size(91, 18);
+            this.lblfname.Size = new System.Drawing.Size(121, 24);
             this.lblfname.TabIndex = 41;
             this.lblfname.Text = "First Name";
             this.lblfname.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -209,22 +209,22 @@
             // txtpassword
             // 
             this.txtpassword.BackColor = System.Drawing.Color.DarkGreen;
-            this.txtpassword.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpassword.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpassword.ForeColor = System.Drawing.Color.White;
-            this.txtpassword.Location = new System.Drawing.Point(6, 81);
+            this.txtpassword.Location = new System.Drawing.Point(18, 94);
             this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Size = new System.Drawing.Size(168, 23);
+            this.txtpassword.Size = new System.Drawing.Size(263, 31);
             this.txtpassword.TabIndex = 48;
             this.txtpassword.TextChanged += new System.EventHandler(this.txtpassword_TextChanged);
             // 
             // lblpassword
             // 
             this.lblpassword.AutoSize = true;
-            this.lblpassword.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpassword.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpassword.ForeColor = System.Drawing.Color.White;
-            this.lblpassword.Location = new System.Drawing.Point(6, 62);
+            this.lblpassword.Location = new System.Drawing.Point(18, 68);
             this.lblpassword.Name = "lblpassword";
-            this.lblpassword.Size = new System.Drawing.Size(81, 18);
+            this.lblpassword.Size = new System.Drawing.Size(107, 24);
             this.lblpassword.TabIndex = 42;
             this.lblpassword.Text = "Password";
             this.lblpassword.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -232,21 +232,21 @@
             // txtusername
             // 
             this.txtusername.BackColor = System.Drawing.Color.DarkGreen;
-            this.txtusername.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtusername.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtusername.ForeColor = System.Drawing.Color.White;
-            this.txtusername.Location = new System.Drawing.Point(6, 35);
+            this.txtusername.Location = new System.Drawing.Point(18, 34);
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(168, 23);
+            this.txtusername.Size = new System.Drawing.Size(263, 31);
             this.txtusername.TabIndex = 49;
             // 
             // lblusername
             // 
             this.lblusername.AutoSize = true;
-            this.lblusername.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusername.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblusername.ForeColor = System.Drawing.Color.White;
-            this.lblusername.Location = new System.Drawing.Point(6, 16);
+            this.lblusername.Location = new System.Drawing.Point(18, 8);
             this.lblusername.Name = "lblusername";
-            this.lblusername.Size = new System.Drawing.Size(90, 18);
+            this.lblusername.Size = new System.Drawing.Size(119, 24);
             this.lblusername.TabIndex = 43;
             this.lblusername.Text = "Username ";
             this.lblusername.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -257,7 +257,7 @@
             this.panel_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_left.Location = new System.Drawing.Point(0, 58);
             this.panel_left.Name = "panel_left";
-            this.panel_left.Size = new System.Drawing.Size(203, 340);
+            this.panel_left.Size = new System.Drawing.Size(203, 431);
             this.panel_left.TabIndex = 2;
             // 
             // pictureBox1
@@ -275,9 +275,9 @@
             this.panel_footer.Controls.Add(this.label8);
             this.panel_footer.Controls.Add(this.btn_register);
             this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_footer.Location = new System.Drawing.Point(0, 398);
+            this.panel_footer.Location = new System.Drawing.Point(0, 489);
             this.panel_footer.Name = "panel_footer";
-            this.panel_footer.Size = new System.Drawing.Size(466, 52);
+            this.panel_footer.Size = new System.Drawing.Size(540, 52);
             this.panel_footer.TabIndex = 1;
             // 
             // label8
@@ -294,9 +294,9 @@
             // btn_register
             // 
             this.btn_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_register.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_register.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_register.ForeColor = System.Drawing.Color.White;
-            this.btn_register.Location = new System.Drawing.Point(363, 8);
+            this.btn_register.Location = new System.Drawing.Point(419, 11);
             this.btn_register.Name = "btn_register";
             this.btn_register.Size = new System.Drawing.Size(91, 32);
             this.btn_register.TabIndex = 40;
@@ -311,7 +311,7 @@
             this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_header.Location = new System.Drawing.Point(0, 0);
             this.panel_header.Name = "panel_header";
-            this.panel_header.Size = new System.Drawing.Size(466, 58);
+            this.panel_header.Size = new System.Drawing.Size(540, 58);
             this.panel_header.TabIndex = 0;
             // 
             // btnClose
@@ -320,7 +320,7 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(371, 5);
+            this.btnClose.Location = new System.Drawing.Point(446, 3);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(91, 32);
             this.btnClose.TabIndex = 40;
@@ -331,11 +331,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("DejaVu Sans Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("DejaVu Sans Condensed", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(123, 22);
+            this.label1.Location = new System.Drawing.Point(139, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 26);
+            this.label1.Size = new System.Drawing.Size(263, 33);
             this.label1.TabIndex = 39;
             this.label1.Text = "User Registration";
             // 
@@ -344,7 +344,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.ForestGreen;
-            this.ClientSize = new System.Drawing.Size(466, 450);
+            this.ClientSize = new System.Drawing.Size(540, 541);
             this.Controls.Add(this.panel_main);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmregister";

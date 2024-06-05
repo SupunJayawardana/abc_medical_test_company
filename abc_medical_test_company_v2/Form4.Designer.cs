@@ -54,6 +54,7 @@
             // 
             // dgv_userReg
             // 
+            this.dgv_userReg.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.dgv_userReg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_userReg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_userReg.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -111,9 +112,9 @@
             this.lblsearchby.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsearchby.Location = new System.Drawing.Point(311, 14);
             this.lblsearchby.Name = "lblsearchby";
-            this.lblsearchby.Size = new System.Drawing.Size(72, 15);
+            this.lblsearchby.Size = new System.Drawing.Size(35, 15);
             this.lblsearchby.TabIndex = 1;
-            this.lblsearchby.Text = "username :";
+            this.lblsearchby.Text = "NIC :";
             // 
             // panel_header
             // 
@@ -147,6 +148,7 @@
             this.Controls.Add(this.panel_header);
             this.Name = "frm_patientview";
             this.Text = "PATIENT INFO VIEWER";
+            this.Load += new System.EventHandler(this.frm_patientview_Load);
             this.panel_mainUser.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_userReg)).EndInit();
             this.panel_footer.ResumeLayout(false);

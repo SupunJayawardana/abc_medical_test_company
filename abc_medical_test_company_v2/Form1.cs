@@ -71,7 +71,7 @@ namespace abc_medical_test_company_v2
             openChildForm(new frm_userReg());
             //.....
             //mycode
-
+            panel_header.Visible = false;
             hideSubmenu();
         }
 
@@ -80,6 +80,7 @@ namespace abc_medical_test_company_v2
             openChildForm(new frm_patient(this));
             //.....
             //mycode
+            panel_header.Visible = false;
 
             hideSubmenu();
         }
@@ -89,7 +90,7 @@ namespace abc_medical_test_company_v2
             openChildForm(new frm_patientview());
             //.....
             //mycode
-
+            panel_header.Visible = false;
             hideSubmenu();
         }
 
@@ -98,7 +99,7 @@ namespace abc_medical_test_company_v2
             openChildForm(new frm_addtrslt());
             //.....
             //mycode
-
+            panel_header.Visible = false;
             hideSubmenu();
         }
 
@@ -107,7 +108,7 @@ namespace abc_medical_test_company_v2
             openChildForm(new frm_trsltview());
             //.....
             //mycode
-
+            panel_header.Visible = false;
             hideSubmenu();
         }
 
@@ -116,7 +117,7 @@ namespace abc_medical_test_company_v2
             openChildForm(new frm_paymentview());
             //.....
             //mycode
-
+            panel_header.Visible = false;
             hideSubmenu();
         }
 
@@ -124,7 +125,7 @@ namespace abc_medical_test_company_v2
         {
             //.....
             //mycode
-
+            panel_header.Visible = false;
             hideSubmenu();
         }
 
@@ -132,7 +133,7 @@ namespace abc_medical_test_company_v2
         {
             //.....
             //mycode
-
+            panel_header.Visible = false;
             hideSubmenu();
         }
 
@@ -140,7 +141,7 @@ namespace abc_medical_test_company_v2
         {
             //.....
             //mycode
-
+            panel_header.Visible = false;
             hideSubmenu();
         }
 
@@ -148,7 +149,7 @@ namespace abc_medical_test_company_v2
         {
             //.....
             //mycode
-
+            panel_header.Visible = false;
             hideSubmenu();
         }
 
@@ -156,38 +157,50 @@ namespace abc_medical_test_company_v2
         {
             //.....
             //mycode
-
+            panel_header.Visible = false;
             hideSubmenu();
         }
 
         private void btn_user_Click(object sender, EventArgs e)
         {
             showSubmenu(panel_userSubmenu);
+            panel_header.Visible = false;
+
         }
 
         private void btn_patient_Click(object sender, EventArgs e)
         {
-            showSubmenu(panel_patientSubmenu);
+            showSubmenu(panel_patientSubmenu); 
+            panel_header.Visible = false;
+
         }
 
         private void btn_test_Click(object sender, EventArgs e)
         {
             showSubmenu(panel_testSubmenu);
+            panel_header.Visible = false;
+
         }
 
         private void btn_payment_Click(object sender, EventArgs e)
         {
             showSubmenu(panel_paymentSubmenu);
+            panel_header.Visible = false;
+
         }
 
         private void btn_reports_Click(object sender, EventArgs e)
         {
             showSubmenu(panel_reportsSubmenu);
+            panel_header.Visible = false;
+
         }
 
         private void btn_notification_Click(object sender, EventArgs e)
         {
             showSubmenu(panel_notificationSubmenu);
+            panel_header.Visible = false;
+
         }
         public Form activeForm = null;
         public void openChildForm(Form childForm)
@@ -205,6 +218,9 @@ namespace abc_medical_test_company_v2
 
         }
 
-      
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

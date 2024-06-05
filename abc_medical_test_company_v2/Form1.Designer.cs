@@ -68,6 +68,7 @@
             this.panel_logo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnexit = new System.Windows.Forms.Button();
             this.panel_main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel_footer.SuspendLayout();
@@ -112,6 +113,7 @@
             // panel_footer
             // 
             this.panel_footer.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel_footer.Controls.Add(this.btnexit);
             this.panel_footer.Controls.Add(this.label8);
             this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_footer.Location = new System.Drawing.Point(0, 647);
@@ -641,6 +643,21 @@
             this.label1.Text = "ABC Health Care";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnexit
+            // 
+            this.btnexit.BackColor = System.Drawing.Color.Transparent;
+            this.btnexit.FlatAppearance.BorderSize = 0;
+            this.btnexit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnexit.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexit.ForeColor = System.Drawing.Color.White;
+            this.btnexit.Location = new System.Drawing.Point(980, 3);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.Size = new System.Drawing.Size(65, 26);
+            this.btnexit.TabIndex = 6;
+            this.btnexit.Text = "Exit";
+            this.btnexit.UseVisualStyleBackColor = false;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
+            // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -719,6 +736,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox picboxUser;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnexit;
     }
 }
 

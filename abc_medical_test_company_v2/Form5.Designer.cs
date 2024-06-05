@@ -393,6 +393,7 @@
             this.Controls.Add(this.panel_header);
             this.Name = "frm_addtrslt";
             this.Text = "ADD TEST RESULTS";
+            this.Load += new System.EventHandler(this.frm_addtrslt_Load);
             this.panel_header.ResumeLayout(false);
             this.panel_header.PerformLayout();
             this.panel_footer.ResumeLayout(false);

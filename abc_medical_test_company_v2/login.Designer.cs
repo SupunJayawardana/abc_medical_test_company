@@ -40,10 +40,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_footer = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.btn_Close = new System.Windows.Forms.Button();
             this.panel_header = new System.Windows.Forms.Panel();
             this.btn_register = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
             this.panel_main.SuspendLayout();
             this.panel_right.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -192,6 +192,17 @@
             this.panel_footer.Size = new System.Drawing.Size(693, 46);
             this.panel_footer.TabIndex = 1;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(287, 16);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(119, 15);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "© asthraksha 2024";
+            // 
             // btn_Close
             // 
             this.btn_Close.FlatAppearance.BorderSize = 0;
@@ -220,26 +231,15 @@
             // 
             this.btn_register.FlatAppearance.BorderSize = 0;
             this.btn_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_register.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_register.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_register.ForeColor = System.Drawing.Color.White;
-            this.btn_register.Location = new System.Drawing.Point(596, 8);
+            this.btn_register.Location = new System.Drawing.Point(576, 8);
             this.btn_register.Name = "btn_register";
-            this.btn_register.Size = new System.Drawing.Size(91, 32);
+            this.btn_register.Size = new System.Drawing.Size(106, 32);
             this.btn_register.TabIndex = 0;
             this.btn_register.Text = "Register";
             this.btn_register.UseVisualStyleBackColor = true;
             this.btn_register.Click += new System.EventHandler(this.Btn_register_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(287, 16);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(119, 15);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "© asthraksha 2024";
             // 
             // frmlogin
             // 
