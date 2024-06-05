@@ -10,16 +10,22 @@ using System.Windows.Forms;
 
 namespace abc_medical_test_company_v2
 {
+    
     public partial class frm_main : Form
     {
         public frm_main()
         {
             InitializeComponent();
+            
+
         }
 
         private void frm_main_Load(object sender, EventArgs e)
         {
             hideSubmenu();
+            //MessageBox.Show("User :" + frmlogin.user);
+            lblusername.Text=frmlogin.name;
+            lblUserrole.Text = frmlogin.user;
         }
         private void customizeDesign()
         {
@@ -199,5 +205,6 @@ namespace abc_medical_test_company_v2
 
         }
 
+      
     }
 }
