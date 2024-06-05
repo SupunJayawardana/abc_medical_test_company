@@ -9,19 +9,23 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApplication11;
 
+
 namespace abc_medical_test_company_v2
 {
-    
     public partial class frmregister : Form
     {
         private readonly Mysqlconnect dbObj1;
-        frmlogin Login = new frmlogin();
-        public frmregister()
+        private frmlogin LogForm;
+
+        public frmregister(frmlogin loginForm)
         {
             InitializeComponent();
             dbObj1 = new Mysqlconnect();
+            LogForm = loginForm;
+
             InitializeComboBoxItems();
         }
+
         private void InitializeComboBoxItems()
         {
             cmbrole.Items.Clear();
@@ -31,7 +35,8 @@ namespace abc_medical_test_company_v2
             cmbrole.Items.Add("Cashier");
             cmbrole.SelectedIndex = 0;
         }
-            private void RegisterUserToSystem()
+
+        private void RegisterUserToSystem()
         {
             string username = txtusername.Text;
             string password = txtpassword.Text;
@@ -49,10 +54,11 @@ namespace abc_medical_test_company_v2
         private void button2_Click(object sender, EventArgs e)
         {
             RegisterUserToSystem();
-            MessageBox.Show("Register Complete wait till Admin Confirmation");
-            Login.Show();
-            this.Close();
-            
+            MessageBox.Show("Register Complete. Wait till Admin Confirmation to Login");
+
+            LogForm.Show();
+            this.Hide();
         }
     }
 }
+
