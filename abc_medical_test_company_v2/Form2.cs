@@ -48,21 +48,16 @@ namespace abc_medical_test_company_v2
                 MessageBox.Show("No data found.");
             }
         }
-       int id;
+    int id =0;
         private void dgv_userReg_SelectionChanged(object sender, EventArgs e)
         {
             if (dgv_userReg.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = dgv_userReg.SelectedRows[0];
                 
-               //id = Convert.ToInt32(selectedRow.Cells["id"].Value); // Assuming you have an 'id' column for unique identification
+             id = Convert.ToInt32(selectedRow.Cells["id"].Value); // Assuming you have an 'id' column for unique identification
 
-                /* txtusername.Text = selectedRow.Cells["username"].Value.ToString();
-                 txtpassword.Text = selectedRow.Cells["password"].Value.ToString();
-                 txtfname.Text = selectedRow.Cells["first_name"].Value.ToString();
-                 txtlname.Text = selectedRow.Cells["last_name"].Value.ToString();
-                 txtemail.Text = selectedRow.Cells["email"].Value.ToString();
-                 txttelno.Text = selectedRow.Cells["mobile"].Value.ToString();*/
+                
                 cmbrole.Text = selectedRow.Cells["role"].Value.ToString();
                 cmbstatus.Text = selectedRow.Cells["status_id"].Value.ToString();
 
@@ -85,58 +80,24 @@ namespace abc_medical_test_company_v2
             cmbrole.Items.Add("Doctor");
             cmbrole.Items.Add("Technologist");
             cmbrole.Items.Add("Cashier");
-            cmbrole.SelectedIndex = 0;
+            //cmbrole.SelectedIndex = 0;
 
             cmbstatus.Items.Clear();
             cmbstatus.Items.Add("Active");
             cmbstatus.Items.Add("Inactive");
-            cmbstatus.SelectedIndex = 0;
+            //cmbstatus.SelectedIndex = 0;
 
-            /*cmbsearch.Items.Clear();
-            cmbsearch.Items.Add("username");
-            cmbsearch.Items.Add("password");
-            cmbsearch.Items.Add("first name");
-            cmbsearch.Items.Add("last name");
-            cmbsearch.Items.Add("role");
-            cmbsearch.Items.Add("email");
-            cmbsearch.Items.Add("tel no");
-            cmbsearch.Items.Add("status");
-            cmbsearch.SelectedIndex = 0;*/
+           
         }
 
         private void btnclear_Click(object sender, EventArgs e)
         {
-           /* txtusername.Clear();
-            txtpassword.Clear();
-            txtfname.Clear();
-            txtlname.Clear();
-            txtemail.Clear();
-            txttelno.Clear();*/
+           
             cmbrole.SelectedIndex = -1;
-            //cmbsearch.SelectedIndex = -1;
+            
             cmbstatus.SelectedIndex = -1;
         }
-        /*
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            AddDataToAdmin();
-        }
-
-        private void AddDataToAdmin()
-        {
-           /* string username = txtusername.Text;
-            string password = txtpassword.Text;
-            string fname = txtfname.Text;
-            string lname = txtlname.Text;
-            string email = txtemail.Text;
-            string telno = txttelno.Text;
-            string role = cmbrole.Text;
-            string status = cmbstatus.Text;
-
-            string sql = $"INSERT INTO admin (username, password, first_name, last_name, email, mobile, role, status_id) VALUES ('{username}', '{password}', '{fname}', '{lname}', '{email}', '{telno}', '{role}', '{status}')";
-            dbObj1.Insert(sql);
-            RefreshDataGridView();
-        }*/
+        
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             UpdateDatatoAdmin();
@@ -147,9 +108,9 @@ namespace abc_medical_test_company_v2
             {
                
                 string role = cmbrole.Text;
-                int status = cmbstatus.Text == "Active" ? 1 : 2;
+                int status = cmbstatus.Text == "Active" ? 2 : 1;
 
-                string sql = $"UPDATE admin SET role = '{role}', status_id = {status} WHERE id = {id}";
+                string sql = "UPDATE admin SET role = '" + role + "' , status_id = '" + status + "' WHERE id = ('" + id + "')";
                 dbObj1.Update(sql);
                 RefreshDataGridView();
             }

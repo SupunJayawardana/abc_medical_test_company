@@ -26,6 +26,8 @@ namespace abc_medical_test_company_v2
             dgv_userReg.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgv_userReg.MultiSelect = false;
             dgv_userReg.SelectionChanged += dgv_userReg_SelectionChanged;
+
+            UserPrivilages();
         }
 
         private void btninvoice_Click(object sender, EventArgs e)
@@ -37,6 +39,16 @@ namespace abc_medical_test_company_v2
         {
             CustomizeDesign();
             RefreshDataGridView();
+            
+
+        }
+        private void UserPrivilages()
+        {
+            if (frmlogin.user == "Doctor" || frmlogin.user == "Technologist")
+            {
+                btnAddpanel.Visible = false;
+                btnedit.Visible = false;
+            }
         }
 
         private void CustomizeDesign()
@@ -70,6 +82,8 @@ namespace abc_medical_test_company_v2
         {
             panel_footer.Visible = true;
             panel_edit.Visible = false;
+            btnUpdate.Visible = false;
+            btnDelete.Visible = false;
 
 
         }
@@ -89,6 +103,10 @@ namespace abc_medical_test_company_v2
         {
             panel_footer.Visible = true;
             panel_edit.Visible = false;
+            btnUpdate.Visible = true;
+            btnDelete.Visible = true;
+            btnAdd.Visible = false;
+
             EditLoad();
         }
         private void EditLoad()
@@ -108,6 +126,35 @@ namespace abc_medical_test_company_v2
         }
 
         private void btnSearchpatient_Click(object sender, EventArgs e)
+        {
+            string nic = "";
+            string sql;
+
+            nic = txtsearch.Text;
+
+            sql = "SELECT * FROM Patient WHERE nic = ('" + nic + "')";
+
+            try
+            {
+                dbObj1.Select(sql);
+
+                if (dbObj1.dtable != null && dbObj1.dtable.Rows.Count > 0)
+                {
+                    dgv_userReg.DataSource = dbObj1.dtable;
+                }
+                else
+                {
+                    MessageBox.Show("No data found.");
+                    txtsearch.Clear();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error fetching data: " + ex.Message);
+            }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
         {
 
         }

@@ -213,6 +213,7 @@
             this.txtpassword.ForeColor = System.Drawing.Color.White;
             this.txtpassword.Location = new System.Drawing.Point(18, 94);
             this.txtpassword.Name = "txtpassword";
+            this.txtpassword.PasswordChar = '*';
             this.txtpassword.Size = new System.Drawing.Size(263, 31);
             this.txtpassword.TabIndex = 48;
             this.txtpassword.TextChanged += new System.EventHandler(this.txtpassword_TextChanged);
@@ -296,9 +297,9 @@
             this.btn_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_register.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_register.ForeColor = System.Drawing.Color.White;
-            this.btn_register.Location = new System.Drawing.Point(419, 11);
+            this.btn_register.Location = new System.Drawing.Point(390, 11);
             this.btn_register.Name = "btn_register";
-            this.btn_register.Size = new System.Drawing.Size(91, 32);
+            this.btn_register.Size = new System.Drawing.Size(120, 32);
             this.btn_register.TabIndex = 40;
             this.btn_register.Text = "Register";
             this.btn_register.UseVisualStyleBackColor = true;

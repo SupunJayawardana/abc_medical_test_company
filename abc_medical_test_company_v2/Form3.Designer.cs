@@ -40,9 +40,10 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel_mainUser = new System.Windows.Forms.Panel();
             this.panel_edit = new System.Windows.Forms.Panel();
+            this.txtsearch = new System.Windows.Forms.TextBox();
+            this.btnSearchpatient = new System.Windows.Forms.Button();
             this.btnAddpanel = new System.Windows.Forms.Button();
             this.btnedit = new System.Windows.Forms.Button();
-            this.cmbsearch = new System.Windows.Forms.ComboBox();
             this.dgv_userReg = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.panel_footer = new System.Windows.Forms.Panel();
@@ -52,7 +53,6 @@
             this.btninvoice = new System.Windows.Forms.Button();
             this.txtaddress = new System.Windows.Forms.TextBox();
             this.panel_header = new System.Windows.Forms.Panel();
-            this.btnSearchpatient = new System.Windows.Forms.Button();
             this.panel_mainUser.SuspendLayout();
             this.panel_edit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_userReg)).BeginInit();
@@ -172,6 +172,7 @@
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // panel_mainUser
             // 
@@ -186,15 +187,39 @@
             // panel_edit
             // 
             this.panel_edit.BackColor = System.Drawing.Color.Transparent;
+            this.panel_edit.Controls.Add(this.txtsearch);
             this.panel_edit.Controls.Add(this.btnSearchpatient);
             this.panel_edit.Controls.Add(this.btnAddpanel);
             this.panel_edit.Controls.Add(this.btnedit);
-            this.panel_edit.Controls.Add(this.cmbsearch);
             this.panel_edit.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_edit.Location = new System.Drawing.Point(0, 119);
             this.panel_edit.Name = "panel_edit";
             this.panel_edit.Size = new System.Drawing.Size(1087, 98);
             this.panel_edit.TabIndex = 3;
+            // 
+            // txtsearch
+            // 
+            this.txtsearch.BackColor = System.Drawing.Color.DarkGreen;
+            this.txtsearch.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.txtsearch.ForeColor = System.Drawing.Color.White;
+            this.txtsearch.Location = new System.Drawing.Point(391, 14);
+            this.txtsearch.Name = "txtsearch";
+            this.txtsearch.Size = new System.Drawing.Size(304, 27);
+            this.txtsearch.TabIndex = 7;
+            // 
+            // btnSearchpatient
+            // 
+            this.btnSearchpatient.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSearchpatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchpatient.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnSearchpatient.ForeColor = System.Drawing.Color.White;
+            this.btnSearchpatient.Location = new System.Drawing.Point(476, 47);
+            this.btnSearchpatient.Name = "btnSearchpatient";
+            this.btnSearchpatient.Size = new System.Drawing.Size(134, 33);
+            this.btnSearchpatient.TabIndex = 6;
+            this.btnSearchpatient.Text = "Search";
+            this.btnSearchpatient.UseVisualStyleBackColor = true;
+            this.btnSearchpatient.Click += new System.EventHandler(this.btnSearchpatient_Click);
             // 
             // btnAddpanel
             // 
@@ -223,18 +248,6 @@
             this.btnedit.Text = "Edit";
             this.btnedit.UseVisualStyleBackColor = false;
             this.btnedit.Click += new System.EventHandler(this.Btnedit);
-            // 
-            // cmbsearch
-            // 
-            this.cmbsearch.BackColor = System.Drawing.Color.DarkGreen;
-            this.cmbsearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbsearch.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
-            this.cmbsearch.ForeColor = System.Drawing.Color.White;
-            this.cmbsearch.FormattingEnabled = true;
-            this.cmbsearch.Location = new System.Drawing.Point(391, 9);
-            this.cmbsearch.Name = "cmbsearch";
-            this.cmbsearch.Size = new System.Drawing.Size(304, 28);
-            this.cmbsearch.TabIndex = 4;
             // 
             // dgv_userReg
             // 
@@ -360,20 +373,6 @@
             this.panel_header.Size = new System.Drawing.Size(1087, 53);
             this.panel_header.TabIndex = 3;
             // 
-            // btnSearchpatient
-            // 
-            this.btnSearchpatient.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnSearchpatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchpatient.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnSearchpatient.ForeColor = System.Drawing.Color.White;
-            this.btnSearchpatient.Location = new System.Drawing.Point(476, 47);
-            this.btnSearchpatient.Name = "btnSearchpatient";
-            this.btnSearchpatient.Size = new System.Drawing.Size(134, 33);
-            this.btnSearchpatient.TabIndex = 6;
-            this.btnSearchpatient.Text = "Search";
-            this.btnSearchpatient.UseVisualStyleBackColor = true;
-            this.btnSearchpatient.Click += new System.EventHandler(this.btnSearchpatient_Click);
-            // 
             // frm_patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -388,6 +387,7 @@
             this.Load += new System.EventHandler(this.frm_patient_Load);
             this.panel_mainUser.ResumeLayout(false);
             this.panel_edit.ResumeLayout(false);
+            this.panel_edit.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_userReg)).EndInit();
             this.panel_footer.ResumeLayout(false);
             this.panel_footer.PerformLayout();
@@ -416,7 +416,6 @@
         private System.Windows.Forms.TextBox txtaddress;
         private System.Windows.Forms.Panel panel_header;
         private System.Windows.Forms.Button btnedit;
-        private System.Windows.Forms.ComboBox cmbsearch;
         private System.Windows.Forms.Button btninvoice;
         private System.Windows.Forms.Panel panel_edit;
         private System.Windows.Forms.Button btnAddtest;
@@ -424,5 +423,6 @@
         private System.Windows.Forms.Button btnAddpanel;
         private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.Button btnSearchpatient;
+        private System.Windows.Forms.TextBox txtsearch;
     }
 }
