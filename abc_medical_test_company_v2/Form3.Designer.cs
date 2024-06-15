@@ -102,7 +102,6 @@
             this.txtfname.Name = "txtfname";
             this.txtfname.Size = new System.Drawing.Size(253, 27);
             this.txtfname.TabIndex = 2;
-   //         this.txtfname.TextChanged += new System.EventHandler(this.txtfname_TextChanged);
             // 
             // lbltelno
             // 
@@ -149,7 +148,7 @@
             this.btnDelete.TabIndex = 0;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
-//            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -163,7 +162,7 @@
             this.btnUpdate.TabIndex = 0;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
-//            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
@@ -379,7 +378,7 @@
             this.txtnic.Name = "txtnic";
             this.txtnic.Size = new System.Drawing.Size(253, 27);
             this.txtnic.TabIndex = 2;
-//            this.txtnic.TextChanged += new System.EventHandler(this.txtnic_TextChanged);
+            this.txtnic.TextChanged += new System.EventHandler(this.txtnic_TextChanged);
             // 
             // label2
             // 
