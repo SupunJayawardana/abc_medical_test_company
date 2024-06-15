@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -42,6 +43,7 @@ namespace abc_medical_test_company_v2
         {
             CustomizeDesign();
             RefreshDataGridView();
+        //    PopulateComboBox();
         }
 
         private void UserPrivilages()
@@ -150,6 +152,7 @@ namespace abc_medical_test_company_v2
 
             //LoadSelectedRow();
             EditLoad();
+            PopulateComboBox();
         }
 
         private void EditLoad()
@@ -192,7 +195,7 @@ namespace abc_medical_test_company_v2
 
         private void btnSearchpatient_Click(object sender, EventArgs e)
         {
-            
+
             string nic = txtsearch.Text.Trim();
             string sql = "SELECT nic,name,email, mobile,address FROM Patient WHERE nic = ('" + nic + "') and status_id='2'";
             try
@@ -319,7 +322,7 @@ namespace abc_medical_test_company_v2
                         txtnic.Clear();
                     }
                 }
-               
+
             }
             catch (Exception ex)
             {
@@ -404,6 +407,30 @@ namespace abc_medical_test_company_v2
         {
 
         }
+        private void PopulateComboBox()
+        {
+            try
+            {
+                string sql = "SELECT test_id, test_name FROM tests";
+                dbObj1.Select(sql);
+
+                if (dbObj1.dtable != null && dbObj1.dtable.Rows.Count > 0)
+                {
+                    cmbtests.DisplayMember = "test_name";
+                    cmbtests.ValueMember = "test_id";
+                    cmbtests.DataSource = dbObj1.dtable;
+                }
+                else
+                {
+                    MessageBox.Show("No data found for ComboBox.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error fetching data: " + ex.Message);
+            }
+        }
+
 
     }
 }

@@ -153,6 +153,7 @@ namespace WindowsFormsApplication11
             if (this.OpenConnection())
             {
                 using (var cmd = new MySqlCommand(query, connection))
+
                 {
                     try
                     {
