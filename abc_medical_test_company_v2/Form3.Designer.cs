@@ -52,6 +52,8 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btninvoice = new System.Windows.Forms.Button();
             this.txtaddress = new System.Windows.Forms.TextBox();
+            this.txtnic = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel_header = new System.Windows.Forms.Panel();
             this.panel_mainUser.SuspendLayout();
             this.panel_edit.SuspendLayout();
@@ -65,7 +67,7 @@
             this.lbladdress.AutoSize = true;
             this.lbladdress.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.lbladdress.ForeColor = System.Drawing.Color.White;
-            this.lbladdress.Location = new System.Drawing.Point(336, 177);
+            this.lbladdress.Location = new System.Drawing.Point(336, 220);
             this.lbladdress.Name = "lbladdress";
             this.lbladdress.Size = new System.Drawing.Size(79, 20);
             this.lbladdress.TabIndex = 3;
@@ -76,7 +78,7 @@
             this.txttelno.BackColor = System.Drawing.Color.DarkGreen;
             this.txttelno.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.txttelno.ForeColor = System.Drawing.Color.White;
-            this.txttelno.Location = new System.Drawing.Point(336, 144);
+            this.txttelno.Location = new System.Drawing.Point(336, 187);
             this.txttelno.Name = "txttelno";
             this.txttelno.Size = new System.Drawing.Size(253, 27);
             this.txttelno.TabIndex = 2;
@@ -86,7 +88,7 @@
             this.txtemail.BackColor = System.Drawing.Color.DarkGreen;
             this.txtemail.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.txtemail.ForeColor = System.Drawing.Color.White;
-            this.txtemail.Location = new System.Drawing.Point(336, 91);
+            this.txtemail.Location = new System.Drawing.Point(336, 134);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(253, 27);
             this.txtemail.TabIndex = 2;
@@ -96,17 +98,18 @@
             this.txtfname.BackColor = System.Drawing.Color.DarkGreen;
             this.txtfname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.txtfname.ForeColor = System.Drawing.Color.White;
-            this.txtfname.Location = new System.Drawing.Point(336, 38);
+            this.txtfname.Location = new System.Drawing.Point(336, 81);
             this.txtfname.Name = "txtfname";
             this.txtfname.Size = new System.Drawing.Size(253, 27);
             this.txtfname.TabIndex = 2;
+   //         this.txtfname.TextChanged += new System.EventHandler(this.txtfname_TextChanged);
             // 
             // lbltelno
             // 
             this.lbltelno.AutoSize = true;
             this.lbltelno.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.lbltelno.ForeColor = System.Drawing.Color.White;
-            this.lbltelno.Location = new System.Drawing.Point(336, 121);
+            this.lbltelno.Location = new System.Drawing.Point(336, 164);
             this.lbltelno.Name = "lbltelno";
             this.lbltelno.Size = new System.Drawing.Size(61, 20);
             this.lbltelno.TabIndex = 1;
@@ -117,7 +120,7 @@
             this.lblemail.AutoSize = true;
             this.lblemail.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.lblemail.ForeColor = System.Drawing.Color.White;
-            this.lblemail.Location = new System.Drawing.Point(336, 68);
+            this.lblemail.Location = new System.Drawing.Point(336, 111);
             this.lblemail.Name = "lblemail";
             this.lblemail.Size = new System.Drawing.Size(60, 20);
             this.lblemail.TabIndex = 1;
@@ -128,7 +131,7 @@
             this.lblfname.AutoSize = true;
             this.lblfname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.lblfname.ForeColor = System.Drawing.Color.White;
-            this.lblfname.Location = new System.Drawing.Point(336, 15);
+            this.lblfname.Location = new System.Drawing.Point(336, 58);
             this.lblfname.Name = "lblfname";
             this.lblfname.Size = new System.Drawing.Size(129, 20);
             this.lblfname.TabIndex = 1;
@@ -146,6 +149,7 @@
             this.btnDelete.TabIndex = 0;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+//            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -159,6 +163,7 @@
             this.btnUpdate.TabIndex = 0;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+//            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
@@ -227,7 +232,7 @@
             this.btnAddpanel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddpanel.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddpanel.ForeColor = System.Drawing.Color.White;
-            this.btnAddpanel.Location = new System.Drawing.Point(331, 47);
+            this.btnAddpanel.Location = new System.Drawing.Point(322, 47);
             this.btnAddpanel.Name = "btnAddpanel";
             this.btnAddpanel.Size = new System.Drawing.Size(134, 33);
             this.btnAddpanel.TabIndex = 5;
@@ -283,8 +288,10 @@
             this.panel_footer.Controls.Add(this.txtaddress);
             this.panel_footer.Controls.Add(this.txttelno);
             this.panel_footer.Controls.Add(this.txtemail);
+            this.panel_footer.Controls.Add(this.txtnic);
             this.panel_footer.Controls.Add(this.txtfname);
             this.panel_footer.Controls.Add(this.lbltelno);
+            this.panel_footer.Controls.Add(this.label2);
             this.panel_footer.Controls.Add(this.lblemail);
             this.panel_footer.Controls.Add(this.lblfname);
             this.panel_footer.Controls.Add(this.btnDelete);
@@ -332,7 +339,7 @@
             this.comboBox1.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.comboBox1.ForeColor = System.Drawing.Color.White;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(336, 273);
+            this.comboBox1.Location = new System.Drawing.Point(336, 316);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(253, 28);
             this.comboBox1.TabIndex = 4;
@@ -356,12 +363,34 @@
             this.txtaddress.BackColor = System.Drawing.Color.DarkGreen;
             this.txtaddress.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.txtaddress.ForeColor = System.Drawing.Color.White;
-            this.txtaddress.Location = new System.Drawing.Point(336, 197);
+            this.txtaddress.Location = new System.Drawing.Point(336, 240);
             this.txtaddress.Multiline = true;
             this.txtaddress.Name = "txtaddress";
             this.txtaddress.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtaddress.Size = new System.Drawing.Size(253, 62);
             this.txtaddress.TabIndex = 2;
+            // 
+            // txtnic
+            // 
+            this.txtnic.BackColor = System.Drawing.Color.DarkGreen;
+            this.txtnic.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.txtnic.ForeColor = System.Drawing.Color.White;
+            this.txtnic.Location = new System.Drawing.Point(336, 28);
+            this.txtnic.Name = "txtnic";
+            this.txtnic.Size = new System.Drawing.Size(253, 27);
+            this.txtnic.TabIndex = 2;
+//            this.txtnic.TextChanged += new System.EventHandler(this.txtnic_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(336, 5);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "NIC No";
             // 
             // panel_header
             // 
@@ -424,5 +453,7 @@
         private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.Button btnSearchpatient;
         private System.Windows.Forms.TextBox txtsearch;
+        private System.Windows.Forms.TextBox txtnic;
+        private System.Windows.Forms.Label label2;
     }
 }

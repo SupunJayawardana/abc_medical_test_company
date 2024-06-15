@@ -61,7 +61,7 @@ namespace WindowsFormsApplication11
                         break;
 
                     default:
-                        MessageBox.Show($"Error: {ex.Message}");
+                        MessageBox.Show("Error: '"+ex.Message+"'");
                         break;
                 }
                 return false;
@@ -94,7 +94,7 @@ namespace WindowsFormsApplication11
                     }
                     catch (MySqlException ex)
                     {
-                        MessageBox.Show($"Error: {ex.Message}");
+                        MessageBox.Show("Error: '"+ex.Message+"'");
                     }
                     finally
                     {
@@ -116,7 +116,7 @@ namespace WindowsFormsApplication11
                     }
                     catch (MySqlException ex)
                     {
-                        MessageBox.Show($"Error: {ex.Message}");
+                        MessageBox.Show("Error: '"+ex.Message+"'");
                     }
                     finally
                     {
@@ -138,7 +138,7 @@ namespace WindowsFormsApplication11
                     }
                     catch (MySqlException ex)
                     {
-                        MessageBox.Show($"Error: {ex.Message}");
+                        MessageBox.Show("Error: '"+ex.Message+"'");
                     }
                     finally
                     {
@@ -164,7 +164,7 @@ namespace WindowsFormsApplication11
                     }
                     catch (MySqlException ex)
                     {
-                        MessageBox.Show($"Error: {ex.Message}");
+                        MessageBox.Show("Error: '"+ex.Message+"'");
                     }
                     finally
                     {

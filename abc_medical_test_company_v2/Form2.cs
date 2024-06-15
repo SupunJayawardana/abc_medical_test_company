@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using WindowsFormsApplication11;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+//using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+//using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace abc_medical_test_company_v2
 {
@@ -36,7 +36,9 @@ namespace abc_medical_test_company_v2
 
         private void RefreshDataGridView()
         {
-            string sql = "SELECT * FROM admin";
+           // string sql = "SELECT * FROM admin WHERE  statis_id='2'";
+
+            string sql = "SELECT * FROM admin ";
             dbObj1.Select(sql);
 
             if (dbObj1.dtable != null && dbObj1.dtable.Rows.Count > 0)

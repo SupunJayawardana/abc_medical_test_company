@@ -31,6 +31,7 @@
             this.panel_main = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel_footer = new System.Windows.Forms.Panel();
+            this.btnexit = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.panel_cover = new System.Windows.Forms.Panel();
             this.picboxUser = new System.Windows.Forms.PictureBox();
@@ -59,7 +60,6 @@
             this.btn_addResult = new System.Windows.Forms.Button();
             this.btn_test = new System.Windows.Forms.Button();
             this.panel_patientSubmenu = new System.Windows.Forms.Panel();
-            this.btn_patientView = new System.Windows.Forms.Button();
             this.btn_patientReg = new System.Windows.Forms.Button();
             this.btn_patient = new System.Windows.Forms.Button();
             this.panel_userSubmenu = new System.Windows.Forms.Panel();
@@ -68,7 +68,6 @@
             this.panel_logo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnexit = new System.Windows.Forms.Button();
             this.panel_main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel_footer.SuspendLayout();
@@ -121,6 +120,21 @@
             this.panel_footer.Size = new System.Drawing.Size(1049, 31);
             this.panel_footer.TabIndex = 2;
             // 
+            // btnexit
+            // 
+            this.btnexit.BackColor = System.Drawing.Color.Transparent;
+            this.btnexit.FlatAppearance.BorderSize = 0;
+            this.btnexit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnexit.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexit.ForeColor = System.Drawing.Color.White;
+            this.btnexit.Location = new System.Drawing.Point(980, 3);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.Size = new System.Drawing.Size(65, 26);
+            this.btnexit.TabIndex = 6;
+            this.btnexit.Text = "Exit";
+            this.btnexit.UseVisualStyleBackColor = false;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -163,7 +177,7 @@
             this.lblUserrole.AutoSize = true;
             this.lblUserrole.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserrole.ForeColor = System.Drawing.Color.White;
-            this.lblUserrole.Location = new System.Drawing.Point(865, 35);
+            this.lblUserrole.Location = new System.Drawing.Point(818, 35);
             this.lblUserrole.Name = "lblUserrole";
             this.lblUserrole.Size = new System.Drawing.Size(85, 15);
             this.lblUserrole.TabIndex = 1;
@@ -174,7 +188,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(802, 35);
+            this.label6.Location = new System.Drawing.Point(755, 35);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 15);
             this.label6.TabIndex = 1;
@@ -185,7 +199,7 @@
             this.lblusername.AutoSize = true;
             this.lblusername.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblusername.ForeColor = System.Drawing.Color.White;
-            this.lblusername.Location = new System.Drawing.Point(864, 12);
+            this.lblusername.Location = new System.Drawing.Point(817, 12);
             this.lblusername.Name = "lblusername";
             this.lblusername.Size = new System.Drawing.Size(85, 15);
             this.lblusername.TabIndex = 1;
@@ -196,7 +210,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(775, 12);
+            this.label4.Location = new System.Drawing.Point(728, 12);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 15);
             this.label4.TabIndex = 1;
@@ -260,7 +274,7 @@
             this.panel_notificationSubmenu.Controls.Add(this.btn_notifyEmail);
             this.panel_notificationSubmenu.Controls.Add(this.btn_notifySms);
             this.panel_notificationSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_notificationSubmenu.Location = new System.Drawing.Point(0, 865);
+            this.panel_notificationSubmenu.Location = new System.Drawing.Point(0, 815);
             this.panel_notificationSubmenu.Name = "panel_notificationSubmenu";
             this.panel_notificationSubmenu.Size = new System.Drawing.Size(257, 100);
             this.panel_notificationSubmenu.TabIndex = 14;
@@ -306,7 +320,7 @@
             this.btn_notification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_notification.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_notification.ForeColor = System.Drawing.Color.White;
-            this.btn_notification.Location = new System.Drawing.Point(0, 817);
+            this.btn_notification.Location = new System.Drawing.Point(0, 767);
             this.btn_notification.Name = "btn_notification";
             this.btn_notification.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btn_notification.Size = new System.Drawing.Size(257, 48);
@@ -323,7 +337,7 @@
             this.panel_reportsSubmenu.Controls.Add(this.btn_rptDocCom);
             this.panel_reportsSubmenu.Controls.Add(this.btn_rptDIncome);
             this.panel_reportsSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_reportsSubmenu.Location = new System.Drawing.Point(0, 668);
+            this.panel_reportsSubmenu.Location = new System.Drawing.Point(0, 618);
             this.panel_reportsSubmenu.Name = "panel_reportsSubmenu";
             this.panel_reportsSubmenu.Size = new System.Drawing.Size(257, 149);
             this.panel_reportsSubmenu.TabIndex = 12;
@@ -386,7 +400,7 @@
             this.btn_reports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_reports.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_reports.ForeColor = System.Drawing.Color.White;
-            this.btn_reports.Location = new System.Drawing.Point(0, 620);
+            this.btn_reports.Location = new System.Drawing.Point(0, 570);
             this.btn_reports.Name = "btn_reports";
             this.btn_reports.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btn_reports.Size = new System.Drawing.Size(257, 48);
@@ -401,7 +415,7 @@
             this.panel_paymentSubmenu.BackColor = System.Drawing.Color.DarkGreen;
             this.panel_paymentSubmenu.Controls.Add(this.btn_paymentView);
             this.panel_paymentSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_paymentSubmenu.Location = new System.Drawing.Point(0, 570);
+            this.panel_paymentSubmenu.Location = new System.Drawing.Point(0, 520);
             this.panel_paymentSubmenu.Name = "panel_paymentSubmenu";
             this.panel_paymentSubmenu.Size = new System.Drawing.Size(257, 50);
             this.panel_paymentSubmenu.TabIndex = 8;
@@ -430,7 +444,7 @@
             this.btn_payment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_payment.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_payment.ForeColor = System.Drawing.Color.White;
-            this.btn_payment.Location = new System.Drawing.Point(0, 522);
+            this.btn_payment.Location = new System.Drawing.Point(0, 472);
             this.btn_payment.Name = "btn_payment";
             this.btn_payment.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btn_payment.Size = new System.Drawing.Size(257, 48);
@@ -446,7 +460,7 @@
             this.panel_testSubmenu.Controls.Add(this.btn_testView);
             this.panel_testSubmenu.Controls.Add(this.btn_addResult);
             this.panel_testSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_testSubmenu.Location = new System.Drawing.Point(0, 422);
+            this.panel_testSubmenu.Location = new System.Drawing.Point(0, 372);
             this.panel_testSubmenu.Name = "panel_testSubmenu";
             this.panel_testSubmenu.Size = new System.Drawing.Size(257, 100);
             this.panel_testSubmenu.TabIndex = 6;
@@ -492,7 +506,7 @@
             this.btn_test.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_test.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_test.ForeColor = System.Drawing.Color.White;
-            this.btn_test.Location = new System.Drawing.Point(0, 374);
+            this.btn_test.Location = new System.Drawing.Point(0, 324);
             this.btn_test.Name = "btn_test";
             this.btn_test.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btn_test.Size = new System.Drawing.Size(257, 48);
@@ -505,30 +519,12 @@
             // panel_patientSubmenu
             // 
             this.panel_patientSubmenu.BackColor = System.Drawing.Color.DarkGreen;
-            this.panel_patientSubmenu.Controls.Add(this.btn_patientView);
             this.panel_patientSubmenu.Controls.Add(this.btn_patientReg);
             this.panel_patientSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_patientSubmenu.Location = new System.Drawing.Point(0, 274);
             this.panel_patientSubmenu.Name = "panel_patientSubmenu";
-            this.panel_patientSubmenu.Size = new System.Drawing.Size(257, 100);
+            this.panel_patientSubmenu.Size = new System.Drawing.Size(257, 50);
             this.panel_patientSubmenu.TabIndex = 4;
-            // 
-            // btn_patientView
-            // 
-            this.btn_patientView.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_patientView.FlatAppearance.BorderSize = 0;
-            this.btn_patientView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_patientView.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_patientView.ForeColor = System.Drawing.Color.White;
-            this.btn_patientView.Location = new System.Drawing.Point(0, 48);
-            this.btn_patientView.Name = "btn_patientView";
-            this.btn_patientView.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_patientView.Size = new System.Drawing.Size(257, 48);
-            this.btn_patientView.TabIndex = 3;
-            this.btn_patientView.Text = "View Patients";
-            this.btn_patientView.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_patientView.UseVisualStyleBackColor = true;
-            this.btn_patientView.Click += new System.EventHandler(this.btn_patientView_Click);
             // 
             // btn_patientReg
             // 
@@ -643,21 +639,6 @@
             this.label1.Text = "ABC Health Care";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnexit
-            // 
-            this.btnexit.BackColor = System.Drawing.Color.Transparent;
-            this.btnexit.FlatAppearance.BorderSize = 0;
-            this.btnexit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnexit.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexit.ForeColor = System.Drawing.Color.White;
-            this.btnexit.Location = new System.Drawing.Point(980, 3);
-            this.btnexit.Name = "btnexit";
-            this.btnexit.Size = new System.Drawing.Size(65, 26);
-            this.btnexit.TabIndex = 6;
-            this.btnexit.Text = "Exit";
-            this.btnexit.UseVisualStyleBackColor = false;
-            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
-            // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -717,7 +698,6 @@
         private System.Windows.Forms.Button btn_addResult;
         private System.Windows.Forms.Button btn_test;
         private System.Windows.Forms.Panel panel_patientSubmenu;
-        private System.Windows.Forms.Button btn_patientView;
         private System.Windows.Forms.Button btn_patientReg;
         private System.Windows.Forms.Button btn_patient;
         private System.Windows.Forms.Button btn_rptTestAnlz;

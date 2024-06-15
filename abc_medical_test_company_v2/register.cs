@@ -47,7 +47,7 @@ namespace abc_medical_test_company_v2
             string role = cmbrole.Text;
             string status = "1";
 
-            string sql = $"INSERT INTO admin (username, password, first_name, last_name, email, mobile, role, status_id) VALUES ('{username}', '{password}', '{fname}', '{lname}', '{email}', '{telno}', '{role}', '{status}')";
+            string sql = "INSERT INTO admin (username, password, first_name, last_name, email, mobile, role, status_id) VALUES ('" + username + "', '" + password + "', '" + fname + "', '" + lname + "', '" + email + "', '" + telno + "', '" + role + "', '" + status + "')";
             dbObj1.Insert(sql);
         }
 
