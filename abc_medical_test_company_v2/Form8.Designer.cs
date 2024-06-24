@@ -31,43 +31,47 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel_header = new System.Windows.Forms.Panel();
             this.panel_mainUser = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.txtPatientAddress = new System.Windows.Forms.TextBox();
+            this.txtPatientName = new System.Windows.Forms.TextBox();
+            this.lblPatientName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.txtDoctorName = new System.Windows.Forms.TextBox();
+            this.lblDoctorName = new System.Windows.Forms.Label();
+            this.txtTechnologistID = new System.Windows.Forms.TextBox();
+            this.lblTechnologistID = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblInvoiceNo = new System.Windows.Forms.Label();
             this.txtInvoiceNo = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.lblTechnologistID = new System.Windows.Forms.Label();
-            this.txtTechnologistID = new System.Windows.Forms.TextBox();
-            this.lblCashierID = new System.Windows.Forms.Label();
-            this.txtCashierID = new System.Windows.Forms.TextBox();
-            this.lblPatientName = new System.Windows.Forms.Label();
-            this.txtPatientName = new System.Windows.Forms.TextBox();
-            this.lblDoctorName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtDoctorName = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblTest = new System.Windows.Forms.Label();
-            this.lblIssuedDate = new System.Windows.Forms.Label();
             this.txtIssuedDate = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.txtPatientAddress = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtCashierID = new System.Windows.Forms.TextBox();
+            this.lblIssuedDate = new System.Windows.Forms.Label();
+            this.lblCashierID = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.DgvInvoice = new System.Windows.Forms.DataGridView();
             this.Test = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel_ChooseInvoice = new System.Windows.Forms.Panel();
+            this.cmbDoctorName = new System.Windows.Forms.ComboBox();
+            this.cmbtests = new System.Windows.Forms.ComboBox();
+            this.cmbTechnologistID = new System.Windows.Forms.ComboBox();
+            this.lblTest = new System.Windows.Forms.Label();
+            this.cmbCashierID = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnCreateInvoice = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel_header.SuspendLayout();
             this.panel_mainUser.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvInvoice)).BeginInit();
+            this.panel_ChooseInvoice.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -78,7 +82,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(66, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(313, 20);
             this.label1.TabIndex = 0;
@@ -103,7 +107,7 @@
             this.panel_mainUser.Controls.Add(this.panel2);
             this.panel_mainUser.Controls.Add(this.panel4);
             this.panel_mainUser.Controls.Add(this.panel3);
-            this.panel_mainUser.Controls.Add(this.panel1);
+            this.panel_mainUser.Controls.Add(this.panel_ChooseInvoice);
             this.panel_mainUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_mainUser.Location = new System.Drawing.Point(0, 0);
             this.panel_mainUser.Name = "panel_mainUser";
@@ -111,17 +115,46 @@
             this.panel_mainUser.TabIndex = 10;
             this.panel_mainUser.UseWaitCursor = true;
             // 
-            // panel1
+            // panel5
             // 
-            this.panel1.Controls.Add(this.btnDelete);
-            this.panel1.Controls.Add(this.btnUpdate);
-            this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 564);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1087, 67);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel5.Controls.Add(this.txtPatientAddress);
+            this.panel5.Controls.Add(this.txtPatientName);
+            this.panel5.Controls.Add(this.lblPatientName);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(553, 236);
+            this.panel5.TabIndex = 0;
+            this.panel5.UseWaitCursor = true;
+            // 
+            // txtPatientAddress
+            // 
+            this.txtPatientAddress.Location = new System.Drawing.Point(70, 106);
+            this.txtPatientAddress.Multiline = true;
+            this.txtPatientAddress.Name = "txtPatientAddress";
+            this.txtPatientAddress.Size = new System.Drawing.Size(214, 96);
+            this.txtPatientAddress.TabIndex = 34;
+            this.txtPatientAddress.UseWaitCursor = true;
+            // 
+            // txtPatientName
+            // 
+            this.txtPatientName.Location = new System.Drawing.Point(70, 78);
+            this.txtPatientName.Name = "txtPatientName";
+            this.txtPatientName.Size = new System.Drawing.Size(214, 22);
+            this.txtPatientName.TabIndex = 34;
+            this.txtPatientName.UseWaitCursor = true;
+            // 
+            // lblPatientName
+            // 
+            this.lblPatientName.AutoSize = true;
+            this.lblPatientName.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPatientName.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lblPatientName.Location = new System.Drawing.Point(66, 52);
+            this.lblPatientName.Name = "lblPatientName";
+            this.lblPatientName.Size = new System.Drawing.Size(205, 20);
+            this.lblPatientName.TabIndex = 33;
+            this.lblPatientName.Text = "PATIENT INFORMATION";
+            this.lblPatientName.UseWaitCursor = true;
             // 
             // panel2
             // 
@@ -132,21 +165,49 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1087, 183);
+            this.panel2.Size = new System.Drawing.Size(1087, 236);
             this.panel2.TabIndex = 0;
+            this.panel2.UseWaitCursor = true;
             // 
-            // panel3
+            // txtDoctorName
             // 
-            this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Controls.Add(this.comboBox1);
-            this.panel3.Controls.Add(this.lblTest);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 271);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1087, 293);
-            this.panel3.TabIndex = 0;
+            this.txtDoctorName.Location = new System.Drawing.Point(581, 75);
+            this.txtDoctorName.Name = "txtDoctorName";
+            this.txtDoctorName.Size = new System.Drawing.Size(214, 22);
+            this.txtDoctorName.TabIndex = 37;
+            this.txtDoctorName.UseWaitCursor = true;
+            // 
+            // lblDoctorName
+            // 
+            this.lblDoctorName.AutoSize = true;
+            this.lblDoctorName.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDoctorName.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lblDoctorName.Location = new System.Drawing.Point(577, 52);
+            this.lblDoctorName.Name = "lblDoctorName";
+            this.lblDoctorName.Size = new System.Drawing.Size(362, 20);
+            this.lblDoctorName.TabIndex = 35;
+            this.lblDoctorName.Text = "PERSCRIBING PHYSCIAN\'S INFORMATION";
+            this.lblDoctorName.UseWaitCursor = true;
+            // 
+            // txtTechnologistID
+            // 
+            this.txtTechnologistID.Location = new System.Drawing.Point(581, 131);
+            this.txtTechnologistID.Name = "txtTechnologistID";
+            this.txtTechnologistID.Size = new System.Drawing.Size(214, 22);
+            this.txtTechnologistID.TabIndex = 30;
+            this.txtTechnologistID.UseWaitCursor = true;
+            // 
+            // lblTechnologistID
+            // 
+            this.lblTechnologistID.AutoSize = true;
+            this.lblTechnologistID.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTechnologistID.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lblTechnologistID.Location = new System.Drawing.Point(577, 108);
+            this.lblTechnologistID.Name = "lblTechnologistID";
+            this.lblTechnologistID.Size = new System.Drawing.Size(284, 20);
+            this.lblTechnologistID.TabIndex = 29;
+            this.lblTechnologistID.Text = "TECHNOLOGIST\'S INFORMATION";
+            this.lblTechnologistID.UseWaitCursor = true;
             // 
             // panel4
             // 
@@ -157,10 +218,11 @@
             this.panel4.Controls.Add(this.lblIssuedDate);
             this.panel4.Controls.Add(this.lblCashierID);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 183);
+            this.panel4.Location = new System.Drawing.Point(0, 236);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1087, 88);
             this.panel4.TabIndex = 0;
+            this.panel4.UseWaitCursor = true;
             // 
             // lblInvoiceNo
             // 
@@ -182,92 +244,13 @@
             this.txtInvoiceNo.TabIndex = 28;
             this.txtInvoiceNo.UseWaitCursor = true;
             // 
-            // comboBox1
+            // txtIssuedDate
             // 
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(431, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(214, 24);
-            this.comboBox1.TabIndex = 42;
-            this.comboBox1.UseWaitCursor = true;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.Red;
-            this.btnDelete.FlatAppearance.BorderSize = 0;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(972, 15);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(88, 39);
-            this.btnDelete.TabIndex = 24;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.UseWaitCursor = true;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.Orange;
-            this.btnUpdate.FlatAppearance.BorderSize = 0;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(878, 15);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(88, 39);
-            this.btnUpdate.TabIndex = 25;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.UseWaitCursor = true;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(784, 15);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(88, 39);
-            this.btnAdd.TabIndex = 26;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.UseWaitCursor = true;
-            // 
-            // lblTechnologistID
-            // 
-            this.lblTechnologistID.AutoSize = true;
-            this.lblTechnologistID.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTechnologistID.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lblTechnologistID.Location = new System.Drawing.Point(577, 108);
-            this.lblTechnologistID.Name = "lblTechnologistID";
-            this.lblTechnologistID.Size = new System.Drawing.Size(284, 20);
-            this.lblTechnologistID.TabIndex = 29;
-            this.lblTechnologistID.Text = "TECHNOLOGIST\'S INFORMATION";
-            this.lblTechnologistID.UseWaitCursor = true;
-            // 
-            // txtTechnologistID
-            // 
-            this.txtTechnologistID.Location = new System.Drawing.Point(581, 131);
-            this.txtTechnologistID.Name = "txtTechnologistID";
-            this.txtTechnologistID.Size = new System.Drawing.Size(214, 22);
-            this.txtTechnologistID.TabIndex = 30;
-            this.txtTechnologistID.UseWaitCursor = true;
-            // 
-            // lblCashierID
-            // 
-            this.lblCashierID.AutoSize = true;
-            this.lblCashierID.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCashierID.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lblCashierID.Location = new System.Drawing.Point(743, 10);
-            this.lblCashierID.Name = "lblCashierID";
-            this.lblCashierID.Size = new System.Drawing.Size(108, 20);
-            this.lblCashierID.TabIndex = 31;
-            this.lblCashierID.Text = "Cashier ID :";
-            this.lblCashierID.UseWaitCursor = true;
+            this.txtIssuedDate.Location = new System.Drawing.Point(581, 44);
+            this.txtIssuedDate.Name = "txtIssuedDate";
+            this.txtIssuedDate.Size = new System.Drawing.Size(214, 22);
+            this.txtIssuedDate.TabIndex = 41;
+            this.txtIssuedDate.UseWaitCursor = true;
             // 
             // txtCashierID
             // 
@@ -276,79 +259,6 @@
             this.txtCashierID.Size = new System.Drawing.Size(214, 22);
             this.txtCashierID.TabIndex = 32;
             this.txtCashierID.UseWaitCursor = true;
-            // 
-            // lblPatientName
-            // 
-            this.lblPatientName.AutoSize = true;
-            this.lblPatientName.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPatientName.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lblPatientName.Location = new System.Drawing.Point(66, 52);
-            this.lblPatientName.Name = "lblPatientName";
-            this.lblPatientName.Size = new System.Drawing.Size(205, 20);
-            this.lblPatientName.TabIndex = 33;
-            this.lblPatientName.Text = "PATIENT INFORMATION";
-            this.lblPatientName.UseWaitCursor = true;
-            // 
-            // txtPatientName
-            // 
-            this.txtPatientName.Location = new System.Drawing.Point(70, 78);
-            this.txtPatientName.Name = "txtPatientName";
-            this.txtPatientName.Size = new System.Drawing.Size(214, 22);
-            this.txtPatientName.TabIndex = 34;
-            this.txtPatientName.UseWaitCursor = true;
-            // 
-            // lblDoctorName
-            // 
-            this.lblDoctorName.AutoSize = true;
-            this.lblDoctorName.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDoctorName.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lblDoctorName.Location = new System.Drawing.Point(577, 52);
-            this.lblDoctorName.Name = "lblDoctorName";
-            this.lblDoctorName.Size = new System.Drawing.Size(362, 20);
-            this.lblDoctorName.TabIndex = 35;
-            this.lblDoctorName.Text = "PERSCRIBING PHYSCIAN\'S INFORMATION";
-            this.lblDoctorName.UseWaitCursor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(703, 7);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 93);
-            this.textBox1.TabIndex = 36;
-            this.textBox1.UseWaitCursor = true;
-            // 
-            // txtDoctorName
-            // 
-            this.txtDoctorName.Location = new System.Drawing.Point(581, 75);
-            this.txtDoctorName.Name = "txtDoctorName";
-            this.txtDoctorName.Size = new System.Drawing.Size(214, 22);
-            this.txtDoctorName.TabIndex = 37;
-            this.txtDoctorName.UseWaitCursor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label2.Location = new System.Drawing.Point(202, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 20);
-            this.label2.TabIndex = 38;
-            this.label2.Text = "Test Description :";
-            this.label2.UseWaitCursor = true;
-            // 
-            // lblTest
-            // 
-            this.lblTest.AutoSize = true;
-            this.lblTest.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTest.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lblTest.Location = new System.Drawing.Point(202, 7);
-            this.lblTest.Name = "lblTest";
-            this.lblTest.Size = new System.Drawing.Size(54, 20);
-            this.lblTest.TabIndex = 39;
-            this.lblTest.Text = "Test :";
-            this.lblTest.UseWaitCursor = true;
             // 
             // lblIssuedDate
             // 
@@ -362,67 +272,224 @@
             this.lblIssuedDate.Text = "Issued Date :";
             this.lblIssuedDate.UseWaitCursor = true;
             // 
-            // txtIssuedDate
+            // lblCashierID
             // 
-            this.txtIssuedDate.Location = new System.Drawing.Point(581, 44);
-            this.txtIssuedDate.Name = "txtIssuedDate";
-            this.txtIssuedDate.Size = new System.Drawing.Size(214, 22);
-            this.txtIssuedDate.TabIndex = 41;
-            this.txtIssuedDate.UseWaitCursor = true;
+            this.lblCashierID.AutoSize = true;
+            this.lblCashierID.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCashierID.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lblCashierID.Location = new System.Drawing.Point(743, 10);
+            this.lblCashierID.Name = "lblCashierID";
+            this.lblCashierID.Size = new System.Drawing.Size(108, 20);
+            this.lblCashierID.TabIndex = 31;
+            this.lblCashierID.Text = "Cashier ID :";
+            this.lblCashierID.UseWaitCursor = true;
             // 
-            // panel5
+            // panel3
             // 
-            this.panel5.Controls.Add(this.txtPatientAddress);
-            this.panel5.Controls.Add(this.txtPatientName);
-            this.panel5.Controls.Add(this.lblPatientName);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(553, 183);
-            this.panel5.TabIndex = 0;
+            this.panel3.Controls.Add(this.DgvInvoice);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 324);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1087, 293);
+            this.panel3.TabIndex = 0;
+            this.panel3.UseWaitCursor = true;
             // 
-            // txtPatientAddress
+            // DgvInvoice
             // 
-            this.txtPatientAddress.Location = new System.Drawing.Point(70, 106);
-            this.txtPatientAddress.Name = "txtPatientAddress";
-            this.txtPatientAddress.Size = new System.Drawing.Size(214, 22);
-            this.txtPatientAddress.TabIndex = 34;
-            this.txtPatientAddress.UseWaitCursor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DgvInvoice.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DgvInvoice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvInvoice.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Test,
             this.Description,
             this.Price});
-            this.dataGridView1.Location = new System.Drawing.Point(193, 119);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(631, 138);
-            this.dataGridView1.TabIndex = 43;
+            this.DgvInvoice.Location = new System.Drawing.Point(193, 127);
+            this.DgvInvoice.Name = "DgvInvoice";
+            this.DgvInvoice.RowHeadersWidth = 51;
+            this.DgvInvoice.RowTemplate.Height = 24;
+            this.DgvInvoice.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.DgvInvoice.Size = new System.Drawing.Size(631, 138);
+            this.DgvInvoice.TabIndex = 43;
+            this.DgvInvoice.UseWaitCursor = true;
             // 
             // Test
             // 
-            this.Test.HeaderText = "Column1";
+            this.Test.HeaderText = "Test";
             this.Test.MinimumWidth = 6;
             this.Test.Name = "Test";
-            this.Test.Width = 125;
             // 
             // Description
             // 
-            this.Description.HeaderText = "Column1";
+            this.Description.HeaderText = "Description";
             this.Description.MinimumWidth = 6;
             this.Description.Name = "Description";
-            this.Description.Width = 125;
             // 
             // Price
             // 
-            this.Price.HeaderText = "Column1";
+            this.Price.HeaderText = "Price";
             this.Price.MinimumWidth = 6;
             this.Price.Name = "Price";
-            this.Price.Width = 125;
+            // 
+            // panel_ChooseInvoice
+            // 
+            this.panel_ChooseInvoice.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel_ChooseInvoice.Controls.Add(this.cmbDoctorName);
+            this.panel_ChooseInvoice.Controls.Add(this.cmbtests);
+            this.panel_ChooseInvoice.Controls.Add(this.cmbTechnologistID);
+            this.panel_ChooseInvoice.Controls.Add(this.lblTest);
+            this.panel_ChooseInvoice.Controls.Add(this.cmbCashierID);
+            this.panel_ChooseInvoice.Controls.Add(this.label2);
+            this.panel_ChooseInvoice.Controls.Add(this.textBox1);
+            this.panel_ChooseInvoice.Controls.Add(this.label5);
+            this.panel_ChooseInvoice.Controls.Add(this.btnCreateInvoice);
+            this.panel_ChooseInvoice.Controls.Add(this.label3);
+            this.panel_ChooseInvoice.Controls.Add(this.label4);
+            this.panel_ChooseInvoice.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_ChooseInvoice.Location = new System.Drawing.Point(0, 617);
+            this.panel_ChooseInvoice.Name = "panel_ChooseInvoice";
+            this.panel_ChooseInvoice.Size = new System.Drawing.Size(1087, 14);
+            this.panel_ChooseInvoice.TabIndex = 0;
+            this.panel_ChooseInvoice.UseWaitCursor = true;
+            this.panel_ChooseInvoice.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // cmbDoctorName
+            // 
+            this.cmbDoctorName.BackColor = System.Drawing.Color.ForestGreen;
+            this.cmbDoctorName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbDoctorName.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.cmbDoctorName.ForeColor = System.Drawing.Color.White;
+            this.cmbDoctorName.FormattingEnabled = true;
+            this.cmbDoctorName.Location = new System.Drawing.Point(462, 82);
+            this.cmbDoctorName.Name = "cmbDoctorName";
+            this.cmbDoctorName.Size = new System.Drawing.Size(345, 32);
+            this.cmbDoctorName.TabIndex = 38;
+            this.cmbDoctorName.UseWaitCursor = true;
+            // 
+            // cmbtests
+            // 
+            this.cmbtests.BackColor = System.Drawing.Color.ForestGreen;
+            this.cmbtests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbtests.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.cmbtests.ForeColor = System.Drawing.Color.White;
+            this.cmbtests.FormattingEnabled = true;
+            this.cmbtests.Location = new System.Drawing.Point(462, 283);
+            this.cmbtests.Name = "cmbtests";
+            this.cmbtests.Size = new System.Drawing.Size(345, 32);
+            this.cmbtests.TabIndex = 42;
+            this.cmbtests.UseWaitCursor = true;
+            // 
+            // cmbTechnologistID
+            // 
+            this.cmbTechnologistID.BackColor = System.Drawing.Color.ForestGreen;
+            this.cmbTechnologistID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbTechnologistID.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.cmbTechnologistID.ForeColor = System.Drawing.Color.White;
+            this.cmbTechnologistID.FormattingEnabled = true;
+            this.cmbTechnologistID.Location = new System.Drawing.Point(462, 149);
+            this.cmbTechnologistID.Name = "cmbTechnologistID";
+            this.cmbTechnologistID.Size = new System.Drawing.Size(345, 32);
+            this.cmbTechnologistID.TabIndex = 38;
+            this.cmbTechnologistID.UseWaitCursor = true;
+            // 
+            // lblTest
+            // 
+            this.lblTest.AutoSize = true;
+            this.lblTest.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTest.ForeColor = System.Drawing.Color.White;
+            this.lblTest.Location = new System.Drawing.Point(247, 289);
+            this.lblTest.Name = "lblTest";
+            this.lblTest.Size = new System.Drawing.Size(61, 20);
+            this.lblTest.TabIndex = 39;
+            this.lblTest.Text = "TEST :";
+            this.lblTest.UseWaitCursor = true;
+            // 
+            // cmbCashierID
+            // 
+            this.cmbCashierID.BackColor = System.Drawing.Color.ForestGreen;
+            this.cmbCashierID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbCashierID.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.cmbCashierID.ForeColor = System.Drawing.Color.White;
+            this.cmbCashierID.FormattingEnabled = true;
+            this.cmbCashierID.Location = new System.Drawing.Point(462, 216);
+            this.cmbCashierID.Name = "cmbCashierID";
+            this.cmbCashierID.Size = new System.Drawing.Size(345, 32);
+            this.cmbCashierID.TabIndex = 38;
+            this.cmbCashierID.UseWaitCursor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(247, 351);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(182, 20);
+            this.label2.TabIndex = 38;
+            this.label2.Text = "TEST DESCRIPTION :";
+            this.label2.UseWaitCursor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.ForestGreen;
+            this.textBox1.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(462, 350);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(345, 93);
+            this.textBox1.TabIndex = 36;
+            this.textBox1.UseWaitCursor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(247, 82);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(158, 20);
+            this.label5.TabIndex = 35;
+            this.label5.Text = "PHISCIAN NAME :";
+            this.label5.UseWaitCursor = true;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // btnCreateInvoice
+            // 
+            this.btnCreateInvoice.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnCreateInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreateInvoice.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateInvoice.ForeColor = System.Drawing.Color.White;
+            this.btnCreateInvoice.Location = new System.Drawing.Point(863, 374);
+            this.btnCreateInvoice.Name = "btnCreateInvoice";
+            this.btnCreateInvoice.Size = new System.Drawing.Size(88, 69);
+            this.btnCreateInvoice.TabIndex = 26;
+            this.btnCreateInvoice.Text = "CREATE INVOICE";
+            this.btnCreateInvoice.UseVisualStyleBackColor = false;
+            this.btnCreateInvoice.UseWaitCursor = true;
+            this.btnCreateInvoice.Click += new System.EventHandler(this.btnCreateInvoice_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(247, 220);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(150, 20);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "CASHIER NAME :";
+            this.label3.UseWaitCursor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(247, 151);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(207, 20);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "TECHNOLOGIST NAME :";
+            this.label4.UseWaitCursor = true;
             // 
             // frm_invoice
             // 
@@ -434,19 +501,20 @@
             this.Name = "frm_invoice";
             this.Text = "INVOICE GENERATER";
             this.UseWaitCursor = true;
+            this.Load += new System.EventHandler(this.frm_invoice_Load);
             this.panel_header.ResumeLayout(false);
             this.panel_header.PerformLayout();
             this.panel_mainUser.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DgvInvoice)).EndInit();
+            this.panel_ChooseInvoice.ResumeLayout(false);
+            this.panel_ChooseInvoice.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -458,14 +526,12 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel_ChooseInvoice;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lblInvoiceNo;
         private System.Windows.Forms.TextBox txtInvoiceNo;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.ComboBox cmbtests;
+        private System.Windows.Forms.Button btnCreateInvoice;
         private System.Windows.Forms.Label lblTechnologistID;
         private System.Windows.Forms.TextBox txtTechnologistID;
         private System.Windows.Forms.Label lblCashierID;
@@ -480,9 +546,15 @@
         private System.Windows.Forms.Label lblIssuedDate;
         private System.Windows.Forms.TextBox txtIssuedDate;
         private System.Windows.Forms.TextBox txtPatientAddress;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DgvInvoice;
         private System.Windows.Forms.DataGridViewTextBoxColumn Test;
         private System.Windows.Forms.DataGridViewTextBoxColumn Description;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.ComboBox cmbTechnologistID;
+        private System.Windows.Forms.ComboBox cmbDoctorName;
+        private System.Windows.Forms.ComboBox cmbCashierID;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
     }
 }
