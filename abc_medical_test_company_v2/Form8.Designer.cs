@@ -86,7 +86,7 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "MEDICAL TEST BILLING INVOICE";
             this.label1.UseWaitCursor = true;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+         //   this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel_header
             // 
@@ -347,7 +347,7 @@
             this.panel_ChooseInvoice.Size = new System.Drawing.Size(1087, 619);
             this.panel_ChooseInvoice.TabIndex = 0;
             this.panel_ChooseInvoice.UseWaitCursor = true;
-            this.panel_ChooseInvoice.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+          //  this.panel_ChooseInvoice.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // cmbDoctorName
             // 
@@ -448,7 +448,7 @@
             this.label5.TabIndex = 35;
             this.label5.Text = "PHISCIAN NAME :";
             this.label5.UseWaitCursor = true;
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+        //    this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // btnCreateInvoice
             // 
