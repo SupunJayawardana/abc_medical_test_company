@@ -48,10 +48,9 @@
             this.lblIssuedDate = new System.Windows.Forms.Label();
             this.lblCashierID = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.DgvInvoice = new System.Windows.Forms.DataGridView();
-            this.Test = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbxtestprice = new System.Windows.Forms.ListBox();
+            this.lbxtestdesc = new System.Windows.Forms.ListBox();
+            this.lbxtest = new System.Windows.Forms.ListBox();
             this.panel_ChooseInvoice = new System.Windows.Forms.Panel();
             this.cmbDoctorName = new System.Windows.Forms.ComboBox();
             this.cmbtests = new System.Windows.Forms.ComboBox();
@@ -59,7 +58,7 @@
             this.lblTest = new System.Windows.Forms.Label();
             this.cmbCashierID = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txttestdescrip = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnCreateInvoice = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -70,7 +69,6 @@
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvInvoice)).BeginInit();
             this.panel_ChooseInvoice.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,7 +121,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(553, 236);
+            this.panel5.Size = new System.Drawing.Size(553, 0);
             this.panel5.TabIndex = 0;
             this.panel5.UseWaitCursor = true;
             // 
@@ -165,7 +163,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1087, 236);
+            this.panel2.Size = new System.Drawing.Size(1087, 0);
             this.panel2.TabIndex = 0;
             this.panel2.UseWaitCursor = true;
             // 
@@ -218,7 +216,7 @@
             this.panel4.Controls.Add(this.lblIssuedDate);
             this.panel4.Controls.Add(this.lblCashierID);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 236);
+            this.panel4.Location = new System.Drawing.Point(0, -369);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1087, 88);
             this.panel4.TabIndex = 0;
@@ -286,48 +284,48 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.DgvInvoice);
+            this.panel3.Controls.Add(this.lbxtestprice);
+            this.panel3.Controls.Add(this.lbxtestdesc);
+            this.panel3.Controls.Add(this.lbxtest);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 324);
+            this.panel3.Location = new System.Drawing.Point(0, -281);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1087, 293);
             this.panel3.TabIndex = 0;
             this.panel3.UseWaitCursor = true;
             // 
-            // DgvInvoice
+            // lbxtestprice
             // 
-            this.DgvInvoice.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DgvInvoice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvInvoice.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Test,
-            this.Description,
-            this.Price});
-            this.DgvInvoice.Location = new System.Drawing.Point(193, 127);
-            this.DgvInvoice.Name = "DgvInvoice";
-            this.DgvInvoice.RowHeadersWidth = 51;
-            this.DgvInvoice.RowTemplate.Height = 24;
-            this.DgvInvoice.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.DgvInvoice.Size = new System.Drawing.Size(631, 138);
-            this.DgvInvoice.TabIndex = 43;
-            this.DgvInvoice.UseWaitCursor = true;
+            this.lbxtestprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbxtestprice.FormattingEnabled = true;
+            this.lbxtestprice.ItemHeight = 25;
+            this.lbxtestprice.Location = new System.Drawing.Point(623, 96);
+            this.lbxtestprice.Name = "lbxtestprice";
+            this.lbxtestprice.Size = new System.Drawing.Size(211, 104);
+            this.lbxtestprice.TabIndex = 44;
+            this.lbxtestprice.UseWaitCursor = true;
             // 
-            // Test
+            // lbxtestdesc
             // 
-            this.Test.HeaderText = "Test";
-            this.Test.MinimumWidth = 6;
-            this.Test.Name = "Test";
+            this.lbxtestdesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbxtestdesc.FormattingEnabled = true;
+            this.lbxtestdesc.ItemHeight = 25;
+            this.lbxtestdesc.Location = new System.Drawing.Point(456, 96);
+            this.lbxtestdesc.Name = "lbxtestdesc";
+            this.lbxtestdesc.Size = new System.Drawing.Size(211, 104);
+            this.lbxtestdesc.TabIndex = 44;
+            this.lbxtestdesc.UseWaitCursor = true;
             // 
-            // Description
+            // lbxtest
             // 
-            this.Description.HeaderText = "Description";
-            this.Description.MinimumWidth = 6;
-            this.Description.Name = "Description";
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.MinimumWidth = 6;
-            this.Price.Name = "Price";
+            this.lbxtest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbxtest.FormattingEnabled = true;
+            this.lbxtest.ItemHeight = 25;
+            this.lbxtest.Location = new System.Drawing.Point(288, 96);
+            this.lbxtest.Name = "lbxtest";
+            this.lbxtest.Size = new System.Drawing.Size(211, 104);
+            this.lbxtest.TabIndex = 44;
+            this.lbxtest.UseWaitCursor = true;
             // 
             // panel_ChooseInvoice
             // 
@@ -338,15 +336,15 @@
             this.panel_ChooseInvoice.Controls.Add(this.lblTest);
             this.panel_ChooseInvoice.Controls.Add(this.cmbCashierID);
             this.panel_ChooseInvoice.Controls.Add(this.label2);
-            this.panel_ChooseInvoice.Controls.Add(this.textBox1);
+            this.panel_ChooseInvoice.Controls.Add(this.txttestdescrip);
             this.panel_ChooseInvoice.Controls.Add(this.label5);
             this.panel_ChooseInvoice.Controls.Add(this.btnCreateInvoice);
             this.panel_ChooseInvoice.Controls.Add(this.label3);
             this.panel_ChooseInvoice.Controls.Add(this.label4);
             this.panel_ChooseInvoice.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_ChooseInvoice.Location = new System.Drawing.Point(0, 617);
+            this.panel_ChooseInvoice.Location = new System.Drawing.Point(0, 12);
             this.panel_ChooseInvoice.Name = "panel_ChooseInvoice";
-            this.panel_ChooseInvoice.Size = new System.Drawing.Size(1087, 14);
+            this.panel_ChooseInvoice.Size = new System.Drawing.Size(1087, 619);
             this.panel_ChooseInvoice.TabIndex = 0;
             this.panel_ChooseInvoice.UseWaitCursor = true;
             this.panel_ChooseInvoice.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
@@ -427,17 +425,17 @@
             this.label2.Text = "TEST DESCRIPTION :";
             this.label2.UseWaitCursor = true;
             // 
-            // textBox1
+            // txttestdescrip
             // 
-            this.textBox1.BackColor = System.Drawing.Color.ForestGreen;
-            this.textBox1.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(462, 350);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(345, 93);
-            this.textBox1.TabIndex = 36;
-            this.textBox1.UseWaitCursor = true;
+            this.txttestdescrip.BackColor = System.Drawing.Color.ForestGreen;
+            this.txttestdescrip.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.txttestdescrip.ForeColor = System.Drawing.Color.White;
+            this.txttestdescrip.Location = new System.Drawing.Point(462, 350);
+            this.txttestdescrip.Multiline = true;
+            this.txttestdescrip.Name = "txttestdescrip";
+            this.txttestdescrip.Size = new System.Drawing.Size(345, 93);
+            this.txttestdescrip.TabIndex = 36;
+            this.txttestdescrip.UseWaitCursor = true;
             // 
             // label5
             // 
@@ -512,7 +510,6 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DgvInvoice)).EndInit();
             this.panel_ChooseInvoice.ResumeLayout(false);
             this.panel_ChooseInvoice.PerformLayout();
             this.ResumeLayout(false);
@@ -539,22 +536,21 @@
         private System.Windows.Forms.Label lblPatientName;
         private System.Windows.Forms.TextBox txtPatientName;
         private System.Windows.Forms.Label lblDoctorName;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txttestdescrip;
         private System.Windows.Forms.TextBox txtDoctorName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblTest;
         private System.Windows.Forms.Label lblIssuedDate;
         private System.Windows.Forms.TextBox txtIssuedDate;
         private System.Windows.Forms.TextBox txtPatientAddress;
-        private System.Windows.Forms.DataGridView DgvInvoice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Test;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.ComboBox cmbTechnologistID;
         private System.Windows.Forms.ComboBox cmbDoctorName;
         private System.Windows.Forms.ComboBox cmbCashierID;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListBox lbxtest;
+        private System.Windows.Forms.ListBox lbxtestprice;
+        private System.Windows.Forms.ListBox lbxtestdesc;
     }
 }

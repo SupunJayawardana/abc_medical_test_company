@@ -33,9 +33,10 @@ namespace abc_medical_test_company_v2
 
             UserPrivilages();
         }
-
+        public static string patient="";
         private void btninvoice_Click(object sender, EventArgs e)
         {
+           patient = txtnic.Text;
             mainForm.openChildForm(new frm_invoice());
         }
 
