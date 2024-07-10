@@ -48,9 +48,12 @@
             this.lblIssuedDate = new System.Windows.Forms.Label();
             this.lblCashierID = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lbltotal = new System.Windows.Forms.Label();
             this.lbxtestprice = new System.Windows.Forms.ListBox();
             this.lbxtestdesc = new System.Windows.Forms.ListBox();
             this.lbxtest = new System.Windows.Forms.ListBox();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.panel_ChooseInvoice = new System.Windows.Forms.Panel();
             this.cmbDoctorName = new System.Windows.Forms.ComboBox();
             this.cmbtests = new System.Windows.Forms.ComboBox();
@@ -60,9 +63,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txttestdescrip = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnAddTests = new System.Windows.Forms.Button();
             this.btnCreateInvoice = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel_header.SuspendLayout();
             this.panel_mainUser.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -80,13 +85,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(66, 10);
+            this.label1.Location = new System.Drawing.Point(249, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(313, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "MEDICAL TEST BILLING INVOICE";
             this.label1.UseWaitCursor = true;
-         //   this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel_header
             // 
@@ -127,6 +131,9 @@
             // 
             // txtPatientAddress
             // 
+            this.txtPatientAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPatientAddress.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.txtPatientAddress.ForeColor = System.Drawing.Color.Green;
             this.txtPatientAddress.Location = new System.Drawing.Point(70, 106);
             this.txtPatientAddress.Multiline = true;
             this.txtPatientAddress.Name = "txtPatientAddress";
@@ -136,9 +143,12 @@
             // 
             // txtPatientName
             // 
+            this.txtPatientName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPatientName.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.txtPatientName.ForeColor = System.Drawing.Color.Green;
             this.txtPatientName.Location = new System.Drawing.Point(70, 78);
             this.txtPatientName.Name = "txtPatientName";
-            this.txtPatientName.Size = new System.Drawing.Size(214, 22);
+            this.txtPatientName.Size = new System.Drawing.Size(214, 20);
             this.txtPatientName.TabIndex = 34;
             this.txtPatientName.UseWaitCursor = true;
             // 
@@ -169,9 +179,12 @@
             // 
             // txtDoctorName
             // 
+            this.txtDoctorName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDoctorName.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.txtDoctorName.ForeColor = System.Drawing.Color.Green;
             this.txtDoctorName.Location = new System.Drawing.Point(581, 75);
             this.txtDoctorName.Name = "txtDoctorName";
-            this.txtDoctorName.Size = new System.Drawing.Size(214, 22);
+            this.txtDoctorName.Size = new System.Drawing.Size(214, 20);
             this.txtDoctorName.TabIndex = 37;
             this.txtDoctorName.UseWaitCursor = true;
             // 
@@ -189,9 +202,12 @@
             // 
             // txtTechnologistID
             // 
-            this.txtTechnologistID.Location = new System.Drawing.Point(581, 131);
+            this.txtTechnologistID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTechnologistID.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.txtTechnologistID.ForeColor = System.Drawing.Color.Green;
+            this.txtTechnologistID.Location = new System.Drawing.Point(863, 182);
             this.txtTechnologistID.Name = "txtTechnologistID";
-            this.txtTechnologistID.Size = new System.Drawing.Size(214, 22);
+            this.txtTechnologistID.Size = new System.Drawing.Size(214, 20);
             this.txtTechnologistID.TabIndex = 30;
             this.txtTechnologistID.UseWaitCursor = true;
             // 
@@ -200,11 +216,11 @@
             this.lblTechnologistID.AutoSize = true;
             this.lblTechnologistID.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTechnologistID.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lblTechnologistID.Location = new System.Drawing.Point(577, 108);
+            this.lblTechnologistID.Location = new System.Drawing.Point(693, 182);
             this.lblTechnologistID.Name = "lblTechnologistID";
-            this.lblTechnologistID.Size = new System.Drawing.Size(284, 20);
+            this.lblTechnologistID.Size = new System.Drawing.Size(152, 20);
             this.lblTechnologistID.TabIndex = 29;
-            this.lblTechnologistID.Text = "TECHNOLOGIST\'S INFORMATION";
+            this.lblTechnologistID.Text = "Technologist ID :";
             this.lblTechnologistID.UseWaitCursor = true;
             // 
             // panel4
@@ -216,7 +232,7 @@
             this.panel4.Controls.Add(this.lblIssuedDate);
             this.panel4.Controls.Add(this.lblCashierID);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, -369);
+            this.panel4.Location = new System.Drawing.Point(0, -349);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1087, 88);
             this.panel4.TabIndex = 0;
@@ -236,25 +252,34 @@
             // 
             // txtInvoiceNo
             // 
+            this.txtInvoiceNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtInvoiceNo.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.txtInvoiceNo.ForeColor = System.Drawing.Color.Green;
             this.txtInvoiceNo.Location = new System.Drawing.Point(193, 46);
             this.txtInvoiceNo.Name = "txtInvoiceNo";
-            this.txtInvoiceNo.Size = new System.Drawing.Size(214, 22);
+            this.txtInvoiceNo.Size = new System.Drawing.Size(214, 20);
             this.txtInvoiceNo.TabIndex = 28;
             this.txtInvoiceNo.UseWaitCursor = true;
             // 
             // txtIssuedDate
             // 
+            this.txtIssuedDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIssuedDate.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.txtIssuedDate.ForeColor = System.Drawing.Color.Green;
             this.txtIssuedDate.Location = new System.Drawing.Point(581, 44);
             this.txtIssuedDate.Name = "txtIssuedDate";
-            this.txtIssuedDate.Size = new System.Drawing.Size(214, 22);
+            this.txtIssuedDate.Size = new System.Drawing.Size(214, 20);
             this.txtIssuedDate.TabIndex = 41;
             this.txtIssuedDate.UseWaitCursor = true;
             // 
             // txtCashierID
             // 
+            this.txtCashierID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCashierID.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.txtCashierID.ForeColor = System.Drawing.Color.Green;
             this.txtCashierID.Location = new System.Drawing.Point(863, 8);
             this.txtCashierID.Name = "txtCashierID";
-            this.txtCashierID.Size = new System.Drawing.Size(214, 22);
+            this.txtCashierID.Size = new System.Drawing.Size(214, 20);
             this.txtCashierID.TabIndex = 32;
             this.txtCashierID.UseWaitCursor = true;
             // 
@@ -284,48 +309,99 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.lbltotal);
             this.panel3.Controls.Add(this.lbxtestprice);
             this.panel3.Controls.Add(this.lbxtestdesc);
             this.panel3.Controls.Add(this.lbxtest);
+            this.panel3.Controls.Add(this.listView1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, -281);
+            this.panel3.Location = new System.Drawing.Point(0, -261);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1087, 293);
             this.panel3.TabIndex = 0;
             this.panel3.UseWaitCursor = true;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.Green;
+            this.label6.Location = new System.Drawing.Point(732, 207);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 20);
+            this.label6.TabIndex = 45;
+            this.label6.Text = "Total :";
+            this.label6.UseWaitCursor = true;
+            // 
+            // lbltotal
+            // 
+            this.lbltotal.AutoSize = true;
+            this.lbltotal.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lbltotal.ForeColor = System.Drawing.Color.Green;
+            this.lbltotal.Location = new System.Drawing.Point(920, 207);
+            this.lbltotal.Name = "lbltotal";
+            this.lbltotal.Size = new System.Drawing.Size(50, 20);
+            this.lbltotal.TabIndex = 45;
+            this.lbltotal.Text = "Total";
+            this.lbltotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbltotal.UseWaitCursor = true;
+            // 
             // lbxtestprice
             // 
-            this.lbxtestprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbxtestprice.BackColor = System.Drawing.Color.White;
+            this.lbxtestprice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbxtestprice.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lbxtestprice.ForeColor = System.Drawing.Color.Green;
+            this.lbxtestprice.FormatString = "C2";
             this.lbxtestprice.FormattingEnabled = true;
-            this.lbxtestprice.ItemHeight = 25;
-            this.lbxtestprice.Location = new System.Drawing.Point(623, 96);
+            this.lbxtestprice.ItemHeight = 20;
+            this.lbxtestprice.Location = new System.Drawing.Point(810, 71);
             this.lbxtestprice.Name = "lbxtestprice";
-            this.lbxtestprice.Size = new System.Drawing.Size(211, 104);
+            this.lbxtestprice.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lbxtestprice.Size = new System.Drawing.Size(160, 100);
             this.lbxtestprice.TabIndex = 44;
             this.lbxtestprice.UseWaitCursor = true;
             // 
             // lbxtestdesc
             // 
-            this.lbxtestdesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbxtestdesc.BackColor = System.Drawing.Color.White;
+            this.lbxtestdesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbxtestdesc.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lbxtestdesc.ForeColor = System.Drawing.Color.Green;
             this.lbxtestdesc.FormattingEnabled = true;
-            this.lbxtestdesc.ItemHeight = 25;
-            this.lbxtestdesc.Location = new System.Drawing.Point(456, 96);
+            this.lbxtestdesc.ItemHeight = 20;
+            this.lbxtestdesc.Location = new System.Drawing.Point(433, 71);
             this.lbxtestdesc.Name = "lbxtestdesc";
-            this.lbxtestdesc.Size = new System.Drawing.Size(211, 104);
+            this.lbxtestdesc.Size = new System.Drawing.Size(418, 100);
             this.lbxtestdesc.TabIndex = 44;
             this.lbxtestdesc.UseWaitCursor = true;
             // 
             // lbxtest
             // 
-            this.lbxtest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbxtest.BackColor = System.Drawing.Color.White;
+            this.lbxtest.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbxtest.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lbxtest.ForeColor = System.Drawing.Color.Green;
             this.lbxtest.FormattingEnabled = true;
-            this.lbxtest.ItemHeight = 25;
-            this.lbxtest.Location = new System.Drawing.Point(288, 96);
+            this.lbxtest.ItemHeight = 20;
+            this.lbxtest.Location = new System.Drawing.Point(247, 71);
             this.lbxtest.Name = "lbxtest";
-            this.lbxtest.Size = new System.Drawing.Size(211, 104);
+            this.lbxtest.Size = new System.Drawing.Size(211, 100);
             this.lbxtest.TabIndex = 44;
             this.lbxtest.UseWaitCursor = true;
+            // 
+            // listView1
+            // 
+            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(237, 40);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(740, 204);
+            this.listView1.TabIndex = 46;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.UseWaitCursor = true;
             // 
             // panel_ChooseInvoice
             // 
@@ -338,16 +414,16 @@
             this.panel_ChooseInvoice.Controls.Add(this.label2);
             this.panel_ChooseInvoice.Controls.Add(this.txttestdescrip);
             this.panel_ChooseInvoice.Controls.Add(this.label5);
+            this.panel_ChooseInvoice.Controls.Add(this.btnAddTests);
             this.panel_ChooseInvoice.Controls.Add(this.btnCreateInvoice);
             this.panel_ChooseInvoice.Controls.Add(this.label3);
             this.panel_ChooseInvoice.Controls.Add(this.label4);
             this.panel_ChooseInvoice.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_ChooseInvoice.Location = new System.Drawing.Point(0, 12);
+            this.panel_ChooseInvoice.Location = new System.Drawing.Point(0, 32);
             this.panel_ChooseInvoice.Name = "panel_ChooseInvoice";
-            this.panel_ChooseInvoice.Size = new System.Drawing.Size(1087, 619);
+            this.panel_ChooseInvoice.Size = new System.Drawing.Size(1087, 599);
             this.panel_ChooseInvoice.TabIndex = 0;
             this.panel_ChooseInvoice.UseWaitCursor = true;
-          //  this.panel_ChooseInvoice.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // cmbDoctorName
             // 
@@ -356,7 +432,7 @@
             this.cmbDoctorName.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.cmbDoctorName.ForeColor = System.Drawing.Color.White;
             this.cmbDoctorName.FormattingEnabled = true;
-            this.cmbDoctorName.Location = new System.Drawing.Point(462, 82);
+            this.cmbDoctorName.Location = new System.Drawing.Point(462, 143);
             this.cmbDoctorName.Name = "cmbDoctorName";
             this.cmbDoctorName.Size = new System.Drawing.Size(345, 32);
             this.cmbDoctorName.TabIndex = 38;
@@ -369,7 +445,7 @@
             this.cmbtests.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.cmbtests.ForeColor = System.Drawing.Color.White;
             this.cmbtests.FormattingEnabled = true;
-            this.cmbtests.Location = new System.Drawing.Point(462, 283);
+            this.cmbtests.Location = new System.Drawing.Point(462, 344);
             this.cmbtests.Name = "cmbtests";
             this.cmbtests.Size = new System.Drawing.Size(345, 32);
             this.cmbtests.TabIndex = 42;
@@ -382,7 +458,7 @@
             this.cmbTechnologistID.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.cmbTechnologistID.ForeColor = System.Drawing.Color.White;
             this.cmbTechnologistID.FormattingEnabled = true;
-            this.cmbTechnologistID.Location = new System.Drawing.Point(462, 149);
+            this.cmbTechnologistID.Location = new System.Drawing.Point(462, 210);
             this.cmbTechnologistID.Name = "cmbTechnologistID";
             this.cmbTechnologistID.Size = new System.Drawing.Size(345, 32);
             this.cmbTechnologistID.TabIndex = 38;
@@ -393,7 +469,7 @@
             this.lblTest.AutoSize = true;
             this.lblTest.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTest.ForeColor = System.Drawing.Color.White;
-            this.lblTest.Location = new System.Drawing.Point(247, 289);
+            this.lblTest.Location = new System.Drawing.Point(247, 344);
             this.lblTest.Name = "lblTest";
             this.lblTest.Size = new System.Drawing.Size(61, 20);
             this.lblTest.TabIndex = 39;
@@ -407,7 +483,7 @@
             this.cmbCashierID.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.cmbCashierID.ForeColor = System.Drawing.Color.White;
             this.cmbCashierID.FormattingEnabled = true;
-            this.cmbCashierID.Location = new System.Drawing.Point(462, 216);
+            this.cmbCashierID.Location = new System.Drawing.Point(462, 277);
             this.cmbCashierID.Name = "cmbCashierID";
             this.cmbCashierID.Size = new System.Drawing.Size(345, 32);
             this.cmbCashierID.TabIndex = 38;
@@ -418,7 +494,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(247, 351);
+            this.label2.Location = new System.Drawing.Point(247, 412);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(182, 20);
             this.label2.TabIndex = 38;
@@ -430,7 +506,7 @@
             this.txttestdescrip.BackColor = System.Drawing.Color.ForestGreen;
             this.txttestdescrip.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.txttestdescrip.ForeColor = System.Drawing.Color.White;
-            this.txttestdescrip.Location = new System.Drawing.Point(462, 350);
+            this.txttestdescrip.Location = new System.Drawing.Point(462, 411);
             this.txttestdescrip.Multiline = true;
             this.txttestdescrip.Name = "txttestdescrip";
             this.txttestdescrip.Size = new System.Drawing.Size(345, 93);
@@ -442,13 +518,27 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(247, 82);
+            this.label5.Location = new System.Drawing.Point(247, 143);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(158, 20);
             this.label5.TabIndex = 35;
             this.label5.Text = "PHISCIAN NAME :";
             this.label5.UseWaitCursor = true;
-        //    this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // btnAddTests
+            // 
+            this.btnAddTests.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnAddTests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddTests.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddTests.ForeColor = System.Drawing.Color.White;
+            this.btnAddTests.Location = new System.Drawing.Point(826, 447);
+            this.btnAddTests.Name = "btnAddTests";
+            this.btnAddTests.Size = new System.Drawing.Size(61, 49);
+            this.btnAddTests.TabIndex = 26;
+            this.btnAddTests.Text = "Add Test";
+            this.btnAddTests.UseVisualStyleBackColor = false;
+            this.btnAddTests.UseWaitCursor = true;
+            this.btnAddTests.Click += new System.EventHandler(this.btnCreateInvoice_Click);
             // 
             // btnCreateInvoice
             // 
@@ -456,9 +546,9 @@
             this.btnCreateInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreateInvoice.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateInvoice.ForeColor = System.Drawing.Color.White;
-            this.btnCreateInvoice.Location = new System.Drawing.Point(863, 374);
+            this.btnCreateInvoice.Location = new System.Drawing.Point(893, 447);
             this.btnCreateInvoice.Name = "btnCreateInvoice";
-            this.btnCreateInvoice.Size = new System.Drawing.Size(88, 69);
+            this.btnCreateInvoice.Size = new System.Drawing.Size(84, 49);
             this.btnCreateInvoice.TabIndex = 26;
             this.btnCreateInvoice.Text = "CREATE INVOICE";
             this.btnCreateInvoice.UseVisualStyleBackColor = false;
@@ -470,7 +560,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(247, 220);
+            this.label3.Location = new System.Drawing.Point(247, 281);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(150, 20);
             this.label3.TabIndex = 31;
@@ -482,17 +572,30 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(247, 151);
+            this.label4.Location = new System.Drawing.Point(247, 212);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(207, 20);
             this.label4.TabIndex = 29;
             this.label4.Text = "TECHNOLOGIST NAME :";
             this.label4.UseWaitCursor = true;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.ForestGreen;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1000, 248);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 39);
+            this.button1.TabIndex = 54;
+            this.button1.Text = "Print";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // frm_invoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1087, 631);
             this.Controls.Add(this.panel_header);
             this.Controls.Add(this.panel_mainUser);
@@ -510,6 +613,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel_ChooseInvoice.ResumeLayout(false);
             this.panel_ChooseInvoice.PerformLayout();
             this.ResumeLayout(false);
@@ -552,5 +656,10 @@
         private System.Windows.Forms.ListBox lbxtest;
         private System.Windows.Forms.ListBox lbxtestprice;
         private System.Windows.Forms.ListBox lbxtestdesc;
+        private System.Windows.Forms.Button btnAddTests;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbltotal;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button button1;
     }
 }

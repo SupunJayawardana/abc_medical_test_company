@@ -17,6 +17,8 @@ namespace abc_medical_test_company_v2
         Mysqlconnect dbObj=new Mysqlconnect();
         public static string user;
         public static string name;
+        public static string userid;
+
         public frmlogin()
         {
             InitializeComponent();
@@ -76,12 +78,14 @@ namespace abc_medical_test_company_v2
                 check2 = dbObj.dtable.Rows[0]["password"].ToString();
             }
 
-            sql3 = "SELECT role FROM Admin WHERE userName = ('" + username + "')";
+            sql3 = "SELECT role,id FROM Admin WHERE userName = ('" + username + "')";
 
             dbObj.Select(sql3);
             if (dbObj.dtable.Rows.Count > 0)
             {
                 user = dbObj.dtable.Rows[0]["role"].ToString();
+                userid = dbObj.dtable.Rows[0]["id"].ToString();
+
             }
 
             sql4 = "SELECT first_name,last_name FROM Admin WHERE userName = ('" + username + "')";

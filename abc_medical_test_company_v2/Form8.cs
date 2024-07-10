@@ -15,9 +15,6 @@ namespace abc_medical_test_company_v2
     public partial class frm_invoice : Form
     {
         private readonly Mysqlconnect dbObj1;
-        private readonly Mysqlconnect dbObj2;
-                    private readonly Mysqlconnect dbObj3;
-
         int rowcount = 0;
         int rowcountmax = 0;
         int tprice = 0;
@@ -26,11 +23,9 @@ namespace abc_medical_test_company_v2
         {
             InitializeComponent();
             dbObj1 = new Mysqlconnect();
-            dbObj2 = new Mysqlconnect();
-            dbObj3 = new Mysqlconnect();
-
 
             cmbtests.SelectedIndexChanged += new EventHandler(cmbtests_SelectedIndexChanged);
+            btnAddTests.Click += new EventHandler(btnAddTests_Click);
         }
 
         private void frm_invoice_Load(object sender, EventArgs e)
@@ -82,18 +77,18 @@ namespace abc_medical_test_company_v2
         {
             try
             {
-                string sql = "SELECT test_id, test_name, test_description, price FROM tests";
-                dbObj3.Select(sql);
+                string sql = "SELECT test_id, test_name, test_description, test_price FROM tests";
+                dbObj1.Select(sql);
 
-                if (dbObj3.dtable != null && dbObj3.dtable.Rows.Count > 0)
+                if (dbObj1.dtable != null && dbObj1.dtable.Rows.Count > 0)
                 {
                     cmbtests.DisplayMember = "test_name";
                     cmbtests.ValueMember = "test_id";
-                    cmbtests.DataSource = dbObj3.dtable;
+                    cmbtests.DataSource = dbObj1.dtable;
 
                     if (cmbtests.SelectedIndex >= 0)
                     {
-                        UpdateTestDescriptionAndPrice(dbObj3.dtable.Rows[0]);
+                        UpdateTestDescriptionAndPrice(dbObj1.dtable.Rows[0]);
                     }
                 }
                 else
@@ -110,7 +105,7 @@ namespace abc_medical_test_company_v2
         private void UpdateTestDescriptionAndPrice(DataRow row)
         {
             txttestdescrip.Text = row["test_description"].ToString();
-            tprice = Convert.ToInt32(row["price"].ToString());
+            tprice = Convert.ToInt32(row["test_price"].ToString());
         }
 
         private DataTable AddFullNameColumn(DataTable dataTable)
@@ -121,11 +116,11 @@ namespace abc_medical_test_company_v2
 
         private void btnCreateInvoice_Click(object sender, EventArgs e)
         {
-            ListPopulate();
-
             SetTextBoxFromComboBoxSelection(cmbCashierID, txtCashierID);
             SetTextBoxFromComboBoxSelection(cmbTechnologistID, txtTechnologistID);
             SetTextBoxFromComboBoxSelection(cmbDoctorName, txtDoctorName, "FullName");
+
+            CalculateTotalPrice();
         }
 
         private void SetTextBoxFromComboBoxSelection(ComboBox comboBox, TextBox textBox, string displayMember = "id")
@@ -175,12 +170,12 @@ namespace abc_medical_test_company_v2
         private void RefreshDataGridView()
         {
             string sql = "SELECT * FROM invoice";
-            dbObj2.Select(sql);
+            dbObj1.Select(sql);
 
-            if (dbObj2.dtable != null && dbObj2.dtable.Rows.Count > 0)
+            if (dbObj1.dtable != null && dbObj1.dtable.Rows.Count > 0)
             {
-                txtIssuedDate.Text = dbObj2.dtable.Rows[0]["issued_date"].ToString();
-                txtInvoiceNo.Text = dbObj2.dtable.Rows[0]["id"].ToString();
+                txtIssuedDate.Text = dbObj1.dtable.Rows[0]["issued_date"].ToString();
+                txtInvoiceNo.Text = dbObj1.dtable.Rows[0]["id"].ToString();
             }
             else
             {
@@ -193,11 +188,11 @@ namespace abc_medical_test_company_v2
         private void SetNewInvoiceID()
         {
             string sqlMaxId = "SELECT MAX(id) FROM invoice";
-            dbObj2.Select(sqlMaxId);
+            dbObj1.Select(sqlMaxId);
 
-            if (dbObj2.dtable != null && dbObj2.dtable.Rows.Count > 0 && dbObj2.dtable.Rows[0][0] != DBNull.Value)
+            if (dbObj1.dtable != null && dbObj1.dtable.Rows.Count > 0 && dbObj1.dtable.Rows[0][0] != DBNull.Value)
             {
-                int newId = Convert.ToInt32(dbObj2.dtable.Rows[0][0]) + 1;
+                int newId = Convert.ToInt32(dbObj1.dtable.Rows[0][0]) + 1;
                 txtInvoiceNo.Text = newId.ToString();
             }
             else
@@ -208,10 +203,36 @@ namespace abc_medical_test_company_v2
 
         private void ListPopulate()
         {
-            AddItemToListBox(cmbtests.Text, lbxtest);
-            AddItemToListBox(txttestdescrip.Text, lbxtestdesc);
-            AddItemToListBox(tprice.ToString(), lbxtestprice);
+            // Check if the test is already added
+            bool testAlreadyAdded = false;
+            for (int i = 0; i < lbxtest.Items.Count; i++)
+            {
+                if (lbxtest.Items[i].ToString() == cmbtests.Text)
+                {
+                    testAlreadyAdded = true;
+                    break;
+                }
+            }
+
+            if (!testAlreadyAdded)
+            {
+                if (lbxtest.Items.Count < 3)
+                {
+                    AddItemToListBox(cmbtests.Text, lbxtest);
+                    AddItemToListBox(txttestdescrip.Text, lbxtestdesc);
+                    AddItemToListBox(tprice.ToString(), lbxtestprice);
+                }
+                else
+                {
+                    MessageBox.Show("You can only add up to 3 tests.", "Limit Reached", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                MessageBox.Show("This test is already added.", "Duplicate Test", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
+
 
         private void AddItemToListBox(string text, ListBox listBox)
         {
@@ -224,5 +245,61 @@ namespace abc_medical_test_company_v2
                 MessageBox.Show("Please enter some text.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void btnAddTests_Click(object sender, EventArgs e)
+        {
+            ListPopulate();
+            SaveToInvoiceTable();
+            panel_ChooseInvoice.Visible = true;
+        }
+
+        private void SaveToInvoiceTable()
+        {
+            try
+            {
+                string patientnic = frm_patient.patient;
+                string userid = frmlogin.userid;
+
+                string cashierid = txtCashierID.Text;
+                string doctorid = cmbDoctorName.SelectedValue.ToString();
+                string issuedate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"); // Get the current timestamp
+                string price = tprice.ToString();
+                string testid = cmbtests.SelectedValue.ToString();
+                string invoiceid = txtInvoiceNo.Text;
+
+                txtIssuedDate.Text = issuedate; // Update the textbox with the current timestamp
+
+                string sql = $"INSERT INTO invoice (id, patient_nic, cashier_id, doctor_id, issued_date, price, tests_test_id, commssion_id, admin_id) VALUES ('{invoiceid}', '{patientnic}', '{cashierid}', '{doctorid}', '{issuedate}', '{price}', '{testid}', '1', '{userid}')";
+                dbObj1.Insert(sql);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error saving data: " + ex.Message);
+            }
+        }
+
+        private void CalculateTotalPrice()
+        {
+            int total = 0;
+
+            // Iterate through each item in lbxtestprice
+            foreach (var item in lbxtestprice.Items)
+            {
+                // Convert each item to an integer (assuming prices are stored as integers)
+                if (int.TryParse(item.ToString(), out int price))
+                {
+                    // Add the price to the total
+                    total += price;
+                }
+                else
+                {
+                    // Handle if the conversion fails (optional)
+                    MessageBox.Show($"Invalid price format: {item}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return; // Exit method or handle accordingly
+                }
+            }
+            lbltotal.Text = total.ToString();
+        }
+
     }
 }

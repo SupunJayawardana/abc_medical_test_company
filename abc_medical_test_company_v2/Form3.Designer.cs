@@ -67,7 +67,7 @@
             this.lbladdress.AutoSize = true;
             this.lbladdress.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.lbladdress.ForeColor = System.Drawing.Color.White;
-            this.lbladdress.Location = new System.Drawing.Point(336, 220);
+            this.lbladdress.Location = new System.Drawing.Point(336, 307);
             this.lbladdress.Name = "lbladdress";
             this.lbladdress.Size = new System.Drawing.Size(79, 20);
             this.lbladdress.TabIndex = 3;
@@ -78,7 +78,7 @@
             this.txttelno.BackColor = System.Drawing.Color.DarkGreen;
             this.txttelno.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.txttelno.ForeColor = System.Drawing.Color.White;
-            this.txttelno.Location = new System.Drawing.Point(336, 187);
+            this.txttelno.Location = new System.Drawing.Point(336, 274);
             this.txttelno.Name = "txttelno";
             this.txttelno.Size = new System.Drawing.Size(253, 27);
             this.txttelno.TabIndex = 2;
@@ -88,7 +88,7 @@
             this.txtemail.BackColor = System.Drawing.Color.DarkGreen;
             this.txtemail.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.txtemail.ForeColor = System.Drawing.Color.White;
-            this.txtemail.Location = new System.Drawing.Point(336, 134);
+            this.txtemail.Location = new System.Drawing.Point(336, 221);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(253, 27);
             this.txtemail.TabIndex = 2;
@@ -98,7 +98,7 @@
             this.txtfname.BackColor = System.Drawing.Color.DarkGreen;
             this.txtfname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.txtfname.ForeColor = System.Drawing.Color.White;
-            this.txtfname.Location = new System.Drawing.Point(336, 81);
+            this.txtfname.Location = new System.Drawing.Point(336, 168);
             this.txtfname.Name = "txtfname";
             this.txtfname.Size = new System.Drawing.Size(253, 27);
             this.txtfname.TabIndex = 2;
@@ -108,7 +108,7 @@
             this.lbltelno.AutoSize = true;
             this.lbltelno.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.lbltelno.ForeColor = System.Drawing.Color.White;
-            this.lbltelno.Location = new System.Drawing.Point(336, 164);
+            this.lbltelno.Location = new System.Drawing.Point(336, 251);
             this.lbltelno.Name = "lbltelno";
             this.lbltelno.Size = new System.Drawing.Size(61, 20);
             this.lbltelno.TabIndex = 1;
@@ -119,7 +119,7 @@
             this.lblemail.AutoSize = true;
             this.lblemail.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.lblemail.ForeColor = System.Drawing.Color.White;
-            this.lblemail.Location = new System.Drawing.Point(336, 111);
+            this.lblemail.Location = new System.Drawing.Point(336, 198);
             this.lblemail.Name = "lblemail";
             this.lblemail.Size = new System.Drawing.Size(60, 20);
             this.lblemail.TabIndex = 1;
@@ -130,7 +130,7 @@
             this.lblfname.AutoSize = true;
             this.lblfname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.lblfname.ForeColor = System.Drawing.Color.White;
-            this.lblfname.Location = new System.Drawing.Point(336, 58);
+            this.lblfname.Location = new System.Drawing.Point(336, 145);
             this.lblfname.Name = "lblfname";
             this.lblfname.Size = new System.Drawing.Size(129, 20);
             this.lblfname.TabIndex = 1;
@@ -142,7 +142,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(616, 209);
+            this.btnDelete.Location = new System.Drawing.Point(616, 296);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(134, 33);
             this.btnDelete.TabIndex = 0;
@@ -156,7 +156,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(616, 160);
+            this.btnUpdate.Location = new System.Drawing.Point(616, 247);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(134, 33);
             this.btnUpdate.TabIndex = 0;
@@ -170,7 +170,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(616, 111);
+            this.btnAdd.Location = new System.Drawing.Point(616, 198);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(134, 33);
             this.btnAdd.TabIndex = 0;
@@ -185,7 +185,7 @@
             this.panel_mainUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_mainUser.Location = new System.Drawing.Point(0, 53);
             this.panel_mainUser.Name = "panel_mainUser";
-            this.panel_mainUser.Size = new System.Drawing.Size(1087, 217);
+            this.panel_mainUser.Size = new System.Drawing.Size(1087, 0);
             this.panel_mainUser.TabIndex = 4;
             // 
             // panel_edit
@@ -196,7 +196,7 @@
             this.panel_edit.Controls.Add(this.btnAddpanel);
             this.panel_edit.Controls.Add(this.btnedit);
             this.panel_edit.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_edit.Location = new System.Drawing.Point(0, 119);
+            this.panel_edit.Location = new System.Drawing.Point(0, -98);
             this.panel_edit.Name = "panel_edit";
             this.panel_edit.Size = new System.Drawing.Size(1087, 98);
             this.panel_edit.TabIndex = 3;
@@ -263,7 +263,7 @@
             this.dgv_userReg.Name = "dgv_userReg";
             this.dgv_userReg.RowHeadersWidth = 51;
             this.dgv_userReg.RowTemplate.Height = 24;
-            this.dgv_userReg.Size = new System.Drawing.Size(1087, 217);
+            this.dgv_userReg.Size = new System.Drawing.Size(1087, 0);
             this.dgv_userReg.TabIndex = 2;
             // 
             // label1
@@ -299,9 +299,9 @@
             this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_footer.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.panel_footer.ForeColor = System.Drawing.Color.White;
-            this.panel_footer.Location = new System.Drawing.Point(0, 270);
+            this.panel_footer.Location = new System.Drawing.Point(0, 53);
             this.panel_footer.Name = "panel_footer";
-            this.panel_footer.Size = new System.Drawing.Size(1087, 361);
+            this.panel_footer.Size = new System.Drawing.Size(1087, 578);
             this.panel_footer.TabIndex = 5;
             // 
             // btncancel
@@ -310,7 +310,7 @@
             this.btncancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncancel.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncancel.ForeColor = System.Drawing.Color.White;
-            this.btncancel.Location = new System.Drawing.Point(616, 313);
+            this.btncancel.Location = new System.Drawing.Point(616, 400);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(134, 33);
             this.btncancel.TabIndex = 5;
@@ -324,7 +324,7 @@
             this.btnAddtest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddtest.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddtest.ForeColor = System.Drawing.Color.White;
-            this.btnAddtest.Location = new System.Drawing.Point(616, 264);
+            this.btnAddtest.Location = new System.Drawing.Point(616, 351);
             this.btnAddtest.Name = "btnAddtest";
             this.btnAddtest.Size = new System.Drawing.Size(134, 33);
             this.btnAddtest.TabIndex = 5;
@@ -338,7 +338,7 @@
             this.cmbtests.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.cmbtests.ForeColor = System.Drawing.Color.White;
             this.cmbtests.FormattingEnabled = true;
-            this.cmbtests.Location = new System.Drawing.Point(336, 316);
+            this.cmbtests.Location = new System.Drawing.Point(336, 403);
             this.cmbtests.Name = "cmbtests";
             this.cmbtests.Size = new System.Drawing.Size(253, 28);
             this.cmbtests.TabIndex = 4;
@@ -349,7 +349,7 @@
             this.btninvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btninvoice.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninvoice.ForeColor = System.Drawing.Color.White;
-            this.btninvoice.Location = new System.Drawing.Point(616, 62);
+            this.btninvoice.Location = new System.Drawing.Point(616, 149);
             this.btninvoice.Name = "btninvoice";
             this.btninvoice.Size = new System.Drawing.Size(134, 33);
             this.btninvoice.TabIndex = 0;
@@ -362,7 +362,7 @@
             this.txtaddress.BackColor = System.Drawing.Color.DarkGreen;
             this.txtaddress.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.txtaddress.ForeColor = System.Drawing.Color.White;
-            this.txtaddress.Location = new System.Drawing.Point(336, 240);
+            this.txtaddress.Location = new System.Drawing.Point(336, 327);
             this.txtaddress.Multiline = true;
             this.txtaddress.Name = "txtaddress";
             this.txtaddress.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -374,7 +374,7 @@
             this.txtnic.BackColor = System.Drawing.Color.DarkGreen;
             this.txtnic.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.txtnic.ForeColor = System.Drawing.Color.White;
-            this.txtnic.Location = new System.Drawing.Point(336, 28);
+            this.txtnic.Location = new System.Drawing.Point(336, 115);
             this.txtnic.Name = "txtnic";
             this.txtnic.Size = new System.Drawing.Size(253, 27);
             this.txtnic.TabIndex = 2;
@@ -385,7 +385,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(336, 5);
+            this.label2.Location = new System.Drawing.Point(336, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 20);
             this.label2.TabIndex = 1;

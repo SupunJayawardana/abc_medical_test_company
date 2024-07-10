@@ -26,5 +26,25 @@ namespace abc_medical_test_company_v2
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtaddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtReceivedDate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCreateTestReport_Click(object sender, EventArgs e)
+        {
+            panel_footer.Visible = false;
+        }
     }
 }
