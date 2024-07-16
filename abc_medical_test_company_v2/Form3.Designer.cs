@@ -48,8 +48,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel_footer = new System.Windows.Forms.Panel();
             this.btncancel = new System.Windows.Forms.Button();
-            this.btnAddtest = new System.Windows.Forms.Button();
-            this.cmbtests = new System.Windows.Forms.ComboBox();
             this.btninvoice = new System.Windows.Forms.Button();
             this.txtaddress = new System.Windows.Forms.TextBox();
             this.txtnic = new System.Windows.Forms.TextBox();
@@ -280,8 +278,6 @@
             // panel_footer
             // 
             this.panel_footer.Controls.Add(this.btncancel);
-            this.panel_footer.Controls.Add(this.btnAddtest);
-            this.panel_footer.Controls.Add(this.cmbtests);
             this.panel_footer.Controls.Add(this.btninvoice);
             this.panel_footer.Controls.Add(this.lbladdress);
             this.panel_footer.Controls.Add(this.txtaddress);
@@ -317,31 +313,6 @@
             this.btncancel.Text = "Cancel";
             this.btncancel.UseVisualStyleBackColor = false;
             this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
-            // 
-            // btnAddtest
-            // 
-            this.btnAddtest.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddtest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddtest.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddtest.ForeColor = System.Drawing.Color.White;
-            this.btnAddtest.Location = new System.Drawing.Point(616, 351);
-            this.btnAddtest.Name = "btnAddtest";
-            this.btnAddtest.Size = new System.Drawing.Size(134, 33);
-            this.btnAddtest.TabIndex = 5;
-            this.btnAddtest.Text = "Add Test";
-            this.btnAddtest.UseVisualStyleBackColor = false;
-            // 
-            // cmbtests
-            // 
-            this.cmbtests.BackColor = System.Drawing.Color.DarkGreen;
-            this.cmbtests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbtests.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
-            this.cmbtests.ForeColor = System.Drawing.Color.White;
-            this.cmbtests.FormattingEnabled = true;
-            this.cmbtests.Location = new System.Drawing.Point(336, 403);
-            this.cmbtests.Name = "cmbtests";
-            this.cmbtests.Size = new System.Drawing.Size(253, 28);
-            this.cmbtests.TabIndex = 4;
             // 
             // btninvoice
             // 
@@ -446,8 +417,6 @@
         private System.Windows.Forms.Button btnedit;
         private System.Windows.Forms.Button btninvoice;
         private System.Windows.Forms.Panel panel_edit;
-        private System.Windows.Forms.Button btnAddtest;
-        private System.Windows.Forms.ComboBox cmbtests;
         private System.Windows.Forms.Button btnAddpanel;
         private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.Button btnSearchpatient;

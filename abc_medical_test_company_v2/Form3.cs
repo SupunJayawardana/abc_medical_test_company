@@ -153,7 +153,7 @@ namespace abc_medical_test_company_v2
 
             //LoadSelectedRow();
             EditLoad();
-            PopulateComboBox();
+            //PopulateComboBox();
         }
 
         private void EditLoad()
@@ -408,7 +408,7 @@ namespace abc_medical_test_company_v2
         {
 
         }
-        private void PopulateComboBox()
+        /*private void PopulateComboBox()
         {
             try
             {
@@ -430,7 +430,7 @@ namespace abc_medical_test_company_v2
             {
                 MessageBox.Show("Error fetching data: " + ex.Message);
             }
-        }
+        }*/
 
 
     }

@@ -15,8 +15,8 @@ namespace abc_medical_test_company_v2
     public partial class frm_invoice : Form
     {
         private readonly Mysqlconnect dbObj1;
-        int rowcount = 0;
-        int rowcountmax = 0;
+       // int rowcount = 0;
+       // int rowcountmax = 0;
         int tprice = 0;
 
         public frm_invoice()
@@ -266,10 +266,11 @@ namespace abc_medical_test_company_v2
                 string price = tprice.ToString();
                 string testid = cmbtests.SelectedValue.ToString();
                 string invoiceid = txtInvoiceNo.Text;
+                string techid = txtTechnologistID.Text;
 
                 txtIssuedDate.Text = issuedate; // Update the textbox with the current timestamp
 
-                string sql = $"INSERT INTO invoice (id, patient_nic, cashier_id, doctor_id, issued_date, price, tests_test_id, commssion_id, admin_id) VALUES ('{invoiceid}', '{patientnic}', '{cashierid}', '{doctorid}', '{issuedate}', '{price}', '{testid}', '1', '{userid}')";
+                string sql = $"INSERT INTO invoice (id, patient_nic, cashier_id, doctor_id, issued_date, price, tests_test_id, commssion_id, admin_id,technologist_id) VALUES ('{invoiceid}', '{patientnic}', '{cashierid}', '{doctorid}', '{issuedate}', '{price}', '{testid}', '1', '{userid}' , '{techid}')";
                 dbObj1.Insert(sql);
             }
             catch (Exception ex)

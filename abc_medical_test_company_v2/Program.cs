@@ -16,8 +16,8 @@ namespace abc_medical_test_company_v2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           Application.Run(new frm_main());
-          // Application.Run(new frmlogin());
+          // Application.Run(new frm_main());
+           Application.Run(new frmlogin());
         }
     }
 }

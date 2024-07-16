@@ -48,6 +48,7 @@
             this.lblIssuedDate = new System.Windows.Forms.Label();
             this.lblCashierID = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.lbltotal = new System.Windows.Forms.Label();
             this.lbxtestprice = new System.Windows.Forms.ListBox();
@@ -67,7 +68,6 @@
             this.btnCreateInvoice = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel_header.SuspendLayout();
             this.panel_mainUser.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -232,7 +232,7 @@
             this.panel4.Controls.Add(this.lblIssuedDate);
             this.panel4.Controls.Add(this.lblCashierID);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, -349);
+            this.panel4.Location = new System.Drawing.Point(0, -356);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1087, 88);
             this.panel4.TabIndex = 0;
@@ -317,11 +317,24 @@
             this.panel3.Controls.Add(this.lbxtest);
             this.panel3.Controls.Add(this.listView1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, -261);
+            this.panel3.Location = new System.Drawing.Point(0, -268);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1087, 293);
             this.panel3.TabIndex = 0;
             this.panel3.UseWaitCursor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.ForestGreen;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1000, 248);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 39);
+            this.button1.TabIndex = 54;
+            this.button1.Text = "Print";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.UseWaitCursor = true;
             // 
             // label6
             // 
@@ -419,9 +432,9 @@
             this.panel_ChooseInvoice.Controls.Add(this.label3);
             this.panel_ChooseInvoice.Controls.Add(this.label4);
             this.panel_ChooseInvoice.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_ChooseInvoice.Location = new System.Drawing.Point(0, 32);
+            this.panel_ChooseInvoice.Location = new System.Drawing.Point(0, 25);
             this.panel_ChooseInvoice.Name = "panel_ChooseInvoice";
-            this.panel_ChooseInvoice.Size = new System.Drawing.Size(1087, 599);
+            this.panel_ChooseInvoice.Size = new System.Drawing.Size(1087, 606);
             this.panel_ChooseInvoice.TabIndex = 0;
             this.panel_ChooseInvoice.UseWaitCursor = true;
             // 
@@ -578,18 +591,6 @@
             this.label4.TabIndex = 29;
             this.label4.Text = "TECHNOLOGIST NAME :";
             this.label4.UseWaitCursor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.ForestGreen;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1000, 248);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 39);
-            this.button1.TabIndex = 54;
-            this.button1.Text = "Print";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // frm_invoice
             // 
