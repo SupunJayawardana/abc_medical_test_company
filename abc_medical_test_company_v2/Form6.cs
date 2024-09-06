@@ -22,10 +22,10 @@ namespace abc_medical_test_company_v2
         {
             InitializeComponent();
             dbObj1 = new Mysqlconnect();
-
-            dgv_pendingtest.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgv_pendingtest.MultiSelect = false;
-            dgv_pendingtest.SelectionChanged += dgv_userReg_SelectionChanged;
+            mainForm = form;
+            dgv_userReg.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgv_userReg.MultiSelect = false;
+            dgv_userReg.SelectionChanged += dgv_userReg_SelectionChanged;
         }
 
         private void frm_trsltview_Load(object sender, EventArgs e)
