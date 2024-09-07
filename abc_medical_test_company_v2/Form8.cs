@@ -270,7 +270,7 @@ namespace abc_medical_test_company_v2
 
                 txtIssuedDate.Text = issuedate; // Update the textbox with the current timestamp
 
-                string sql = $"INSERT INTO invoice (id, patient_nic, cashier_id, doctor_id, issued_date, price, tests_test_id, commssion_id, admin_id,technologist_id) VALUES ('{invoiceid}', '{patientnic}', '{cashierid}', '{doctorid}', '{issuedate}', '{price}', '{testid}', '1', '{userid}' , '{techid}')";
+                string sql = $"INSERT INTO invoice (id, patient_nic, cashier_id, doctor_id, issued_date, price, tests_test_id, commssion_id, admin_id,technologist_id, report_status_id) VALUES ('{invoiceid}', '{patientnic}', '{cashierid}', '{doctorid}', '{issuedate}', '{price}', '{testid}', '1', '{userid}' , '{techid}' , 2)";
                 dbObj1.Insert(sql);
             }
             catch (Exception ex)

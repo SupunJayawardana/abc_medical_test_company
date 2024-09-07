@@ -165,7 +165,7 @@
             // listBoxCritiria
             // 
             this.listBoxCritiria.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBoxCritiria.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxCritiria.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxCritiria.ForeColor = System.Drawing.Color.Green;
             this.listBoxCritiria.FormattingEnabled = true;
             this.listBoxCritiria.ItemHeight = 20;
@@ -177,7 +177,7 @@
             // listBoxCResult
             // 
             this.listBoxCResult.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBoxCResult.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxCResult.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxCResult.ForeColor = System.Drawing.Color.Green;
             this.listBoxCResult.FormattingEnabled = true;
             this.listBoxCResult.ItemHeight = 20;
@@ -403,9 +403,9 @@
             this.panel_footer.Controls.Add(this.btnCreateTestReport);
             this.panel_footer.Controls.Add(this.label4);
             this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_footer.Location = new System.Drawing.Point(0, 18);
+            this.panel_footer.Location = new System.Drawing.Point(0, 32);
             this.panel_footer.Name = "panel_footer";
-            this.panel_footer.Size = new System.Drawing.Size(1031, 613);
+            this.panel_footer.Size = new System.Drawing.Size(1031, 599);
             this.panel_footer.TabIndex = 8;
             // 
             // cmbPatientName
@@ -514,7 +514,7 @@
             this.txtCritiria.Location = new System.Drawing.Point(165, 367);
             this.txtCritiria.Multiline = true;
             this.txtCritiria.Name = "txtCritiria";
-            this.txtCritiria.Size = new System.Drawing.Size(283, 100);
+            this.txtCritiria.Size = new System.Drawing.Size(283, 132);
             this.txtCritiria.TabIndex = 48;
             this.txtCritiria.UseWaitCursor = true;
             // 
@@ -526,7 +526,7 @@
             this.txttestCResults.Location = new System.Drawing.Point(461, 367);
             this.txttestCResults.Multiline = true;
             this.txttestCResults.Name = "txttestCResults";
-            this.txttestCResults.Size = new System.Drawing.Size(325, 100);
+            this.txttestCResults.Size = new System.Drawing.Size(325, 132);
             this.txttestCResults.TabIndex = 48;
             this.txttestCResults.UseWaitCursor = true;
             // 

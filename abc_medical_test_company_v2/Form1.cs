@@ -22,6 +22,7 @@ namespace abc_medical_test_company_v2
             hideSubmenu();
             lblusername.Text = frmlogin.name;
             lblUserrole.Text = frmlogin.user;
+            btn_addResult.Enabled = false;
         }
 
         private void customizeDesign()

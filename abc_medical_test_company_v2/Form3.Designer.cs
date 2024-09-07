@@ -295,9 +295,9 @@
             this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_footer.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.panel_footer.ForeColor = System.Drawing.Color.White;
-            this.panel_footer.Location = new System.Drawing.Point(0, 53);
+            this.panel_footer.Location = new System.Drawing.Point(0, 41);
             this.panel_footer.Name = "panel_footer";
-            this.panel_footer.Size = new System.Drawing.Size(1087, 578);
+            this.panel_footer.Size = new System.Drawing.Size(1087, 590);
             this.panel_footer.TabIndex = 5;
             // 
             // btncancel
