@@ -1,11 +1,8 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
-using System.Windows.Forms;
 using System.Data;
+using System.Windows.Forms;
 
 namespace WindowsFormsApplication11
 {
@@ -61,7 +58,7 @@ namespace WindowsFormsApplication11
                         break;
 
                     default:
-                        MessageBox.Show("Error: '"+ex.Message+"'");
+                        MessageBox.Show("Error: '" + ex.Message + "'");
                         break;
                 }
                 return false;
@@ -77,11 +74,12 @@ namespace WindowsFormsApplication11
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error closing connection: " + ex.Message);
                 return false;
             }
         }
 
+       
         public void Insert(string query)
         {
             if (this.OpenConnection())
@@ -94,7 +92,11 @@ namespace WindowsFormsApplication11
                     }
                     catch (MySqlException ex)
                     {
-                        MessageBox.Show("Error: '"+ex.Message+"'");
+                        MessageBox.Show("Database Error: '" + ex.Message + "'");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: '" + ex.Message + "'");
                     }
                     finally
                     {
@@ -116,7 +118,11 @@ namespace WindowsFormsApplication11
                     }
                     catch (MySqlException ex)
                     {
-                        MessageBox.Show("Error: '"+ex.Message+"'");
+                        MessageBox.Show("Database Error: '" + ex.Message + "'");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: '" + ex.Message + "'");
                     }
                     finally
                     {
@@ -138,7 +144,11 @@ namespace WindowsFormsApplication11
                     }
                     catch (MySqlException ex)
                     {
-                        MessageBox.Show("Error: '"+ex.Message+"'");
+                        MessageBox.Show("Database Error: '" + ex.Message + "'");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: '" + ex.Message + "'");
                     }
                     finally
                     {
@@ -153,7 +163,6 @@ namespace WindowsFormsApplication11
             if (this.OpenConnection())
             {
                 using (var cmd = new MySqlCommand(query, connection))
-
                 {
                     try
                     {
@@ -165,7 +174,11 @@ namespace WindowsFormsApplication11
                     }
                     catch (MySqlException ex)
                     {
-                        MessageBox.Show("Error: '"+ex.Message+"'");
+                        MessageBox.Show("Database Error: '" + ex.Message + "'");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: '" + ex.Message + "'");
                     }
                     finally
                     {

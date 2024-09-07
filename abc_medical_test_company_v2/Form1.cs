@@ -22,7 +22,7 @@ namespace abc_medical_test_company_v2
             hideSubmenu();
             lblusername.Text = frmlogin.name;
             lblUserrole.Text = frmlogin.user;
-            btn_addResult.Enabled = false;
+            
         }
 
         private void customizeDesign()
@@ -111,18 +111,21 @@ namespace abc_medical_test_company_v2
 
         private void btn_rptDIncome_Click(object sender, EventArgs e)
         {
+            openChildForm(new frm_DayIncome());
             panel_header.Visible = false;
             hideSubmenu();
         }
 
         private void btn_rptDocCom_Click(object sender, EventArgs e)
         {
+            openChildForm(new frm_DocComis());
             panel_header.Visible = false;
             hideSubmenu();
         }
 
         private void btn_rptTestAnlz_Click(object sender, EventArgs e)
         {
+            openChildForm(new frm_testtech());
             panel_header.Visible = false;
             hideSubmenu();
         }

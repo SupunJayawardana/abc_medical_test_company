@@ -57,7 +57,6 @@
             this.btn_payment = new System.Windows.Forms.Button();
             this.panel_testSubmenu = new System.Windows.Forms.Panel();
             this.btn_testView = new System.Windows.Forms.Button();
-            this.btn_addResult = new System.Windows.Forms.Button();
             this.btn_test = new System.Windows.Forms.Button();
             this.panel_patientSubmenu = new System.Windows.Forms.Panel();
             this.btn_patientReg = new System.Windows.Forms.Button();
@@ -274,7 +273,7 @@
             this.panel_notificationSubmenu.Controls.Add(this.btn_notifyEmail);
             this.panel_notificationSubmenu.Controls.Add(this.btn_notifySms);
             this.panel_notificationSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_notificationSubmenu.Location = new System.Drawing.Point(0, 815);
+            this.panel_notificationSubmenu.Location = new System.Drawing.Point(0, 760);
             this.panel_notificationSubmenu.Name = "panel_notificationSubmenu";
             this.panel_notificationSubmenu.Size = new System.Drawing.Size(257, 100);
             this.panel_notificationSubmenu.TabIndex = 14;
@@ -320,7 +319,7 @@
             this.btn_notification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_notification.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_notification.ForeColor = System.Drawing.Color.White;
-            this.btn_notification.Location = new System.Drawing.Point(0, 767);
+            this.btn_notification.Location = new System.Drawing.Point(0, 712);
             this.btn_notification.Name = "btn_notification";
             this.btn_notification.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btn_notification.Size = new System.Drawing.Size(257, 48);
@@ -337,7 +336,7 @@
             this.panel_reportsSubmenu.Controls.Add(this.btn_rptDocCom);
             this.panel_reportsSubmenu.Controls.Add(this.btn_rptDIncome);
             this.panel_reportsSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_reportsSubmenu.Location = new System.Drawing.Point(0, 618);
+            this.panel_reportsSubmenu.Location = new System.Drawing.Point(0, 563);
             this.panel_reportsSubmenu.Name = "panel_reportsSubmenu";
             this.panel_reportsSubmenu.Size = new System.Drawing.Size(257, 149);
             this.panel_reportsSubmenu.TabIndex = 12;
@@ -400,7 +399,7 @@
             this.btn_reports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_reports.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_reports.ForeColor = System.Drawing.Color.White;
-            this.btn_reports.Location = new System.Drawing.Point(0, 570);
+            this.btn_reports.Location = new System.Drawing.Point(0, 515);
             this.btn_reports.Name = "btn_reports";
             this.btn_reports.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btn_reports.Size = new System.Drawing.Size(257, 48);
@@ -415,7 +414,7 @@
             this.panel_paymentSubmenu.BackColor = System.Drawing.Color.DarkGreen;
             this.panel_paymentSubmenu.Controls.Add(this.btn_paymentView);
             this.panel_paymentSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_paymentSubmenu.Location = new System.Drawing.Point(0, 520);
+            this.panel_paymentSubmenu.Location = new System.Drawing.Point(0, 465);
             this.panel_paymentSubmenu.Name = "panel_paymentSubmenu";
             this.panel_paymentSubmenu.Size = new System.Drawing.Size(257, 50);
             this.panel_paymentSubmenu.TabIndex = 8;
@@ -444,7 +443,7 @@
             this.btn_payment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_payment.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_payment.ForeColor = System.Drawing.Color.White;
-            this.btn_payment.Location = new System.Drawing.Point(0, 472);
+            this.btn_payment.Location = new System.Drawing.Point(0, 417);
             this.btn_payment.Name = "btn_payment";
             this.btn_payment.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btn_payment.Size = new System.Drawing.Size(257, 48);
@@ -458,11 +457,10 @@
             // 
             this.panel_testSubmenu.BackColor = System.Drawing.Color.DarkGreen;
             this.panel_testSubmenu.Controls.Add(this.btn_testView);
-            this.panel_testSubmenu.Controls.Add(this.btn_addResult);
             this.panel_testSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_testSubmenu.Location = new System.Drawing.Point(0, 372);
             this.panel_testSubmenu.Name = "panel_testSubmenu";
-            this.panel_testSubmenu.Size = new System.Drawing.Size(257, 100);
+            this.panel_testSubmenu.Size = new System.Drawing.Size(257, 45);
             this.panel_testSubmenu.TabIndex = 6;
             // 
             // btn_testView
@@ -472,7 +470,7 @@
             this.btn_testView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_testView.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_testView.ForeColor = System.Drawing.Color.White;
-            this.btn_testView.Location = new System.Drawing.Point(0, 48);
+            this.btn_testView.Location = new System.Drawing.Point(0, 0);
             this.btn_testView.Name = "btn_testView";
             this.btn_testView.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btn_testView.Size = new System.Drawing.Size(257, 48);
@@ -481,23 +479,6 @@
             this.btn_testView.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_testView.UseVisualStyleBackColor = true;
             this.btn_testView.Click += new System.EventHandler(this.btn_testView_Click);
-            // 
-            // btn_addResult
-            // 
-            this.btn_addResult.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_addResult.FlatAppearance.BorderSize = 0;
-            this.btn_addResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_addResult.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_addResult.ForeColor = System.Drawing.Color.White;
-            this.btn_addResult.Location = new System.Drawing.Point(0, 0);
-            this.btn_addResult.Name = "btn_addResult";
-            this.btn_addResult.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_addResult.Size = new System.Drawing.Size(257, 48);
-            this.btn_addResult.TabIndex = 2;
-            this.btn_addResult.Text = "Add Test Results";
-            this.btn_addResult.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_addResult.UseVisualStyleBackColor = true;
-            this.btn_addResult.Click += new System.EventHandler(this.btn_addResult_Click);
             // 
             // btn_test
             // 
@@ -695,7 +676,6 @@
         private System.Windows.Forms.Button btn_payment;
         private System.Windows.Forms.Panel panel_testSubmenu;
         private System.Windows.Forms.Button btn_testView;
-        private System.Windows.Forms.Button btn_addResult;
         private System.Windows.Forms.Button btn_test;
         private System.Windows.Forms.Panel panel_patientSubmenu;
         private System.Windows.Forms.Button btn_patientReg;

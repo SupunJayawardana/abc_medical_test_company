@@ -95,6 +95,24 @@
     <Compile Include="Form8.Designer.cs">
       <DependentUpon>Form8.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_DayIncome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DayIncome.Designer.cs">
+      <DependentUpon>frm_DayIncome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DocComis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DocComis.Designer.cs">
+      <DependentUpon>frm_DocComis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_testtech.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_testtech.Designer.cs">
+      <DependentUpon>frm_testtech.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +151,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form8.resx">
       <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DayIncome.resx">
+      <DependentUpon>frm_DayIncome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DocComis.resx">
+      <DependentUpon>frm_DocComis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_testtech.resx">
+      <DependentUpon>frm_testtech.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
