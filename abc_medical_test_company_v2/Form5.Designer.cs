@@ -40,10 +40,8 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.lbladdress = new System.Windows.Forms.Label();
             this.txtaddress = new System.Windows.Forms.TextBox();
-            this.txttelno = new System.Windows.Forms.TextBox();
-            this.txtemail = new System.Windows.Forms.TextBox();
-            this.lbltelno = new System.Windows.Forms.Label();
-            this.lblemail = new System.Windows.Forms.Label();
+            this.txtpname = new System.Windows.Forms.TextBox();
+            this.lblpname = new System.Windows.Forms.Label();
             this.lblInvoiceNo = new System.Windows.Forms.Label();
             this.txtInvoiceNo = new System.Windows.Forms.TextBox();
             this.lblCashierID = new System.Windows.Forms.Label();
@@ -109,10 +107,8 @@
             this.panel_mainUser.Controls.Add(this.listView1);
             this.panel_mainUser.Controls.Add(this.lbladdress);
             this.panel_mainUser.Controls.Add(this.txtaddress);
-            this.panel_mainUser.Controls.Add(this.txttelno);
-            this.panel_mainUser.Controls.Add(this.txtemail);
-            this.panel_mainUser.Controls.Add(this.lbltelno);
-            this.panel_mainUser.Controls.Add(this.lblemail);
+            this.panel_mainUser.Controls.Add(this.txtpname);
+            this.panel_mainUser.Controls.Add(this.lblpname);
             this.panel_mainUser.Controls.Add(this.lblInvoiceNo);
             this.panel_mainUser.Controls.Add(this.txtInvoiceNo);
             this.panel_mainUser.Controls.Add(this.lblCashierID);
@@ -137,7 +133,7 @@
             this.button1.BackColor = System.Drawing.Color.ForestGreen;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(935, 480);
+            this.button1.Location = new System.Drawing.Point(853, 478);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 39);
             this.button1.TabIndex = 53;
@@ -149,7 +145,7 @@
             this.lblTechnologistID.AutoSize = true;
             this.lblTechnologistID.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.lblTechnologistID.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lblTechnologistID.Location = new System.Drawing.Point(20, 495);
+            this.lblTechnologistID.Location = new System.Drawing.Point(20, 486);
             this.lblTechnologistID.Name = "lblTechnologistID";
             this.lblTechnologistID.Size = new System.Drawing.Size(152, 20);
             this.lblTechnologistID.TabIndex = 51;
@@ -161,18 +157,18 @@
             this.txtTechnologistID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTechnologistID.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.txtTechnologistID.ForeColor = System.Drawing.Color.Green;
-            this.txtTechnologistID.Location = new System.Drawing.Point(182, 495);
+            this.txtTechnologistID.Location = new System.Drawing.Point(198, 486);
             this.txtTechnologistID.Name = "txtTechnologistID";
-            this.txtTechnologistID.Size = new System.Drawing.Size(176, 20);
+            this.txtTechnologistID.Size = new System.Drawing.Size(175, 20);
             this.txtTechnologistID.TabIndex = 52;
             // 
             // listBoxCritiria
             // 
             this.listBoxCritiria.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBoxCritiria.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxCritiria.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxCritiria.ForeColor = System.Drawing.Color.Green;
             this.listBoxCritiria.FormattingEnabled = true;
-            this.listBoxCritiria.ItemHeight = 15;
+            this.listBoxCritiria.ItemHeight = 20;
             this.listBoxCritiria.Location = new System.Drawing.Point(87, 305);
             this.listBoxCritiria.Name = "listBoxCritiria";
             this.listBoxCritiria.Size = new System.Drawing.Size(280, 180);
@@ -181,10 +177,10 @@
             // listBoxCResult
             // 
             this.listBoxCResult.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBoxCResult.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxCResult.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxCResult.ForeColor = System.Drawing.Color.Green;
             this.listBoxCResult.FormattingEnabled = true;
-            this.listBoxCResult.ItemHeight = 15;
+            this.listBoxCResult.ItemHeight = 20;
             this.listBoxCResult.Location = new System.Drawing.Point(399, 305);
             this.listBoxCResult.Name = "listBoxCResult";
             this.listBoxCResult.Size = new System.Drawing.Size(474, 180);
@@ -195,7 +191,7 @@
             this.lblTestName.AutoSize = true;
             this.lblTestName.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.lblTestName.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lblTestName.Location = new System.Drawing.Point(338, 266);
+            this.lblTestName.Location = new System.Drawing.Point(304, 253);
             this.lblTestName.Name = "lblTestName";
             this.lblTestName.Size = new System.Drawing.Size(119, 20);
             this.lblTestName.TabIndex = 49;
@@ -205,9 +201,9 @@
             // 
             this.listView1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 293);
+            this.listView1.Location = new System.Drawing.Point(0, 289);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1031, 338);
+            this.listView1.Size = new System.Drawing.Size(1031, 342);
             this.listView1.TabIndex = 47;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -216,7 +212,7 @@
             this.lbladdress.AutoSize = true;
             this.lbladdress.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.lbladdress.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lbladdress.Location = new System.Drawing.Point(20, 61);
+            this.lbladdress.Location = new System.Drawing.Point(20, 122);
             this.lbladdress.Name = "lbladdress";
             this.lbladdress.Size = new System.Drawing.Size(90, 20);
             this.lbladdress.TabIndex = 30;
@@ -228,56 +224,34 @@
             this.txtaddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtaddress.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.txtaddress.ForeColor = System.Drawing.Color.Green;
-            this.txtaddress.Location = new System.Drawing.Point(182, 61);
+            this.txtaddress.Location = new System.Drawing.Point(161, 122);
             this.txtaddress.Multiline = true;
             this.txtaddress.Name = "txtaddress";
             this.txtaddress.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtaddress.Size = new System.Drawing.Size(176, 59);
+            this.txtaddress.Size = new System.Drawing.Size(262, 59);
             this.txtaddress.TabIndex = 27;
             // 
-            // txttelno
+            // txtpname
             // 
-            this.txttelno.BackColor = System.Drawing.Color.White;
-            this.txttelno.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txttelno.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
-            this.txttelno.ForeColor = System.Drawing.Color.Green;
-            this.txttelno.Location = new System.Drawing.Point(114, 174);
-            this.txttelno.Name = "txttelno";
-            this.txttelno.Size = new System.Drawing.Size(176, 20);
-            this.txttelno.TabIndex = 28;
+            this.txtpname.BackColor = System.Drawing.Color.White;
+            this.txtpname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtpname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.txtpname.ForeColor = System.Drawing.Color.Green;
+            this.txtpname.Location = new System.Drawing.Point(161, 61);
+            this.txtpname.Name = "txtpname";
+            this.txtpname.Size = new System.Drawing.Size(176, 20);
+            this.txtpname.TabIndex = 28;
             // 
-            // txtemail
+            // lblpname
             // 
-            this.txtemail.BackColor = System.Drawing.Color.White;
-            this.txtemail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtemail.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
-            this.txtemail.ForeColor = System.Drawing.Color.Green;
-            this.txtemail.Location = new System.Drawing.Point(114, 136);
-            this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(176, 20);
-            this.txtemail.TabIndex = 29;
-            // 
-            // lbltelno
-            // 
-            this.lbltelno.AutoSize = true;
-            this.lbltelno.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
-            this.lbltelno.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lbltelno.Location = new System.Drawing.Point(20, 174);
-            this.lbltelno.Name = "lbltelno";
-            this.lbltelno.Size = new System.Drawing.Size(72, 20);
-            this.lbltelno.TabIndex = 25;
-            this.lbltelno.Text = "Tel No :";
-            // 
-            // lblemail
-            // 
-            this.lblemail.AutoSize = true;
-            this.lblemail.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
-            this.lblemail.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lblemail.Location = new System.Drawing.Point(20, 136);
-            this.lblemail.Name = "lblemail";
-            this.lblemail.Size = new System.Drawing.Size(66, 20);
-            this.lblemail.TabIndex = 26;
-            this.lblemail.Text = "Email :";
+            this.lblpname.AutoSize = true;
+            this.lblpname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
+            this.lblpname.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lblpname.Location = new System.Drawing.Point(20, 61);
+            this.lblpname.Name = "lblpname";
+            this.lblpname.Size = new System.Drawing.Size(135, 20);
+            this.lblpname.TabIndex = 25;
+            this.lblpname.Text = "Patient Name :";
             // 
             // lblInvoiceNo
             // 
@@ -296,9 +270,9 @@
             this.txtInvoiceNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInvoiceNo.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.txtInvoiceNo.ForeColor = System.Drawing.Color.Green;
-            this.txtInvoiceNo.Location = new System.Drawing.Point(179, 210);
+            this.txtInvoiceNo.Location = new System.Drawing.Point(138, 210);
             this.txtInvoiceNo.Name = "txtInvoiceNo";
-            this.txtInvoiceNo.Size = new System.Drawing.Size(111, 20);
+            this.txtInvoiceNo.Size = new System.Drawing.Size(96, 20);
             this.txtInvoiceNo.TabIndex = 32;
             // 
             // lblCashierID
@@ -372,7 +346,7 @@
             this.lblReceivedDate.AutoSize = true;
             this.lblReceivedDate.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.lblReceivedDate.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lblReceivedDate.Location = new System.Drawing.Point(294, 210);
+            this.lblReceivedDate.Location = new System.Drawing.Point(257, 210);
             this.lblReceivedDate.Name = "lblReceivedDate";
             this.lblReceivedDate.Size = new System.Drawing.Size(142, 20);
             this.lblReceivedDate.TabIndex = 41;
@@ -384,9 +358,9 @@
             this.txtReceivedDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtReceivedDate.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.txtReceivedDate.ForeColor = System.Drawing.Color.Green;
-            this.txtReceivedDate.Location = new System.Drawing.Point(488, 210);
+            this.txtReceivedDate.Location = new System.Drawing.Point(405, 210);
             this.txtReceivedDate.Name = "txtReceivedDate";
-            this.txtReceivedDate.Size = new System.Drawing.Size(111, 20);
+            this.txtReceivedDate.Size = new System.Drawing.Size(238, 20);
             this.txtReceivedDate.TabIndex = 42;
             // 
             // lblIssuedDate
@@ -394,7 +368,7 @@
             this.lblIssuedDate.AutoSize = true;
             this.lblIssuedDate.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.lblIssuedDate.ForeColor = System.Drawing.Color.ForestGreen;
-            this.lblIssuedDate.Location = new System.Drawing.Point(721, 210);
+            this.lblIssuedDate.Location = new System.Drawing.Point(657, 210);
             this.lblIssuedDate.Name = "lblIssuedDate";
             this.lblIssuedDate.Size = new System.Drawing.Size(121, 20);
             this.lblIssuedDate.TabIndex = 43;
@@ -406,9 +380,9 @@
             this.txtIssuedDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIssuedDate.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.txtIssuedDate.ForeColor = System.Drawing.Color.Green;
-            this.txtIssuedDate.Location = new System.Drawing.Point(890, 210);
+            this.txtIssuedDate.Location = new System.Drawing.Point(784, 210);
             this.txtIssuedDate.Name = "txtIssuedDate";
-            this.txtIssuedDate.Size = new System.Drawing.Size(111, 20);
+            this.txtIssuedDate.Size = new System.Drawing.Size(236, 20);
             this.txtIssuedDate.TabIndex = 44;
             // 
             // panel_footer
@@ -441,7 +415,7 @@
             this.cmbPatientName.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.cmbPatientName.ForeColor = System.Drawing.Color.White;
             this.cmbPatientName.FormattingEnabled = true;
-            this.cmbPatientName.Location = new System.Drawing.Point(366, 144);
+            this.cmbPatientName.Location = new System.Drawing.Point(339, 144);
             this.cmbPatientName.Name = "cmbPatientName";
             this.cmbPatientName.Size = new System.Drawing.Size(449, 32);
             this.cmbPatientName.TabIndex = 49;
@@ -454,7 +428,7 @@
             this.cmbtests.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.cmbtests.ForeColor = System.Drawing.Color.White;
             this.cmbtests.FormattingEnabled = true;
-            this.cmbtests.Location = new System.Drawing.Point(366, 272);
+            this.cmbtests.Location = new System.Drawing.Point(339, 272);
             this.cmbtests.Name = "cmbtests";
             this.cmbtests.Size = new System.Drawing.Size(449, 32);
             this.cmbtests.TabIndex = 54;
@@ -467,7 +441,7 @@
             this.cmbTechnologistID.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.cmbTechnologistID.ForeColor = System.Drawing.Color.White;
             this.cmbTechnologistID.FormattingEnabled = true;
-            this.cmbTechnologistID.Location = new System.Drawing.Point(366, 211);
+            this.cmbTechnologistID.Location = new System.Drawing.Point(339, 211);
             this.cmbTechnologistID.Name = "cmbTechnologistID";
             this.cmbTechnologistID.Size = new System.Drawing.Size(449, 32);
             this.cmbTechnologistID.TabIndex = 50;
@@ -478,7 +452,7 @@
             this.lblTest.AutoSize = true;
             this.lblTest.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTest.ForeColor = System.Drawing.Color.White;
-            this.lblTest.Location = new System.Drawing.Point(131, 272);
+            this.lblTest.Location = new System.Drawing.Point(104, 272);
             this.lblTest.Name = "lblTest";
             this.lblTest.Size = new System.Drawing.Size(61, 20);
             this.lblTest.TabIndex = 53;
@@ -490,7 +464,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(484, 323);
+            this.label8.Location = new System.Drawing.Point(457, 323);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(0, 20);
             this.label8.TabIndex = 52;
@@ -501,7 +475,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(202, 357);
+            this.label9.Location = new System.Drawing.Point(175, 357);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(141, 20);
             this.label9.TabIndex = 52;
@@ -513,7 +487,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(496, 357);
+            this.label6.Location = new System.Drawing.Point(469, 357);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 20);
             this.label6.TabIndex = 52;
@@ -525,7 +499,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(131, 314);
+            this.label2.Location = new System.Drawing.Point(104, 314);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(182, 20);
             this.label2.TabIndex = 52;
@@ -537,10 +511,10 @@
             this.txtCritiria.BackColor = System.Drawing.Color.ForestGreen;
             this.txtCritiria.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.txtCritiria.ForeColor = System.Drawing.Color.White;
-            this.txtCritiria.Location = new System.Drawing.Point(192, 367);
+            this.txtCritiria.Location = new System.Drawing.Point(165, 367);
             this.txtCritiria.Multiline = true;
             this.txtCritiria.Name = "txtCritiria";
-            this.txtCritiria.Size = new System.Drawing.Size(283, 162);
+            this.txtCritiria.Size = new System.Drawing.Size(283, 100);
             this.txtCritiria.TabIndex = 48;
             this.txtCritiria.UseWaitCursor = true;
             // 
@@ -549,10 +523,10 @@
             this.txttestCResults.BackColor = System.Drawing.Color.ForestGreen;
             this.txttestCResults.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.txttestCResults.ForeColor = System.Drawing.Color.White;
-            this.txttestCResults.Location = new System.Drawing.Point(488, 367);
+            this.txttestCResults.Location = new System.Drawing.Point(461, 367);
             this.txttestCResults.Multiline = true;
             this.txttestCResults.Name = "txttestCResults";
-            this.txttestCResults.Size = new System.Drawing.Size(325, 162);
+            this.txttestCResults.Size = new System.Drawing.Size(325, 100);
             this.txttestCResults.TabIndex = 48;
             this.txttestCResults.UseWaitCursor = true;
             // 
@@ -561,7 +535,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(131, 144);
+            this.label5.Location = new System.Drawing.Point(104, 144);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(144, 20);
             this.label5.TabIndex = 47;
@@ -574,13 +548,14 @@
             this.btnAddResults.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddResults.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddResults.ForeColor = System.Drawing.Color.White;
-            this.btnAddResults.Location = new System.Drawing.Point(863, 397);
+            this.btnAddResults.Location = new System.Drawing.Point(811, 353);
             this.btnAddResults.Name = "btnAddResults";
-            this.btnAddResults.Size = new System.Drawing.Size(76, 49);
+            this.btnAddResults.Size = new System.Drawing.Size(98, 49);
             this.btnAddResults.TabIndex = 43;
             this.btnAddResults.Text = "ADD CRITIRIA";
             this.btnAddResults.UseVisualStyleBackColor = false;
             this.btnAddResults.UseWaitCursor = true;
+            this.btnAddResults.Click += new System.EventHandler(this.btnAddResults_Click);
             // 
             // btnCreateTestReport
             // 
@@ -588,9 +563,9 @@
             this.btnCreateTestReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreateTestReport.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateTestReport.ForeColor = System.Drawing.Color.White;
-            this.btnCreateTestReport.Location = new System.Drawing.Point(863, 452);
+            this.btnCreateTestReport.Location = new System.Drawing.Point(811, 408);
             this.btnCreateTestReport.Name = "btnCreateTestReport";
-            this.btnCreateTestReport.Size = new System.Drawing.Size(76, 69);
+            this.btnCreateTestReport.Size = new System.Drawing.Size(98, 69);
             this.btnCreateTestReport.TabIndex = 44;
             this.btnCreateTestReport.Text = "CREATE TEST REPORT";
             this.btnCreateTestReport.UseVisualStyleBackColor = false;
@@ -602,7 +577,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(131, 213);
+            this.label4.Location = new System.Drawing.Point(104, 213);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(207, 20);
             this.label4.TabIndex = 45;
@@ -638,10 +613,8 @@
         private System.Windows.Forms.Panel panel_footer;
         private System.Windows.Forms.Label lbladdress;
         private System.Windows.Forms.TextBox txtaddress;
-        private System.Windows.Forms.TextBox txttelno;
-        private System.Windows.Forms.TextBox txtemail;
-        private System.Windows.Forms.Label lbltelno;
-        private System.Windows.Forms.Label lblemail;
+        private System.Windows.Forms.TextBox txtpname;
+        private System.Windows.Forms.Label lblpname;
         private System.Windows.Forms.Label lblInvoiceNo;
         private System.Windows.Forms.TextBox txtInvoiceNo;
         private System.Windows.Forms.Label lblCashierID;

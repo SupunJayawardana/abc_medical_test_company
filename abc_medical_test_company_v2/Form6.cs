@@ -49,7 +49,7 @@ namespace abc_medical_test_company_v2
             }
         }
 
-        int id = 0;
+        public static int id = 0;
         public static string pnic;
         public static string testid;
 
@@ -59,16 +59,18 @@ namespace abc_medical_test_company_v2
             {
                 DataGridViewRow selectedRow = dgv_userReg.SelectedRows[0];
 
-                id = Convert.ToInt32(selectedRow.Cells["id"].Value); // Assuming you have an 'id' column for unique identification
+                id = Convert.ToInt32(selectedRow.Cells["id"].Value); 
                 pnic = selectedRow.Cells["patient_nic"].Value.ToString();
                 testid = selectedRow.Cells["tests_test_id"].Value.ToString();
                 PatientName();
                 TestName();
+                StatusReport();
             }
         }
 
         public static string pname;
         public static string testname;
+
 
         private void PatientName()
         {
@@ -106,6 +108,37 @@ namespace abc_medical_test_company_v2
                 else
                 {
                     MessageBox.Show("No data found for ComboBox.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error fetching data: " + ex.Message);
+            }
+        }
+
+        private void StatusReport()
+        {
+            try
+            {
+                string sql = "SELECT report_status_id FROM invoice WHERE id = '" + id + "'";
+                dbObj1.Select(sql);
+
+                if (dbObj1.dtable != null && dbObj1.dtable.Rows.Count > 0)
+                {
+                    int reportStatusId = Convert.ToInt32(dbObj1.dtable.Rows[0]["report_status_id"]);
+                                    
+                    if (reportStatusId == 2)
+                    {
+                        lblrepostats.Text = "Pending";
+                    }
+                    else
+                    {
+                        lblrepostats.Text = "Sent";
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No data found for this invoice.");
                 }
             }
             catch (Exception ex)

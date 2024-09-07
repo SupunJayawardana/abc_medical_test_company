@@ -166,7 +166,7 @@ namespace abc_medical_test_company_v2
                 UpdateTestDescriptionAndPrice(selectedRow.Row);
             }
         }
-
+       
         private void RefreshDataGridView()
         {
             string sql = "SELECT * FROM invoice";

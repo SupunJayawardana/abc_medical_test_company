@@ -232,7 +232,7 @@
             this.panel4.Controls.Add(this.lblIssuedDate);
             this.panel4.Controls.Add(this.lblCashierID);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, -356);
+            this.panel4.Location = new System.Drawing.Point(0, -349);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1087, 88);
             this.panel4.TabIndex = 0;
@@ -317,7 +317,7 @@
             this.panel3.Controls.Add(this.lbxtest);
             this.panel3.Controls.Add(this.listView1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, -268);
+            this.panel3.Location = new System.Drawing.Point(0, -261);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1087, 293);
             this.panel3.TabIndex = 0;
@@ -432,9 +432,9 @@
             this.panel_ChooseInvoice.Controls.Add(this.label3);
             this.panel_ChooseInvoice.Controls.Add(this.label4);
             this.panel_ChooseInvoice.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_ChooseInvoice.Location = new System.Drawing.Point(0, 25);
+            this.panel_ChooseInvoice.Location = new System.Drawing.Point(0, 32);
             this.panel_ChooseInvoice.Name = "panel_ChooseInvoice";
-            this.panel_ChooseInvoice.Size = new System.Drawing.Size(1087, 606);
+            this.panel_ChooseInvoice.Size = new System.Drawing.Size(1087, 599);
             this.panel_ChooseInvoice.TabIndex = 0;
             this.panel_ChooseInvoice.UseWaitCursor = true;
             // 

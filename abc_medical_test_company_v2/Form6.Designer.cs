@@ -36,6 +36,7 @@
             this.txtpatientname = new System.Windows.Forms.TextBox();
             this.panel_header = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblrepostats = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_userReg)).BeginInit();
             this.panel_mainUser.SuspendLayout();
             this.panel_footer.SuspendLayout();
@@ -65,6 +66,7 @@
             // 
             // panel_footer
             // 
+            this.panel_footer.Controls.Add(this.lblrepostats);
             this.panel_footer.Controls.Add(this.btnaddresult);
             this.panel_footer.Controls.Add(this.txttest);
             this.panel_footer.Controls.Add(this.txtpatientname);
@@ -91,14 +93,14 @@
             // 
             // txttest
             // 
-            this.txttest.Location = new System.Drawing.Point(499, 15);
+            this.txttest.Location = new System.Drawing.Point(366, 15);
             this.txttest.Name = "txttest";
             this.txttest.Size = new System.Drawing.Size(168, 22);
             this.txttest.TabIndex = 2;
             // 
             // txtpatientname
             // 
-            this.txtpatientname.Location = new System.Drawing.Point(307, 15);
+            this.txtpatientname.Location = new System.Drawing.Point(174, 15);
             this.txtpatientname.Name = "txtpatientname";
             this.txtpatientname.Size = new System.Drawing.Size(168, 22);
             this.txtpatientname.TabIndex = 2;
@@ -123,6 +125,15 @@
             this.label1.Size = new System.Drawing.Size(106, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Test Results";
+            // 
+            // lblrepostats
+            // 
+            this.lblrepostats.AutoSize = true;
+            this.lblrepostats.Location = new System.Drawing.Point(594, 21);
+            this.lblrepostats.Name = "lblrepostats";
+            this.lblrepostats.Size = new System.Drawing.Size(44, 16);
+            this.lblrepostats.TabIndex = 6;
+            this.lblrepostats.Text = "label2";
             // 
             // frm_trsltview
             // 
@@ -155,5 +166,6 @@
         private System.Windows.Forms.Panel panel_header;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txttest;
+        private System.Windows.Forms.Label lblrepostats;
     }
 }
