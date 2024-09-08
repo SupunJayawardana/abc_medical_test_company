@@ -26,7 +26,7 @@ namespace abc_medical_test_company_v2
         }
         private void UserPrivilages()
         {
-            if (frmlogin.user == "Doctor" || frmlogin.user == "Technologist")
+            if (frmlogin.user == "Doctor" || frmlogin.user == "Technologist" || frmlogin.user == "Cashier")
             {
                panel_userSubmenu.Visible = false;
                 
@@ -86,12 +86,7 @@ namespace abc_medical_test_company_v2
 
     
 
-        private void btn_addResult_Click(object sender, EventArgs e)
-        {
-            openChildForm(new frm_addtrslt());
-            panel_header.Visible = false;
-            hideSubmenu();
-        }
+     
 
         private void btn_testView_Click(object sender, EventArgs e)
         {

@@ -561,11 +561,11 @@
             this.btnAddTests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddTests.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddTests.ForeColor = System.Drawing.Color.White;
-            this.btnAddTests.Location = new System.Drawing.Point(826, 447);
+            this.btnAddTests.Location = new System.Drawing.Point(832, 404);
             this.btnAddTests.Name = "btnAddTests";
-            this.btnAddTests.Size = new System.Drawing.Size(61, 49);
+            this.btnAddTests.Size = new System.Drawing.Size(84, 49);
             this.btnAddTests.TabIndex = 26;
-            this.btnAddTests.Text = "Add Test";
+            this.btnAddTests.Text = "ADD TEST";
             this.btnAddTests.UseVisualStyleBackColor = false;
             this.btnAddTests.UseWaitCursor = true;
             this.btnAddTests.Click += new System.EventHandler(this.btnCreateInvoice_Click);
@@ -576,7 +576,7 @@
             this.btnCreateInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreateInvoice.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateInvoice.ForeColor = System.Drawing.Color.White;
-            this.btnCreateInvoice.Location = new System.Drawing.Point(893, 447);
+            this.btnCreateInvoice.Location = new System.Drawing.Point(832, 459);
             this.btnCreateInvoice.Name = "btnCreateInvoice";
             this.btnCreateInvoice.Size = new System.Drawing.Size(84, 49);
             this.btnCreateInvoice.TabIndex = 26;

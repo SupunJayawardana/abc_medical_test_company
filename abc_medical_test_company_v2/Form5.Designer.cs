@@ -564,7 +564,7 @@
             this.btnAddResults.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddResults.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddResults.ForeColor = System.Drawing.Color.White;
-            this.btnAddResults.Location = new System.Drawing.Point(811, 353);
+            this.btnAddResults.Location = new System.Drawing.Point(813, 382);
             this.btnAddResults.Name = "btnAddResults";
             this.btnAddResults.Size = new System.Drawing.Size(98, 49);
             this.btnAddResults.TabIndex = 43;
@@ -579,7 +579,7 @@
             this.btnCreateTestReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreateTestReport.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateTestReport.ForeColor = System.Drawing.Color.White;
-            this.btnCreateTestReport.Location = new System.Drawing.Point(811, 408);
+            this.btnCreateTestReport.Location = new System.Drawing.Point(813, 437);
             this.btnCreateTestReport.Name = "btnCreateTestReport";
             this.btnCreateTestReport.Size = new System.Drawing.Size(98, 69);
             this.btnCreateTestReport.TabIndex = 44;

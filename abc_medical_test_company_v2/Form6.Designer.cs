@@ -83,7 +83,7 @@
             this.lblrepostats.AutoSize = true;
             this.lblrepostats.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblrepostats.ForeColor = System.Drawing.Color.Ivory;
-            this.lblrepostats.Location = new System.Drawing.Point(589, 18);
+            this.lblrepostats.Location = new System.Drawing.Point(530, 17);
             this.lblrepostats.Name = "lblrepostats";
             this.lblrepostats.Size = new System.Drawing.Size(55, 18);
             this.lblrepostats.TabIndex = 6;
@@ -92,13 +92,12 @@
             // btnaddresult
             // 
             this.btnaddresult.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnaddresult.FlatAppearance.BorderSize = 0;
             this.btnaddresult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnaddresult.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnaddresult.ForeColor = System.Drawing.Color.White;
-            this.btnaddresult.Location = new System.Drawing.Point(695, 9);
+            this.btnaddresult.Location = new System.Drawing.Point(629, 9);
             this.btnaddresult.Name = "btnaddresult";
-            this.btnaddresult.Size = new System.Drawing.Size(158, 33);
+            this.btnaddresult.Size = new System.Drawing.Size(167, 33);
             this.btnaddresult.TabIndex = 5;
             this.btnaddresult.Text = "Add Test Results";
             this.btnaddresult.UseVisualStyleBackColor = false;
@@ -109,7 +108,7 @@
             this.txttest.BackColor = System.Drawing.Color.DarkGreen;
             this.txttest.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttest.ForeColor = System.Drawing.Color.White;
-            this.txttest.Location = new System.Drawing.Point(366, 15);
+            this.txttest.Location = new System.Drawing.Point(307, 14);
             this.txttest.Name = "txttest";
             this.txttest.Size = new System.Drawing.Size(168, 25);
             this.txttest.TabIndex = 2;
@@ -119,7 +118,7 @@
             this.txtpatientname.BackColor = System.Drawing.Color.DarkGreen;
             this.txtpatientname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpatientname.ForeColor = System.Drawing.Color.White;
-            this.txtpatientname.Location = new System.Drawing.Point(174, 15);
+            this.txtpatientname.Location = new System.Drawing.Point(115, 14);
             this.txtpatientname.Name = "txtpatientname";
             this.txtpatientname.Size = new System.Drawing.Size(168, 25);
             this.txtpatientname.TabIndex = 2;

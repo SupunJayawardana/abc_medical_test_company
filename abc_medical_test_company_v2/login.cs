@@ -129,6 +129,11 @@ namespace abc_medical_test_company_v2
             }
 
         }
+
+        private void panel_header_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

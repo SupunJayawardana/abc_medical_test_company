@@ -227,6 +227,7 @@
             this.panel_header.Name = "panel_header";
             this.panel_header.Size = new System.Drawing.Size(693, 50);
             this.panel_header.TabIndex = 0;
+            this.panel_header.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_header_Paint);
             // 
             // btn_register
             // 

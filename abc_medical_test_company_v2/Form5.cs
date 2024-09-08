@@ -221,6 +221,8 @@ namespace abc_medical_test_company_v2
 
                 MessageBox.Show("PDF has been created successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 UpdateInvoice();
+                
+
             }
             catch (Exception ex)
             {

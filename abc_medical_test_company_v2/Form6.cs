@@ -28,26 +28,54 @@ namespace abc_medical_test_company_v2
             dgv_userReg.SelectionChanged += dgv_userReg_SelectionChanged;
         }
 
+        public frm_trsltview()
+        {
+        }
+
         private void frm_trsltview_Load(object sender, EventArgs e)
         {
             RefreshDataGridView();
+            if (frmlogin.user == "Cashier" || frmlogin.user == "Doctor")
+            {
+                btnaddresult.Enabled = false;
+            }
 
         }
 
         private void RefreshDataGridView()
         {
-            string sql = "SELECT * FROM invoice WHERE technologist_id = '" + frmlogin.userid + "'";
-            dbObj1.Select(sql);
-
-            if (dbObj1.dtable != null && dbObj1.dtable.Rows.Count > 0)
+            if (frmlogin.user == "admin")
             {
-                dgv_userReg.DataSource = dbObj1.dtable;
+                string sql = "SELECT * FROM invoice ORDER BY (report_status_id = 2) DESC, report_status_id";
+
+                dbObj1.Select(sql);
+
+                if (dbObj1.dtable != null && dbObj1.dtable.Rows.Count > 0)
+                {
+                    dgv_userReg.DataSource = dbObj1.dtable;
+                }
+                else
+                {
+                    MessageBox.Show("No data found.");
+                }
             }
             else
             {
-                MessageBox.Show("No data found.");
+                string sql = "SELECT * FROM invoice WHERE technologist_id = '" + frmlogin.userid + "' ORDER BY (report_status_id = 2) DESC, report_status_id";
+
+                dbObj1.Select(sql);
+
+                if (dbObj1.dtable != null && dbObj1.dtable.Rows.Count > 0)
+                {
+                    dgv_userReg.DataSource = dbObj1.dtable;
+                }
+                else
+                {
+                    MessageBox.Show("No data found.");
+                }
             }
         }
+
 
         public static int id = 0;
         public static string pnic;
