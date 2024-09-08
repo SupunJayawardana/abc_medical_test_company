@@ -48,9 +48,6 @@
             this.btn_rptDocCom = new System.Windows.Forms.Button();
             this.btn_rptDIncome = new System.Windows.Forms.Button();
             this.btn_reports = new System.Windows.Forms.Button();
-            this.panel_paymentSubmenu = new System.Windows.Forms.Panel();
-            this.btn_paymentView = new System.Windows.Forms.Button();
-            this.btn_payment = new System.Windows.Forms.Button();
             this.panel_testSubmenu = new System.Windows.Forms.Panel();
             this.btn_testView = new System.Windows.Forms.Button();
             this.btn_test = new System.Windows.Forms.Button();
@@ -71,7 +68,6 @@
             this.panel_header.SuspendLayout();
             this.panel_slide.SuspendLayout();
             this.panel_reportsSubmenu.SuspendLayout();
-            this.panel_paymentSubmenu.SuspendLayout();
             this.panel_testSubmenu.SuspendLayout();
             this.panel_patientSubmenu.SuspendLayout();
             this.panel_userSubmenu.SuspendLayout();
@@ -220,7 +216,7 @@
             // 
             // panel_header
             // 
-            this.panel_header.BackColor = System.Drawing.Color.LightGray;
+            this.panel_header.BackColor = System.Drawing.Color.ForestGreen;
             this.panel_header.Controls.Add(this.label2);
             this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_header.Location = new System.Drawing.Point(0, 0);
@@ -232,7 +228,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("DejaVu Sans Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkGreen;
+            this.label2.ForeColor = System.Drawing.Color.Ivory;
             this.label2.Location = new System.Drawing.Point(15, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(354, 26);
@@ -245,8 +241,6 @@
             this.panel_slide.BackColor = System.Drawing.Color.ForestGreen;
             this.panel_slide.Controls.Add(this.panel_reportsSubmenu);
             this.panel_slide.Controls.Add(this.btn_reports);
-            this.panel_slide.Controls.Add(this.panel_paymentSubmenu);
-            this.panel_slide.Controls.Add(this.btn_payment);
             this.panel_slide.Controls.Add(this.panel_testSubmenu);
             this.panel_slide.Controls.Add(this.btn_test);
             this.panel_slide.Controls.Add(this.panel_patientSubmenu);
@@ -267,9 +261,9 @@
             this.panel_reportsSubmenu.Controls.Add(this.btn_rptDocCom);
             this.panel_reportsSubmenu.Controls.Add(this.btn_rptDIncome);
             this.panel_reportsSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_reportsSubmenu.Location = new System.Drawing.Point(0, 563);
+            this.panel_reportsSubmenu.Location = new System.Drawing.Point(0, 465);
             this.panel_reportsSubmenu.Name = "panel_reportsSubmenu";
-            this.panel_reportsSubmenu.Size = new System.Drawing.Size(257, 149);
+            this.panel_reportsSubmenu.Size = new System.Drawing.Size(278, 149);
             this.panel_reportsSubmenu.TabIndex = 12;
             // 
             // btn_rptTestAnlz
@@ -282,7 +276,7 @@
             this.btn_rptTestAnlz.Location = new System.Drawing.Point(0, 96);
             this.btn_rptTestAnlz.Name = "btn_rptTestAnlz";
             this.btn_rptTestAnlz.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_rptTestAnlz.Size = new System.Drawing.Size(257, 48);
+            this.btn_rptTestAnlz.Size = new System.Drawing.Size(278, 48);
             this.btn_rptTestAnlz.TabIndex = 4;
             this.btn_rptTestAnlz.Text = "Test Analysis";
             this.btn_rptTestAnlz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -299,7 +293,7 @@
             this.btn_rptDocCom.Location = new System.Drawing.Point(0, 48);
             this.btn_rptDocCom.Name = "btn_rptDocCom";
             this.btn_rptDocCom.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_rptDocCom.Size = new System.Drawing.Size(257, 48);
+            this.btn_rptDocCom.Size = new System.Drawing.Size(278, 48);
             this.btn_rptDocCom.TabIndex = 3;
             this.btn_rptDocCom.Text = "Doctor Commission";
             this.btn_rptDocCom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -316,7 +310,7 @@
             this.btn_rptDIncome.Location = new System.Drawing.Point(0, 0);
             this.btn_rptDIncome.Name = "btn_rptDIncome";
             this.btn_rptDIncome.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_rptDIncome.Size = new System.Drawing.Size(257, 48);
+            this.btn_rptDIncome.Size = new System.Drawing.Size(278, 48);
             this.btn_rptDIncome.TabIndex = 2;
             this.btn_rptDIncome.Text = "Daily Income";
             this.btn_rptDIncome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -330,58 +324,15 @@
             this.btn_reports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_reports.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_reports.ForeColor = System.Drawing.Color.White;
-            this.btn_reports.Location = new System.Drawing.Point(0, 515);
+            this.btn_reports.Location = new System.Drawing.Point(0, 417);
             this.btn_reports.Name = "btn_reports";
             this.btn_reports.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_reports.Size = new System.Drawing.Size(257, 48);
+            this.btn_reports.Size = new System.Drawing.Size(278, 48);
             this.btn_reports.TabIndex = 11;
             this.btn_reports.Text = "Reports";
             this.btn_reports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_reports.UseVisualStyleBackColor = true;
             this.btn_reports.Click += new System.EventHandler(this.btn_reports_Click);
-            // 
-            // panel_paymentSubmenu
-            // 
-            this.panel_paymentSubmenu.BackColor = System.Drawing.Color.DarkGreen;
-            this.panel_paymentSubmenu.Controls.Add(this.btn_paymentView);
-            this.panel_paymentSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_paymentSubmenu.Location = new System.Drawing.Point(0, 465);
-            this.panel_paymentSubmenu.Name = "panel_paymentSubmenu";
-            this.panel_paymentSubmenu.Size = new System.Drawing.Size(257, 50);
-            this.panel_paymentSubmenu.TabIndex = 8;
-            // 
-            // btn_paymentView
-            // 
-            this.btn_paymentView.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_paymentView.FlatAppearance.BorderSize = 0;
-            this.btn_paymentView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_paymentView.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_paymentView.ForeColor = System.Drawing.Color.White;
-            this.btn_paymentView.Location = new System.Drawing.Point(0, 0);
-            this.btn_paymentView.Name = "btn_paymentView";
-            this.btn_paymentView.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_paymentView.Size = new System.Drawing.Size(257, 48);
-            this.btn_paymentView.TabIndex = 2;
-            this.btn_paymentView.Text = "View Payments";
-            this.btn_paymentView.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_paymentView.UseVisualStyleBackColor = true;
-            // 
-            // btn_payment
-            // 
-            this.btn_payment.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_payment.FlatAppearance.BorderSize = 0;
-            this.btn_payment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_payment.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_payment.ForeColor = System.Drawing.Color.White;
-            this.btn_payment.Location = new System.Drawing.Point(0, 417);
-            this.btn_payment.Name = "btn_payment";
-            this.btn_payment.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_payment.Size = new System.Drawing.Size(257, 48);
-            this.btn_payment.TabIndex = 7;
-            this.btn_payment.Text = "Payment Management";
-            this.btn_payment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_payment.UseVisualStyleBackColor = true;
-            this.btn_payment.Click += new System.EventHandler(this.btn_payment_Click);
             // 
             // panel_testSubmenu
             // 
@@ -390,7 +341,7 @@
             this.panel_testSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_testSubmenu.Location = new System.Drawing.Point(0, 372);
             this.panel_testSubmenu.Name = "panel_testSubmenu";
-            this.panel_testSubmenu.Size = new System.Drawing.Size(257, 45);
+            this.panel_testSubmenu.Size = new System.Drawing.Size(278, 45);
             this.panel_testSubmenu.TabIndex = 6;
             // 
             // btn_testView
@@ -403,7 +354,7 @@
             this.btn_testView.Location = new System.Drawing.Point(0, 0);
             this.btn_testView.Name = "btn_testView";
             this.btn_testView.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_testView.Size = new System.Drawing.Size(257, 48);
+            this.btn_testView.Size = new System.Drawing.Size(278, 48);
             this.btn_testView.TabIndex = 3;
             this.btn_testView.Text = "View Test Results";
             this.btn_testView.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -420,7 +371,7 @@
             this.btn_test.Location = new System.Drawing.Point(0, 324);
             this.btn_test.Name = "btn_test";
             this.btn_test.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_test.Size = new System.Drawing.Size(257, 48);
+            this.btn_test.Size = new System.Drawing.Size(278, 48);
             this.btn_test.TabIndex = 5;
             this.btn_test.Text = "Test Management";
             this.btn_test.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -434,7 +385,7 @@
             this.panel_patientSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_patientSubmenu.Location = new System.Drawing.Point(0, 274);
             this.panel_patientSubmenu.Name = "panel_patientSubmenu";
-            this.panel_patientSubmenu.Size = new System.Drawing.Size(257, 50);
+            this.panel_patientSubmenu.Size = new System.Drawing.Size(278, 50);
             this.panel_patientSubmenu.TabIndex = 4;
             // 
             // btn_patientReg
@@ -448,7 +399,7 @@
             this.btn_patientReg.Location = new System.Drawing.Point(0, 0);
             this.btn_patientReg.Name = "btn_patientReg";
             this.btn_patientReg.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_patientReg.Size = new System.Drawing.Size(257, 48);
+            this.btn_patientReg.Size = new System.Drawing.Size(278, 48);
             this.btn_patientReg.TabIndex = 2;
             this.btn_patientReg.Text = "Registration";
             this.btn_patientReg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -465,7 +416,7 @@
             this.btn_patient.Location = new System.Drawing.Point(0, 226);
             this.btn_patient.Name = "btn_patient";
             this.btn_patient.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_patient.Size = new System.Drawing.Size(257, 48);
+            this.btn_patient.Size = new System.Drawing.Size(278, 48);
             this.btn_patient.TabIndex = 3;
             this.btn_patient.Text = "Patient Information";
             this.btn_patient.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -479,7 +430,7 @@
             this.panel_userSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_userSubmenu.Location = new System.Drawing.Point(0, 174);
             this.panel_userSubmenu.Name = "panel_userSubmenu";
-            this.panel_userSubmenu.Size = new System.Drawing.Size(257, 52);
+            this.panel_userSubmenu.Size = new System.Drawing.Size(278, 52);
             this.panel_userSubmenu.TabIndex = 2;
             // 
             // btn_userReg
@@ -492,7 +443,7 @@
             this.btn_userReg.Location = new System.Drawing.Point(0, 0);
             this.btn_userReg.Name = "btn_userReg";
             this.btn_userReg.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_userReg.Size = new System.Drawing.Size(257, 48);
+            this.btn_userReg.Size = new System.Drawing.Size(278, 48);
             this.btn_userReg.TabIndex = 2;
             this.btn_userReg.Text = "Registration";
             this.btn_userReg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -509,7 +460,7 @@
             this.btn_user.Location = new System.Drawing.Point(0, 126);
             this.btn_user.Name = "btn_user";
             this.btn_user.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_user.Size = new System.Drawing.Size(257, 48);
+            this.btn_user.Size = new System.Drawing.Size(278, 48);
             this.btn_user.TabIndex = 1;
             this.btn_user.Text = "User Management";
             this.btn_user.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -523,7 +474,7 @@
             this.panel_logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_logo.Location = new System.Drawing.Point(0, 0);
             this.panel_logo.Name = "panel_logo";
-            this.panel_logo.Size = new System.Drawing.Size(257, 126);
+            this.panel_logo.Size = new System.Drawing.Size(278, 126);
             this.panel_logo.TabIndex = 0;
             // 
             // pictureBox1
@@ -573,7 +524,6 @@
             this.panel_header.PerformLayout();
             this.panel_slide.ResumeLayout(false);
             this.panel_reportsSubmenu.ResumeLayout(false);
-            this.panel_paymentSubmenu.ResumeLayout(false);
             this.panel_testSubmenu.ResumeLayout(false);
             this.panel_patientSubmenu.ResumeLayout(false);
             this.panel_userSubmenu.ResumeLayout(false);
@@ -600,9 +550,6 @@
         private System.Windows.Forms.Button btn_rptDocCom;
         private System.Windows.Forms.Button btn_rptDIncome;
         private System.Windows.Forms.Button btn_reports;
-        private System.Windows.Forms.Panel panel_paymentSubmenu;
-        private System.Windows.Forms.Button btn_paymentView;
-        private System.Windows.Forms.Button btn_payment;
         private System.Windows.Forms.Panel panel_testSubmenu;
         private System.Windows.Forms.Button btn_testView;
         private System.Windows.Forms.Button btn_test;

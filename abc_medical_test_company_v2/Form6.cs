@@ -52,6 +52,8 @@ namespace abc_medical_test_company_v2
         public static int id = 0;
         public static string pnic;
         public static string testid;
+        public static string statusid;
+
 
         private void dgv_userReg_SelectionChanged(object sender, EventArgs e)
         {
@@ -62,6 +64,7 @@ namespace abc_medical_test_company_v2
                 id = Convert.ToInt32(selectedRow.Cells["id"].Value); 
                 pnic = selectedRow.Cells["patient_nic"].Value.ToString();
                 testid = selectedRow.Cells["tests_test_id"].Value.ToString();
+                statusid = selectedRow.Cells["report_status_id"].Value.ToString();
                 PatientName();
                 TestName();
                 StatusReport();
@@ -118,33 +121,14 @@ namespace abc_medical_test_company_v2
 
         private void StatusReport()
         {
-            try
-            {
-                string sql = "SELECT report_status_id FROM invoice WHERE id = '" + id + "'";
-                dbObj1.Select(sql);
-
-                if (dbObj1.dtable != null && dbObj1.dtable.Rows.Count > 0)
-                {
-                    int reportStatusId;
-                    if (int.TryParse(dbObj1.dtable.Rows[0]["report_status_id"].ToString(), out reportStatusId))
-                    {
-                        lblrepostats.Text = reportStatusId == 2 ? "Pending" : "Sent";
-                    }
-                    else
-                    {
-                        MessageBox.Show("Error converting report status ID.");
-                    }
-                }
-                else
-                {
-                    lblrepostats.Text = "No data found for this invoice.";
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error fetching data: " + ex.Message);
-            }
+            
+                     {
+                         lblrepostats.Text = statusid == "2" ? "Pending" : "Sent";
+                     }
+                    
+           
         }
+
 
 
         private void btnaddresult_Click(object sender, EventArgs e)

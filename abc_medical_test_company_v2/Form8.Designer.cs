@@ -48,6 +48,7 @@
             this.lblIssuedDate = new System.Windows.Forms.Label();
             this.lblCashierID = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnpdf = new System.Windows.Forms.Button();
             this.btnprint = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.lbltotal = new System.Windows.Forms.Label();
@@ -68,7 +69,6 @@
             this.btnCreateInvoice = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnpdf = new System.Windows.Forms.Button();
             this.panel_header.SuspendLayout();
             this.panel_mainUser.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -84,11 +84,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("DejaVu Sans", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(249, 9);
+            this.label1.Location = new System.Drawing.Point(328, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(313, 20);
+            this.label1.Size = new System.Drawing.Size(430, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "MEDICAL TEST BILLING INVOICE";
             this.label1.UseWaitCursor = true;
@@ -233,7 +233,7 @@
             this.panel4.Controls.Add(this.lblIssuedDate);
             this.panel4.Controls.Add(this.lblCashierID);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, -369);
+            this.panel4.Location = new System.Drawing.Point(0, -350);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1087, 88);
             this.panel4.TabIndex = 0;
@@ -319,20 +319,34 @@
             this.panel3.Controls.Add(this.lbxtest);
             this.panel3.Controls.Add(this.listView1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, -281);
+            this.panel3.Location = new System.Drawing.Point(0, -262);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1087, 293);
             this.panel3.TabIndex = 0;
             this.panel3.UseWaitCursor = true;
             // 
+            // btnpdf
+            // 
+            this.btnpdf.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnpdf.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.btnpdf.ForeColor = System.Drawing.Color.White;
+            this.btnpdf.Location = new System.Drawing.Point(810, 251);
+            this.btnpdf.Name = "btnpdf";
+            this.btnpdf.Size = new System.Drawing.Size(75, 36);
+            this.btnpdf.TabIndex = 55;
+            this.btnpdf.Text = "PDF";
+            this.btnpdf.UseVisualStyleBackColor = false;
+            this.btnpdf.UseWaitCursor = true;
+            this.btnpdf.Click += new System.EventHandler(this.btnpdf_Click);
+            // 
             // btnprint
             // 
             this.btnprint.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnprint.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold);
             this.btnprint.ForeColor = System.Drawing.Color.White;
-            this.btnprint.Location = new System.Drawing.Point(902, 248);
+            this.btnprint.Location = new System.Drawing.Point(902, 250);
             this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(75, 39);
+            this.btnprint.Size = new System.Drawing.Size(75, 36);
             this.btnprint.TabIndex = 54;
             this.btnprint.Text = "Print";
             this.btnprint.UseVisualStyleBackColor = false;
@@ -435,15 +449,15 @@
             this.panel_ChooseInvoice.Controls.Add(this.label3);
             this.panel_ChooseInvoice.Controls.Add(this.label4);
             this.panel_ChooseInvoice.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_ChooseInvoice.Location = new System.Drawing.Point(0, 12);
+            this.panel_ChooseInvoice.Location = new System.Drawing.Point(0, 31);
             this.panel_ChooseInvoice.Name = "panel_ChooseInvoice";
-            this.panel_ChooseInvoice.Size = new System.Drawing.Size(1087, 619);
+            this.panel_ChooseInvoice.Size = new System.Drawing.Size(1087, 600);
             this.panel_ChooseInvoice.TabIndex = 0;
             this.panel_ChooseInvoice.UseWaitCursor = true;
             // 
             // cmbDoctorName
             // 
-            this.cmbDoctorName.BackColor = System.Drawing.Color.ForestGreen;
+            this.cmbDoctorName.BackColor = System.Drawing.Color.DarkGreen;
             this.cmbDoctorName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbDoctorName.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.cmbDoctorName.ForeColor = System.Drawing.Color.White;
@@ -456,7 +470,7 @@
             // 
             // cmbtests
             // 
-            this.cmbtests.BackColor = System.Drawing.Color.ForestGreen;
+            this.cmbtests.BackColor = System.Drawing.Color.DarkGreen;
             this.cmbtests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbtests.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.cmbtests.ForeColor = System.Drawing.Color.White;
@@ -469,7 +483,7 @@
             // 
             // cmbTechnologistID
             // 
-            this.cmbTechnologistID.BackColor = System.Drawing.Color.ForestGreen;
+            this.cmbTechnologistID.BackColor = System.Drawing.Color.DarkGreen;
             this.cmbTechnologistID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbTechnologistID.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.cmbTechnologistID.ForeColor = System.Drawing.Color.White;
@@ -494,7 +508,7 @@
             // 
             // cmbCashierID
             // 
-            this.cmbCashierID.BackColor = System.Drawing.Color.ForestGreen;
+            this.cmbCashierID.BackColor = System.Drawing.Color.DarkGreen;
             this.cmbCashierID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbCashierID.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.cmbCashierID.ForeColor = System.Drawing.Color.White;
@@ -519,7 +533,7 @@
             // 
             // txttestdescrip
             // 
-            this.txttestdescrip.BackColor = System.Drawing.Color.ForestGreen;
+            this.txttestdescrip.BackColor = System.Drawing.Color.DarkGreen;
             this.txttestdescrip.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.txttestdescrip.ForeColor = System.Drawing.Color.White;
             this.txttestdescrip.Location = new System.Drawing.Point(462, 411);
@@ -594,16 +608,6 @@
             this.label4.TabIndex = 29;
             this.label4.Text = "TECHNOLOGIST NAME :";
             this.label4.UseWaitCursor = true;
-            // 
-            // btnpdf
-            // 
-            this.btnpdf.Location = new System.Drawing.Point(810, 251);
-            this.btnpdf.Name = "btnpdf";
-            this.btnpdf.Size = new System.Drawing.Size(75, 33);
-            this.btnpdf.TabIndex = 55;
-            this.btnpdf.Text = "PDF";
-            this.btnpdf.UseVisualStyleBackColor = true;
-            this.btnpdf.Click += new System.EventHandler(this.btnpdf_Click);
             // 
             // frm_invoice
             // 

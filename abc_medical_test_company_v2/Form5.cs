@@ -220,13 +220,19 @@ namespace abc_medical_test_company_v2
                 pdfPath = filePath;
 
                 MessageBox.Show("PDF has been created successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                UpdateInvoice();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error generating PDF: " + ex.Message);
             }
         }
+        private void UpdateInvoice()
+        {
 
+            string sql = " UPDATE invoice set report_status_id = 1 where id  = ('" + frm_trsltview.id + "')";
+            dbObj1.Update(sql);
+        }
 
 
     }

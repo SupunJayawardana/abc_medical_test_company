@@ -31,12 +31,12 @@
             this.dgv_userReg = new System.Windows.Forms.DataGridView();
             this.panel_mainUser = new System.Windows.Forms.Panel();
             this.panel_footer = new System.Windows.Forms.Panel();
+            this.lblrepostats = new System.Windows.Forms.Label();
             this.btnaddresult = new System.Windows.Forms.Button();
             this.txttest = new System.Windows.Forms.TextBox();
             this.txtpatientname = new System.Windows.Forms.TextBox();
             this.panel_header = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblrepostats = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_userReg)).BeginInit();
             this.panel_mainUser.SuspendLayout();
             this.panel_footer.SuspendLayout();
@@ -45,6 +45,7 @@
             // 
             // dgv_userReg
             // 
+            this.dgv_userReg.BackgroundColor = System.Drawing.Color.DarkGreen;
             this.dgv_userReg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_userReg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_userReg.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -66,6 +67,7 @@
             // 
             // panel_footer
             // 
+            this.panel_footer.BackColor = System.Drawing.Color.ForestGreen;
             this.panel_footer.Controls.Add(this.lblrepostats);
             this.panel_footer.Controls.Add(this.btnaddresult);
             this.panel_footer.Controls.Add(this.txttest);
@@ -75,6 +77,17 @@
             this.panel_footer.Name = "panel_footer";
             this.panel_footer.Size = new System.Drawing.Size(865, 54);
             this.panel_footer.TabIndex = 11;
+            // 
+            // lblrepostats
+            // 
+            this.lblrepostats.AutoSize = true;
+            this.lblrepostats.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrepostats.ForeColor = System.Drawing.Color.Ivory;
+            this.lblrepostats.Location = new System.Drawing.Point(589, 18);
+            this.lblrepostats.Name = "lblrepostats";
+            this.lblrepostats.Size = new System.Drawing.Size(55, 18);
+            this.lblrepostats.TabIndex = 6;
+            this.lblrepostats.Text = "label2";
             // 
             // btnaddresult
             // 
@@ -93,16 +106,22 @@
             // 
             // txttest
             // 
+            this.txttest.BackColor = System.Drawing.Color.DarkGreen;
+            this.txttest.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttest.ForeColor = System.Drawing.Color.White;
             this.txttest.Location = new System.Drawing.Point(366, 15);
             this.txttest.Name = "txttest";
-            this.txttest.Size = new System.Drawing.Size(168, 22);
+            this.txttest.Size = new System.Drawing.Size(168, 25);
             this.txttest.TabIndex = 2;
             // 
             // txtpatientname
             // 
+            this.txtpatientname.BackColor = System.Drawing.Color.DarkGreen;
+            this.txtpatientname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpatientname.ForeColor = System.Drawing.Color.White;
             this.txtpatientname.Location = new System.Drawing.Point(174, 15);
             this.txtpatientname.Name = "txtpatientname";
-            this.txtpatientname.Size = new System.Drawing.Size(168, 22);
+            this.txtpatientname.Size = new System.Drawing.Size(168, 25);
             this.txtpatientname.TabIndex = 2;
             // 
             // panel_header
@@ -118,22 +137,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("DejaVu Sans", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(317, 9);
+            this.label1.Location = new System.Drawing.Point(347, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 20);
+            this.label1.Size = new System.Drawing.Size(171, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Test Results";
-            // 
-            // lblrepostats
-            // 
-            this.lblrepostats.AutoSize = true;
-            this.lblrepostats.Location = new System.Drawing.Point(594, 21);
-            this.lblrepostats.Name = "lblrepostats";
-            this.lblrepostats.Size = new System.Drawing.Size(44, 16);
-            this.lblrepostats.TabIndex = 6;
-            this.lblrepostats.Text = "label2";
             // 
             // frm_trsltview
             // 

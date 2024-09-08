@@ -59,7 +59,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("DejaVu Sans Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(407, 15);
+            this.label1.Location = new System.Drawing.Point(402, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(226, 26);
             this.label1.TabIndex = 0;
@@ -78,6 +78,7 @@
             // dgv_userReg
             // 
             this.dgv_userReg.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_userReg.BackgroundColor = System.Drawing.Color.DarkGreen;
             this.dgv_userReg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_userReg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_userReg.Dock = System.Windows.Forms.DockStyle.Fill;

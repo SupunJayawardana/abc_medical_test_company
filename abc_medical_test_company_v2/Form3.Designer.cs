@@ -254,6 +254,7 @@
             // dgv_userReg
             // 
             this.dgv_userReg.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_userReg.BackgroundColor = System.Drawing.Color.DarkGreen;
             this.dgv_userReg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_userReg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_userReg.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -269,7 +270,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("DejaVu Sans Condensed", 13.8F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(395, 13);
+            this.label1.Location = new System.Drawing.Point(423, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(241, 26);
             this.label1.TabIndex = 0;
@@ -295,9 +296,9 @@
             this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_footer.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.panel_footer.ForeColor = System.Drawing.Color.White;
-            this.panel_footer.Location = new System.Drawing.Point(0, 41);
+            this.panel_footer.Location = new System.Drawing.Point(0, 53);
             this.panel_footer.Name = "panel_footer";
-            this.panel_footer.Size = new System.Drawing.Size(1087, 590);
+            this.panel_footer.Size = new System.Drawing.Size(1087, 578);
             this.panel_footer.TabIndex = 5;
             // 
             // btncancel

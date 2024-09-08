@@ -24,13 +24,19 @@ namespace abc_medical_test_company_v2
             lblUserrole.Text = frmlogin.user;
             
         }
-
+        private void UserPrivilages()
+        {
+            if (frmlogin.user == "Doctor" || frmlogin.user == "Technologist")
+            {
+               panel_userSubmenu.Visible = false;
+                
+            }
+        }
         private void customizeDesign()
         {
             panel_userSubmenu.Visible = false;
             panel_patientSubmenu.Visible = false;
             panel_testSubmenu.Visible = false;
-            panel_paymentSubmenu.Visible = false;
             panel_reportsSubmenu.Visible = false;
             
         }
@@ -46,8 +52,7 @@ namespace abc_medical_test_company_v2
             if (panel_testSubmenu.Visible)
                 panel_testSubmenu.Visible = false;
 
-            if (panel_paymentSubmenu.Visible)
-                panel_paymentSubmenu.Visible = false;
+           
 
             if (panel_reportsSubmenu.Visible)
                 panel_reportsSubmenu.Visible = false;
@@ -146,11 +151,7 @@ namespace abc_medical_test_company_v2
             panel_header.Visible = false;
         }
 
-        private void btn_payment_Click(object sender, EventArgs e)
-        {
-            showSubmenu(panel_paymentSubmenu);
-            panel_header.Visible = false;
-        }
+    
 
         private void btn_reports_Click(object sender, EventArgs e)
         {
@@ -158,11 +159,7 @@ namespace abc_medical_test_company_v2
             panel_header.Visible = false;
         }
 
-        private void btn_notification_Click(object sender, EventArgs e)
-        {
-            showSubmenu(panel_notificationSubmenu);
-            panel_header.Visible = false;
-        }
+      
 
         public Form activeForm = null;
         public void openChildForm(Form childForm)

@@ -31,6 +31,7 @@
             this.panel_header = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel_mainUser = new System.Windows.Forms.Panel();
+            this.btnpdf = new System.Windows.Forms.Button();
             this.btnprint = new System.Windows.Forms.Button();
             this.lblTechnologistID = new System.Windows.Forms.Label();
             this.txtTechnologistID = new System.Windows.Forms.TextBox();
@@ -69,7 +70,6 @@
             this.btnAddResults = new System.Windows.Forms.Button();
             this.btnCreateTestReport = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnpdf = new System.Windows.Forms.Button();
             this.panel_header.SuspendLayout();
             this.panel_mainUser.SuspendLayout();
             this.panel_footer.SuspendLayout();
@@ -88,11 +88,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("DejaVu Sans", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(317, 9);
+            this.label1.Location = new System.Drawing.Point(430, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 20);
+            this.label1.Size = new System.Drawing.Size(171, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Test Results";
             // 
@@ -130,14 +130,27 @@
             this.panel_mainUser.Size = new System.Drawing.Size(1031, 631);
             this.panel_mainUser.TabIndex = 7;
             // 
+            // btnpdf
+            // 
+            this.btnpdf.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnpdf.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold);
+            this.btnpdf.ForeColor = System.Drawing.Color.White;
+            this.btnpdf.Location = new System.Drawing.Point(741, 477);
+            this.btnpdf.Name = "btnpdf";
+            this.btnpdf.Size = new System.Drawing.Size(75, 41);
+            this.btnpdf.TabIndex = 54;
+            this.btnpdf.Text = "PDF";
+            this.btnpdf.UseVisualStyleBackColor = false;
+            this.btnpdf.Click += new System.EventHandler(this.btnpdf_Click);
+            // 
             // btnprint
             // 
             this.btnprint.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnprint.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprint.ForeColor = System.Drawing.Color.White;
-            this.btnprint.Location = new System.Drawing.Point(853, 478);
+            this.btnprint.Location = new System.Drawing.Point(853, 477);
             this.btnprint.Name = "btnprint";
-            this.btnprint.Size = new System.Drawing.Size(75, 39);
+            this.btnprint.Size = new System.Drawing.Size(75, 41);
             this.btnprint.TabIndex = 53;
             this.btnprint.Text = "Print";
             this.btnprint.UseVisualStyleBackColor = false;
@@ -406,14 +419,14 @@
             this.panel_footer.Controls.Add(this.btnCreateTestReport);
             this.panel_footer.Controls.Add(this.label4);
             this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_footer.Location = new System.Drawing.Point(0, 32);
+            this.panel_footer.Location = new System.Drawing.Point(0, 18);
             this.panel_footer.Name = "panel_footer";
-            this.panel_footer.Size = new System.Drawing.Size(1031, 599);
+            this.panel_footer.Size = new System.Drawing.Size(1031, 613);
             this.panel_footer.TabIndex = 8;
             // 
             // cmbPatientName
             // 
-            this.cmbPatientName.BackColor = System.Drawing.Color.ForestGreen;
+            this.cmbPatientName.BackColor = System.Drawing.Color.DarkGreen;
             this.cmbPatientName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbPatientName.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.cmbPatientName.ForeColor = System.Drawing.Color.White;
@@ -426,7 +439,7 @@
             // 
             // cmbtests
             // 
-            this.cmbtests.BackColor = System.Drawing.Color.ForestGreen;
+            this.cmbtests.BackColor = System.Drawing.Color.DarkGreen;
             this.cmbtests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbtests.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.cmbtests.ForeColor = System.Drawing.Color.White;
@@ -439,7 +452,7 @@
             // 
             // cmbTechnologistID
             // 
-            this.cmbTechnologistID.BackColor = System.Drawing.Color.ForestGreen;
+            this.cmbTechnologistID.BackColor = System.Drawing.Color.DarkGreen;
             this.cmbTechnologistID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbTechnologistID.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.cmbTechnologistID.ForeColor = System.Drawing.Color.White;
@@ -511,10 +524,10 @@
             // 
             // txtCritiria
             // 
-            this.txtCritiria.BackColor = System.Drawing.Color.ForestGreen;
+            this.txtCritiria.BackColor = System.Drawing.Color.DarkGreen;
             this.txtCritiria.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.txtCritiria.ForeColor = System.Drawing.Color.White;
-            this.txtCritiria.Location = new System.Drawing.Point(165, 367);
+            this.txtCritiria.Location = new System.Drawing.Point(165, 372);
             this.txtCritiria.Multiline = true;
             this.txtCritiria.Name = "txtCritiria";
             this.txtCritiria.Size = new System.Drawing.Size(283, 132);
@@ -523,10 +536,10 @@
             // 
             // txttestCResults
             // 
-            this.txttestCResults.BackColor = System.Drawing.Color.ForestGreen;
+            this.txttestCResults.BackColor = System.Drawing.Color.DarkGreen;
             this.txttestCResults.Font = new System.Drawing.Font("DejaVu Sans Condensed", 12F, System.Drawing.FontStyle.Bold);
             this.txttestCResults.ForeColor = System.Drawing.Color.White;
-            this.txttestCResults.Location = new System.Drawing.Point(461, 367);
+            this.txttestCResults.Location = new System.Drawing.Point(461, 372);
             this.txttestCResults.Multiline = true;
             this.txttestCResults.Name = "txttestCResults";
             this.txttestCResults.Size = new System.Drawing.Size(325, 132);
@@ -586,16 +599,6 @@
             this.label4.TabIndex = 45;
             this.label4.Text = "TECHNOLOGIST NAME :";
             this.label4.UseWaitCursor = true;
-            // 
-            // btnpdf
-            // 
-            this.btnpdf.Location = new System.Drawing.Point(740, 486);
-            this.btnpdf.Name = "btnpdf";
-            this.btnpdf.Size = new System.Drawing.Size(75, 23);
-            this.btnpdf.TabIndex = 54;
-            this.btnpdf.Text = "PDF";
-            this.btnpdf.UseVisualStyleBackColor = true;
-            this.btnpdf.Click += new System.EventHandler(this.btnpdf_Click);
             // 
             // frm_addtrslt
             // 
