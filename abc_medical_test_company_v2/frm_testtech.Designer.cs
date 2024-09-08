@@ -37,7 +37,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(627, 381);
+            this.dateTimePicker1.Location = new System.Drawing.Point(627, 383);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 8;
@@ -54,9 +54,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(655, 405);
+            this.button1.Location = new System.Drawing.Point(655, 409);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 47);
+            this.button1.Size = new System.Drawing.Size(173, 35);
             this.button1.TabIndex = 6;
             this.button1.Text = "Monthly Test Completion";
             this.button1.UseVisualStyleBackColor = true;
@@ -64,9 +64,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(655, 458);
+            this.button2.Location = new System.Drawing.Point(655, 448);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 48);
+            this.button2.Size = new System.Drawing.Size(173, 36);
             this.button2.TabIndex = 9;
             this.button2.Text = "Pending Tests";
             this.button2.UseVisualStyleBackColor = true;

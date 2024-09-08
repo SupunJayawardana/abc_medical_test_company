@@ -125,20 +125,19 @@ namespace abc_medical_test_company_v2
 
                 if (dbObj1.dtable != null && dbObj1.dtable.Rows.Count > 0)
                 {
-                    int reportStatusId = Convert.ToInt32(dbObj1.dtable.Rows[0]["report_status_id"]);
-                                    
-                    if (reportStatusId == 2)
+                    int reportStatusId;
+                    if (int.TryParse(dbObj1.dtable.Rows[0]["report_status_id"].ToString(), out reportStatusId))
                     {
-                        lblrepostats.Text = "Pending";
+                        lblrepostats.Text = reportStatusId == 2 ? "Pending" : "Sent";
                     }
                     else
                     {
-                        lblrepostats.Text = "Sent";
+                        MessageBox.Show("Error converting report status ID.");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("No data found for this invoice.");
+                    lblrepostats.Text = "No data found for this invoice.";
                 }
             }
             catch (Exception ex)
@@ -146,6 +145,7 @@ namespace abc_medical_test_company_v2
                 MessageBox.Show("Error fetching data: " + ex.Message);
             }
         }
+
 
         private void btnaddresult_Click(object sender, EventArgs e)
         {

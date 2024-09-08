@@ -32,7 +32,7 @@ namespace abc_medical_test_company_v2
             panel_testSubmenu.Visible = false;
             panel_paymentSubmenu.Visible = false;
             panel_reportsSubmenu.Visible = false;
-            panel_notificationSubmenu.Visible = false;
+            
         }
 
         private void hideSubmenu()
@@ -52,8 +52,6 @@ namespace abc_medical_test_company_v2
             if (panel_reportsSubmenu.Visible)
                 panel_reportsSubmenu.Visible = false;
 
-            if (panel_notificationSubmenu.Visible)
-                panel_notificationSubmenu.Visible = false;
         }
 
         private void showSubmenu(Panel submenu)
@@ -81,12 +79,7 @@ namespace abc_medical_test_company_v2
             hideSubmenu();
         }
 
-        private void btn_patientView_Click(object sender, EventArgs e)
-        {
-            openChildForm(new frm_patientview());
-            panel_header.Visible = false;
-            hideSubmenu();
-        }
+    
 
         private void btn_addResult_Click(object sender, EventArgs e)
         {
@@ -98,13 +91,6 @@ namespace abc_medical_test_company_v2
         private void btn_testView_Click(object sender, EventArgs e)
         {
             openChildForm(new frm_trsltview(this)); // Pass the instance of frm_main
-            panel_header.Visible = false;
-            hideSubmenu();
-        }
-
-        private void btn_paymentView_Click(object sender, EventArgs e)
-        {
-            openChildForm(new frm_paymentview());
             panel_header.Visible = false;
             hideSubmenu();
         }

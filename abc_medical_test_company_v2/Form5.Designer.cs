@@ -31,7 +31,7 @@
             this.panel_header = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel_mainUser = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnprint = new System.Windows.Forms.Button();
             this.lblTechnologistID = new System.Windows.Forms.Label();
             this.txtTechnologistID = new System.Windows.Forms.TextBox();
             this.listBoxCritiria = new System.Windows.Forms.ListBox();
@@ -69,6 +69,7 @@
             this.btnAddResults = new System.Windows.Forms.Button();
             this.btnCreateTestReport = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnpdf = new System.Windows.Forms.Button();
             this.panel_header.SuspendLayout();
             this.panel_mainUser.SuspendLayout();
             this.panel_footer.SuspendLayout();
@@ -98,7 +99,8 @@
             // panel_mainUser
             // 
             this.panel_mainUser.BackColor = System.Drawing.Color.White;
-            this.panel_mainUser.Controls.Add(this.button1);
+            this.panel_mainUser.Controls.Add(this.btnpdf);
+            this.panel_mainUser.Controls.Add(this.btnprint);
             this.panel_mainUser.Controls.Add(this.lblTechnologistID);
             this.panel_mainUser.Controls.Add(this.txtTechnologistID);
             this.panel_mainUser.Controls.Add(this.listBoxCritiria);
@@ -128,17 +130,18 @@
             this.panel_mainUser.Size = new System.Drawing.Size(1031, 631);
             this.panel_mainUser.TabIndex = 7;
             // 
-            // button1
+            // btnprint
             // 
-            this.button1.BackColor = System.Drawing.Color.ForestGreen;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(853, 478);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 39);
-            this.button1.TabIndex = 53;
-            this.button1.Text = "Print";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnprint.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnprint.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnprint.ForeColor = System.Drawing.Color.White;
+            this.btnprint.Location = new System.Drawing.Point(853, 478);
+            this.btnprint.Name = "btnprint";
+            this.btnprint.Size = new System.Drawing.Size(75, 39);
+            this.btnprint.TabIndex = 53;
+            this.btnprint.Text = "Print";
+            this.btnprint.UseVisualStyleBackColor = false;
+            this.btnprint.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblTechnologistID
             // 
@@ -584,6 +587,16 @@
             this.label4.Text = "TECHNOLOGIST NAME :";
             this.label4.UseWaitCursor = true;
             // 
+            // btnpdf
+            // 
+            this.btnpdf.Location = new System.Drawing.Point(740, 486);
+            this.btnpdf.Name = "btnpdf";
+            this.btnpdf.Size = new System.Drawing.Size(75, 23);
+            this.btnpdf.TabIndex = 54;
+            this.btnpdf.Text = "PDF";
+            this.btnpdf.UseVisualStyleBackColor = true;
+            this.btnpdf.Click += new System.EventHandler(this.btnpdf_Click);
+            // 
             // frm_addtrslt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -643,10 +656,11 @@
         private System.Windows.Forms.ListBox listBoxCResult;
         private System.Windows.Forms.Label lblTechnologistID;
         private System.Windows.Forms.TextBox txtTechnologistID;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnprint;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtCritiria;
+        private System.Windows.Forms.Button btnpdf;
     }
 }

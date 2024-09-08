@@ -9,6 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApplication11;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
+using System.Xml.Linq;
 
 namespace abc_medical_test_company_v2
 {
@@ -126,6 +130,104 @@ namespace abc_medical_test_company_v2
                 MessageBox.Show("You can only add up to 3 entries.", "Limit Reached", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+        private string pdfPath;
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(pdfPath) && File.Exists(pdfPath))
+            {
+                try
+                {
+                    // Open the PDF file with the default PDF viewer
+                    Process.Start(pdfPath);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error opening PDF: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("PDF file not found. Please generate the invoice first.", "File Not Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+
+
+        private void btnpdf_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Define file name with test ID and timestamp
+                string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
+                string testID = txtInvoiceNo.Text; // or any other field containing test ID
+                string fileName = $"TestReport_{testID}_{timestamp}.pdf";
+                string filePath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), fileName);
+
+                // Create a document
+                Document doc = new Document(PageSize.A4);
+                PdfWriter.GetInstance(doc, new FileStream(filePath, FileMode.Create));
+                doc.Open();
+
+                // Title and Header
+                doc.Add(new Paragraph("ABC Medical Test Report", FontFactory.GetFont("Arial Black", 24)));
+                doc.Add(new Paragraph($"Issued by: ABC Medical Test, Mawathagama, Kurunegala", FontFactory.GetFont("Arial", 12)));
+                doc.Add(new Paragraph($"Date: {DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}", FontFactory.GetFont("Arial", 12)));
+                doc.Add(new Paragraph(" "));
+
+                // Patient Information
+                doc.Add(new Paragraph("Patient Information", FontFactory.GetFont("Arial Black", 16)));
+                doc.Add(new Paragraph($"Name: {txtpname.Text}", FontFactory.GetFont("Arial", 12)));
+                doc.Add(new Paragraph($"Address: {txtaddress.Text}", FontFactory.GetFont("Arial", 12)));
+                doc.Add(new Paragraph(" "));
+
+                // Test Information
+                doc.Add(new Paragraph("Test Information", FontFactory.GetFont("Arial Black", 16)));
+                doc.Add(new Paragraph(" "));
+                doc.Add(new Paragraph($"Test Name: {lblTestName.Text}", FontFactory.GetFont("Arial", 12)));
+                doc.Add(new Paragraph(" "));
+                doc.Add(new Paragraph($"Invoice No: {txtInvoiceNo.Text}", FontFactory.GetFont("Arial", 12)));
+                doc.Add(new Paragraph(" "));
+                doc.Add(new Paragraph($"Issued Date: {txtIssuedDate.Text}", FontFactory.GetFont("Arial", 12)));
+                doc.Add(new Paragraph($"Received Date: {txtReceivedDate.Text}", FontFactory.GetFont("Arial", 12)));
+                doc.Add(new Paragraph($"Cashier ID: {txtCashierID.Text}", FontFactory.GetFont("Arial", 12)));
+                doc.Add(new Paragraph(" "));
+
+                // Test Results and Criteria
+                doc.Add(new Paragraph("Medical Test Results", FontFactory.GetFont("Arial Black", 16)));
+                PdfPTable table = new PdfPTable(2);
+                table.WidthPercentage = 100;
+                table.AddCell(new PdfPCell(new Phrase("Tested For", FontFactory.GetFont("Arial Black", 12))));
+                table.AddCell(new PdfPCell(new Phrase("Results", FontFactory.GetFont("Arial Black", 12 ))));
+                doc.Add(new Paragraph(" "));
+            
+
+                for (int i = 0; i < listBoxCritiria.Items.Count; i++)
+                {
+                    table.AddCell(new PdfPCell(new Phrase(listBoxCritiria.Items[i].ToString(), FontFactory.GetFont("Arial", 12))));
+                    table.AddCell(new PdfPCell(new Phrase(listBoxCResult.Items[i].ToString(), FontFactory.GetFont("Arial", 12))));
+                }
+
+                doc.Add(table);
+                doc.Add(new Paragraph(" ")); doc.Add(new Paragraph(" "));
+                doc.Add(new Paragraph($"Technologist ID: {txtTechnologistID.Text}", FontFactory.GetFont("Arial", 12)));
+                doc.Add(new Paragraph("Authorized Signature: _____________________", FontFactory.GetFont("Arial", 12)));
+                doc.Add(new Paragraph("Date: _____________________", FontFactory.GetFont("Arial", 12)));
+
+                // Close the document
+                doc.Close();
+
+                // Store the PDF path at the form level
+                pdfPath = filePath;
+
+                MessageBox.Show("PDF has been created successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error generating PDF: " + ex.Message);
+            }
+        }
+
+
 
     }
 }

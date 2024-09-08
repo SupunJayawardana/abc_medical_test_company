@@ -43,10 +43,6 @@
             this.panel_header = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel_slide = new System.Windows.Forms.Panel();
-            this.panel_notificationSubmenu = new System.Windows.Forms.Panel();
-            this.btn_notifyEmail = new System.Windows.Forms.Button();
-            this.btn_notifySms = new System.Windows.Forms.Button();
-            this.btn_notification = new System.Windows.Forms.Button();
             this.panel_reportsSubmenu = new System.Windows.Forms.Panel();
             this.btn_rptTestAnlz = new System.Windows.Forms.Button();
             this.btn_rptDocCom = new System.Windows.Forms.Button();
@@ -74,7 +70,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picboxUser)).BeginInit();
             this.panel_header.SuspendLayout();
             this.panel_slide.SuspendLayout();
-            this.panel_notificationSubmenu.SuspendLayout();
             this.panel_reportsSubmenu.SuspendLayout();
             this.panel_paymentSubmenu.SuspendLayout();
             this.panel_testSubmenu.SuspendLayout();
@@ -248,8 +243,6 @@
             // 
             this.panel_slide.AutoScroll = true;
             this.panel_slide.BackColor = System.Drawing.Color.ForestGreen;
-            this.panel_slide.Controls.Add(this.panel_notificationSubmenu);
-            this.panel_slide.Controls.Add(this.btn_notification);
             this.panel_slide.Controls.Add(this.panel_reportsSubmenu);
             this.panel_slide.Controls.Add(this.btn_reports);
             this.panel_slide.Controls.Add(this.panel_paymentSubmenu);
@@ -266,68 +259,6 @@
             this.panel_slide.Name = "panel_slide";
             this.panel_slide.Size = new System.Drawing.Size(278, 678);
             this.panel_slide.TabIndex = 0;
-            // 
-            // panel_notificationSubmenu
-            // 
-            this.panel_notificationSubmenu.BackColor = System.Drawing.Color.DarkGreen;
-            this.panel_notificationSubmenu.Controls.Add(this.btn_notifyEmail);
-            this.panel_notificationSubmenu.Controls.Add(this.btn_notifySms);
-            this.panel_notificationSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_notificationSubmenu.Location = new System.Drawing.Point(0, 760);
-            this.panel_notificationSubmenu.Name = "panel_notificationSubmenu";
-            this.panel_notificationSubmenu.Size = new System.Drawing.Size(257, 100);
-            this.panel_notificationSubmenu.TabIndex = 14;
-            // 
-            // btn_notifyEmail
-            // 
-            this.btn_notifyEmail.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_notifyEmail.FlatAppearance.BorderSize = 0;
-            this.btn_notifyEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_notifyEmail.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_notifyEmail.ForeColor = System.Drawing.Color.White;
-            this.btn_notifyEmail.Location = new System.Drawing.Point(0, 48);
-            this.btn_notifyEmail.Name = "btn_notifyEmail";
-            this.btn_notifyEmail.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_notifyEmail.Size = new System.Drawing.Size(257, 48);
-            this.btn_notifyEmail.TabIndex = 3;
-            this.btn_notifyEmail.Text = "Email Notification";
-            this.btn_notifyEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_notifyEmail.UseVisualStyleBackColor = true;
-            this.btn_notifyEmail.Click += new System.EventHandler(this.btn_notifyEmail_Click);
-            // 
-            // btn_notifySms
-            // 
-            this.btn_notifySms.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_notifySms.FlatAppearance.BorderSize = 0;
-            this.btn_notifySms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_notifySms.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_notifySms.ForeColor = System.Drawing.Color.White;
-            this.btn_notifySms.Location = new System.Drawing.Point(0, 0);
-            this.btn_notifySms.Name = "btn_notifySms";
-            this.btn_notifySms.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_notifySms.Size = new System.Drawing.Size(257, 48);
-            this.btn_notifySms.TabIndex = 2;
-            this.btn_notifySms.Text = "SMS Notification";
-            this.btn_notifySms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_notifySms.UseVisualStyleBackColor = true;
-            this.btn_notifySms.Click += new System.EventHandler(this.btn_notifySms_Click);
-            // 
-            // btn_notification
-            // 
-            this.btn_notification.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_notification.FlatAppearance.BorderSize = 0;
-            this.btn_notification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_notification.Font = new System.Drawing.Font("DejaVu Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_notification.ForeColor = System.Drawing.Color.White;
-            this.btn_notification.Location = new System.Drawing.Point(0, 712);
-            this.btn_notification.Name = "btn_notification";
-            this.btn_notification.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btn_notification.Size = new System.Drawing.Size(257, 48);
-            this.btn_notification.TabIndex = 13;
-            this.btn_notification.Text = "Notification";
-            this.btn_notification.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_notification.UseVisualStyleBackColor = true;
-            this.btn_notification.Click += new System.EventHandler(this.btn_notification_Click);
             // 
             // panel_reportsSubmenu
             // 
@@ -434,7 +365,6 @@
             this.btn_paymentView.Text = "View Payments";
             this.btn_paymentView.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_paymentView.UseVisualStyleBackColor = true;
-            this.btn_paymentView.Click += new System.EventHandler(this.btn_paymentView_Click);
             // 
             // btn_payment
             // 
@@ -642,7 +572,6 @@
             this.panel_header.ResumeLayout(false);
             this.panel_header.PerformLayout();
             this.panel_slide.ResumeLayout(false);
-            this.panel_notificationSubmenu.ResumeLayout(false);
             this.panel_reportsSubmenu.ResumeLayout(false);
             this.panel_paymentSubmenu.ResumeLayout(false);
             this.panel_testSubmenu.ResumeLayout(false);
@@ -681,10 +610,6 @@
         private System.Windows.Forms.Button btn_patientReg;
         private System.Windows.Forms.Button btn_patient;
         private System.Windows.Forms.Button btn_rptTestAnlz;
-        private System.Windows.Forms.Panel panel_notificationSubmenu;
-        private System.Windows.Forms.Button btn_notifyEmail;
-        private System.Windows.Forms.Button btn_notifySms;
-        private System.Windows.Forms.Button btn_notification;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;

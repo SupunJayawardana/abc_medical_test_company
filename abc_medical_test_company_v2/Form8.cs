@@ -9,11 +9,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApplication11;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
+using System.Diagnostics;
+
+
 
 namespace abc_medical_test_company_v2
 {
     public partial class frm_invoice : Form
     {
+
         private readonly Mysqlconnect dbObj1;
        // int rowcount = 0;
        // int rowcountmax = 0;
@@ -300,6 +307,120 @@ namespace abc_medical_test_company_v2
                 }
             }
             lbltotal.Text = total.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(pdfFilePath) && File.Exists(pdfFilePath))
+            {
+                try
+                {
+                    // Open the PDF file with the default PDF viewer
+                    Process.Start(pdfFilePath);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error opening PDF: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("PDF file not found. Please generate the invoice first.", "File Not Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private string pdfFilePath; // Declare this at the form level
+
+        private void btnpdf_Click(object sender, EventArgs e)
+        {
+            string invoiceNo = txtInvoiceNo.Text;
+            string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
+            string pdfFileName = $"Invoice_{invoiceNo}_{timestamp}.pdf";
+
+            // Define the file path for the PDF and assign to form-level variable
+            pdfFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), pdfFileName);
+
+            // Create a document object
+            Document document = new Document(PageSize.A4, 25, 25, 30, 30);
+
+            try
+            {
+                // Create a PDF writer
+                PdfWriter.GetInstance(document, new FileStream(pdfFilePath, FileMode.Create));
+
+                // Open the document for writing
+                document.Open();
+
+                // Add the header with your company name/logo and customer info
+                var titleFont = FontFactory.GetFont("Arial Black", 18);
+                var regularFont = FontFactory.GetFont("Arial", 12);
+                var boldFont = FontFactory.GetFont("Arial Black", 12);
+
+                // Add company information
+                document.Add(new Paragraph("ABC Medical Test PVT.Ltd", titleFont));
+                document.Add(new Paragraph("Mawathagama", regularFont));
+                document.Add(new Paragraph("Kurunegala", regularFont));
+                document.Add(new Paragraph("Phone: (+94) 456-7890 | Email: abc@company.com", regularFont));
+                document.Add(new Paragraph(" ", regularFont)); // Empty line
+
+                // Add invoice information
+                document.Add(new Paragraph($"Invoice No: {invoiceNo}", boldFont));
+                document.Add(new Paragraph($"Issued Date: {txtIssuedDate.Text}", regularFont));
+                document.Add(new Paragraph(" ", regularFont)); // Empty line
+
+                // Add customer information
+                document.Add(new Paragraph("Bill To:", boldFont));
+                document.Add(new Paragraph($"Patient Name: {txtPatientName.Text}", regularFont));
+                document.Add(new Paragraph($"Doctor Name: {txtDoctorName.Text}", regularFont));
+                document.Add(new Paragraph(" ", regularFont)); // Empty line
+
+                // Add table for tests and prices
+                PdfPTable table = new PdfPTable(2); // Two columns for test and price
+                table.WidthPercentage = 100; // Set table width to 100% of the page
+                table.SetWidths(new float[] { 70f, 30f }); // Column widths
+
+                // Add table headers
+                PdfPCell testHeader = new PdfPCell(new Phrase("Test", boldFont));
+                testHeader.HorizontalAlignment = Element.ALIGN_CENTER;
+                table.AddCell(testHeader);
+
+                PdfPCell priceHeader = new PdfPCell(new Phrase("Price", boldFont));
+                priceHeader.HorizontalAlignment = Element.ALIGN_CENTER;
+                table.AddCell(priceHeader);
+
+                // Add test details to the table
+                for (int i = 0; i < lbxtest.Items.Count; i++)
+                {
+                    table.AddCell(new Phrase(lbxtest.Items[i].ToString(), regularFont)); // Test name
+                    table.AddCell(new Phrase(lbxtestprice.Items[i].ToString(), regularFont)); // Price
+                }
+
+                // Add table to the document
+                document.Add(table);
+
+                // Add total price and footer
+                document.Add(new Paragraph(" ", regularFont)); // Empty line
+                document.Add(new Paragraph($"Total Price: {lbltotal.Text}", boldFont));
+                document.Add(new Paragraph(" ", regularFont)); // Empty line
+
+                document.Add(new Paragraph("Technologist: " + txtTechnologistID.Text, regularFont));
+                document.Add(new Paragraph("Cashier: " + txtCashierID.Text, regularFont));
+                document.Add(new Paragraph("Thank you for your business!", regularFont));
+
+                // Add company signature area
+                document.Add(new Paragraph("Authorized Signature: _____________________", regularFont));
+                document.Add(new Paragraph("Date: _____________________", regularFont));
+
+                MessageBox.Show($"PDF Invoice '{pdfFileName}' has been generated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error generating PDF: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                document.Close();
+            }
         }
 
     }

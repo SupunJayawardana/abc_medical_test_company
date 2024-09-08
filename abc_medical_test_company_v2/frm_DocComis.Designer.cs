@@ -46,7 +46,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(622, 413);
+            this.button1.Location = new System.Drawing.Point(622, 416);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(173, 47);
             this.button1.TabIndex = 3;
@@ -56,7 +56,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(366, 423);
+            this.dateTimePicker1.Location = new System.Drawing.Point(595, 388);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 5;
@@ -65,7 +65,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 579);
+            this.ClientSize = new System.Drawing.Size(907, 523);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
