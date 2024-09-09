@@ -163,5 +163,11 @@ namespace abc_medical_test_company_v2
         {
             mainForm.openChildForm(new frm_addtrslt());
         }
+
+        private void btnaddtests_Click(object sender, EventArgs e)
+        {
+            mainForm.openChildForm(new frm_addTest());
+
+        }
     }
 }

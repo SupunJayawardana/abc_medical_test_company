@@ -37,6 +37,7 @@
             this.txtpatientname = new System.Windows.Forms.TextBox();
             this.panel_header = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnaddtests = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_userReg)).BeginInit();
             this.panel_mainUser.SuspendLayout();
             this.panel_footer.SuspendLayout();
@@ -53,7 +54,7 @@
             this.dgv_userReg.Name = "dgv_userReg";
             this.dgv_userReg.RowHeadersWidth = 51;
             this.dgv_userReg.RowTemplate.Height = 24;
-            this.dgv_userReg.Size = new System.Drawing.Size(865, 379);
+            this.dgv_userReg.Size = new System.Drawing.Size(865, 445);
             this.dgv_userReg.TabIndex = 2;
             // 
             // panel_mainUser
@@ -62,7 +63,7 @@
             this.panel_mainUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_mainUser.Location = new System.Drawing.Point(0, 42);
             this.panel_mainUser.Name = "panel_mainUser";
-            this.panel_mainUser.Size = new System.Drawing.Size(865, 379);
+            this.panel_mainUser.Size = new System.Drawing.Size(865, 445);
             this.panel_mainUser.TabIndex = 10;
             // 
             // panel_footer
@@ -73,7 +74,7 @@
             this.panel_footer.Controls.Add(this.txttest);
             this.panel_footer.Controls.Add(this.txtpatientname);
             this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_footer.Location = new System.Drawing.Point(0, 421);
+            this.panel_footer.Location = new System.Drawing.Point(0, 487);
             this.panel_footer.Name = "panel_footer";
             this.panel_footer.Size = new System.Drawing.Size(865, 54);
             this.panel_footer.TabIndex = 11;
@@ -126,6 +127,7 @@
             // panel_header
             // 
             this.panel_header.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel_header.Controls.Add(this.btnaddtests);
             this.panel_header.Controls.Add(this.label1);
             this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_header.Location = new System.Drawing.Point(0, 0);
@@ -140,15 +142,29 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(347, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 26);
+            this.label1.Size = new System.Drawing.Size(164, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Test Results";
+            // 
+            // btnaddtests
+            // 
+            this.btnaddtests.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnaddtests.FlatAppearance.BorderSize = 0;
+            this.btnaddtests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnaddtests.ForeColor = System.Drawing.Color.White;
+            this.btnaddtests.Location = new System.Drawing.Point(726, 11);
+            this.btnaddtests.Name = "btnaddtests";
+            this.btnaddtests.Size = new System.Drawing.Size(110, 23);
+            this.btnaddtests.TabIndex = 1;
+            this.btnaddtests.Text = "test catalogue";
+            this.btnaddtests.UseVisualStyleBackColor = false;
+            this.btnaddtests.Click += new System.EventHandler(this.btnaddtests_Click);
             // 
             // frm_trsltview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 475);
+            this.ClientSize = new System.Drawing.Size(865, 541);
             this.Controls.Add(this.panel_mainUser);
             this.Controls.Add(this.panel_footer);
             this.Controls.Add(this.panel_header);
@@ -176,5 +192,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txttest;
         private System.Windows.Forms.Label lblrepostats;
+        private System.Windows.Forms.Button btnaddtests;
     }
 }
