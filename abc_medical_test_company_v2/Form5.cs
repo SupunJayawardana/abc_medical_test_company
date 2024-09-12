@@ -282,5 +282,35 @@ namespace abc_medical_test_company_v2
         {
 
         }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbladdress_Click()
+        {
+
+        }
+
+        private void txtaddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtpname_TextChanged()
+        {
+
+        }
+
+        private void lblpname_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblInvoiceNo_Click()
+        {
+
+        }
     }
 }
