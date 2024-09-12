@@ -36,8 +36,8 @@
             this.txttest = new System.Windows.Forms.TextBox();
             this.txtpatientname = new System.Windows.Forms.TextBox();
             this.panel_header = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnaddtests = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_userReg)).BeginInit();
             this.panel_mainUser.SuspendLayout();
             this.panel_footer.SuspendLayout();
@@ -54,7 +54,7 @@
             this.dgv_userReg.Name = "dgv_userReg";
             this.dgv_userReg.RowHeadersWidth = 51;
             this.dgv_userReg.RowTemplate.Height = 24;
-            this.dgv_userReg.Size = new System.Drawing.Size(865, 445);
+            this.dgv_userReg.Size = new System.Drawing.Size(1031, 535);
             this.dgv_userReg.TabIndex = 2;
             // 
             // panel_mainUser
@@ -63,7 +63,7 @@
             this.panel_mainUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_mainUser.Location = new System.Drawing.Point(0, 42);
             this.panel_mainUser.Name = "panel_mainUser";
-            this.panel_mainUser.Size = new System.Drawing.Size(865, 445);
+            this.panel_mainUser.Size = new System.Drawing.Size(1031, 535);
             this.panel_mainUser.TabIndex = 10;
             // 
             // panel_footer
@@ -74,9 +74,9 @@
             this.panel_footer.Controls.Add(this.txttest);
             this.panel_footer.Controls.Add(this.txtpatientname);
             this.panel_footer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_footer.Location = new System.Drawing.Point(0, 487);
+            this.panel_footer.Location = new System.Drawing.Point(0, 577);
             this.panel_footer.Name = "panel_footer";
-            this.panel_footer.Size = new System.Drawing.Size(865, 54);
+            this.panel_footer.Size = new System.Drawing.Size(1031, 54);
             this.panel_footer.TabIndex = 11;
             // 
             // lblrepostats
@@ -132,19 +132,8 @@
             this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_header.Location = new System.Drawing.Point(0, 0);
             this.panel_header.Name = "panel_header";
-            this.panel_header.Size = new System.Drawing.Size(865, 42);
+            this.panel_header.Size = new System.Drawing.Size(1031, 42);
             this.panel_header.TabIndex = 9;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("DejaVu Sans", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(347, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Test Results";
             // 
             // btnaddtests
             // 
@@ -160,14 +149,26 @@
             this.btnaddtests.UseVisualStyleBackColor = false;
             this.btnaddtests.Click += new System.EventHandler(this.btnaddtests_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("DejaVu Sans", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(347, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(164, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Test Results";
+            // 
             // frm_trsltview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 541);
+            this.ClientSize = new System.Drawing.Size(1031, 631);
             this.Controls.Add(this.panel_mainUser);
             this.Controls.Add(this.panel_footer);
             this.Controls.Add(this.panel_header);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_trsltview";
             this.Text = "TEST RESULT VIEWER";
             this.Load += new System.EventHandler(this.frm_trsltview_Load);

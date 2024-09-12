@@ -57,11 +57,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("DejaVu Sans Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("DejaVu Sans Condensed", 13.8F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(402, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 26);
+            this.label1.Size = new System.Drawing.Size(237, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "User Management";
             // 
@@ -107,7 +108,7 @@
             // 
             this.cmbstatus.BackColor = System.Drawing.Color.Green;
             this.cmbstatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbstatus.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbstatus.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold);
             this.cmbstatus.ForeColor = System.Drawing.Color.White;
             this.cmbstatus.FormattingEnabled = true;
             this.cmbstatus.Location = new System.Drawing.Point(722, 25);
@@ -118,8 +119,9 @@
             // lblstatus
             // 
             this.lblstatus.AutoSize = true;
-            this.lblstatus.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblstatus.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.lblstatus.ForeColor = System.Drawing.Color.White;
+            this.lblstatus.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblstatus.Location = new System.Drawing.Point(718, 2);
             this.lblstatus.Name = "lblstatus";
             this.lblstatus.Size = new System.Drawing.Size(75, 20);
@@ -131,7 +133,7 @@
             // 
             this.cmbrole.BackColor = System.Drawing.Color.Green;
             this.cmbrole.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbrole.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbrole.Font = new System.Drawing.Font("DejaVu Sans Condensed", 7.8F, System.Drawing.FontStyle.Bold);
             this.cmbrole.ForeColor = System.Drawing.Color.White;
             this.cmbrole.FormattingEnabled = true;
             this.cmbrole.Location = new System.Drawing.Point(504, 27);
@@ -142,8 +144,9 @@
             // lblrole
             // 
             this.lblrole.AutoSize = true;
-            this.lblrole.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrole.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.lblrole.ForeColor = System.Drawing.Color.White;
+            this.lblrole.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblrole.Location = new System.Drawing.Point(500, 4);
             this.lblrole.Name = "lblrole";
             this.lblrole.Size = new System.Drawing.Size(58, 20);
@@ -156,8 +159,9 @@
             this.btnUpdate.BackColor = System.Drawing.Color.Orange;
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnUpdate.Location = new System.Drawing.Point(919, 19);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(101, 33);
@@ -176,6 +180,8 @@
             this.Controls.Add(this.panel_footer);
             this.Controls.Add(this.panel_mainUser);
             this.Controls.Add(this.panel_header);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "frm_userReg";
             this.Text = "USER REGISTRATION";
             this.Load += new System.EventHandler(this.frm_userReg_Load);

@@ -41,7 +41,7 @@
             this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
             this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.White;
             this.dateTimePicker1.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(150, 424);
+            this.dateTimePicker1.Location = new System.Drawing.Point(150, 540);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(327, 25);
             this.dateTimePicker1.TabIndex = 8;
@@ -49,12 +49,13 @@
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.DarkGreen;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(2, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(869, 398);
+            this.dataGridView1.Size = new System.Drawing.Size(1113, 524);
             this.dataGridView1.TabIndex = 7;
             // 
             // button1
@@ -63,7 +64,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(483, 413);
+            this.button1.Location = new System.Drawing.Point(483, 529);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 50);
             this.button1.TabIndex = 6;
@@ -77,7 +78,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("DejaVu Sans Condensed", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(701, 413);
+            this.button2.Location = new System.Drawing.Point(701, 529);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(152, 50);
             this.button2.TabIndex = 9;
@@ -90,11 +91,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.ForestGreen;
-            this.ClientSize = new System.Drawing.Size(865, 475);
+            this.ClientSize = new System.Drawing.Size(1031, 631);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_testtech";
             this.Text = "frm_testtech";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

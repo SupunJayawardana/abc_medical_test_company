@@ -92,7 +92,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(430, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 26);
+            this.label1.Size = new System.Drawing.Size(164, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Test Results";
             // 
@@ -609,6 +609,7 @@
             this.Controls.Add(this.panel_header);
             this.Controls.Add(this.panel_footer);
             this.Controls.Add(this.panel_mainUser);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_addtrslt";
             this.Text = "ADD TEST RESULTS";
             this.Load += new System.EventHandler(this.frm_addtrslt_Load);

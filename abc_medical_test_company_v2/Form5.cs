@@ -243,6 +243,44 @@ namespace abc_medical_test_company_v2
             dbObj1.Update(sql);
         }
 
+        private void panel_footer_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
+
+        private void label1_Click()
+        {
+
+        }
+
+        private void panel_mainUser_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblTechnologistID_Click()
+        {
+
+        }
+
+        private void txtTechnologistID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBoxCritiria_SelectedIndexChanged()
+        {
+
+        }
+
+        private void listBoxCResult_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTestName_Click()
+        {
+
+        }
     }
 }

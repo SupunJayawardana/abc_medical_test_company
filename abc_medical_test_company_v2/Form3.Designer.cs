@@ -272,7 +272,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(423, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(241, 26);
+            this.label1.Size = new System.Drawing.Size(250, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Patient Information";
             // 
@@ -382,6 +382,7 @@
             this.Controls.Add(this.panel_mainUser);
             this.Controls.Add(this.panel_footer);
             this.Controls.Add(this.panel_header);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_patient";
             this.Text = "PATIENT INFORMATION";
             this.Load += new System.EventHandler(this.frm_patient_Load);

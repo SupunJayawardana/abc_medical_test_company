@@ -46,12 +46,13 @@
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.DarkGreen;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-34, 37);
+            this.dataGridView1.Location = new System.Drawing.Point(-1, 37);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(869, 253);
+            this.dataGridView1.Size = new System.Drawing.Size(1033, 447);
             this.dataGridView1.TabIndex = 5;
             // 
             // label1
@@ -59,7 +60,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("DejaVu Sans", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(379, 9);
+            this.label1.Location = new System.Drawing.Point(477, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 25);
             this.label1.TabIndex = 6;
@@ -71,7 +72,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(721, 420);
+            this.btnUpdate.Location = new System.Drawing.Point(798, 573);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(102, 35);
             this.btnUpdate.TabIndex = 7;
@@ -85,7 +86,7 @@
             this.btnInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsert.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnInsert.ForeColor = System.Drawing.Color.White;
-            this.btnInsert.Location = new System.Drawing.Point(609, 420);
+            this.btnInsert.Location = new System.Drawing.Point(686, 573);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(106, 35);
             this.btnInsert.TabIndex = 8;
@@ -98,7 +99,7 @@
             this.txttestdescription.BackColor = System.Drawing.Color.DarkGreen;
             this.txttestdescription.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.txttestdescription.ForeColor = System.Drawing.Color.White;
-            this.txttestdescription.Location = new System.Drawing.Point(576, 380);
+            this.txttestdescription.Location = new System.Drawing.Point(653, 533);
             this.txttestdescription.Name = "txttestdescription";
             this.txttestdescription.Size = new System.Drawing.Size(253, 27);
             this.txttestdescription.TabIndex = 17;
@@ -108,7 +109,7 @@
             this.txttestname.BackColor = System.Drawing.Color.DarkGreen;
             this.txttestname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.txttestname.ForeColor = System.Drawing.Color.White;
-            this.txttestname.Location = new System.Drawing.Point(12, 380);
+            this.txttestname.Location = new System.Drawing.Point(89, 533);
             this.txttestname.Name = "txttestname";
             this.txttestname.Size = new System.Drawing.Size(253, 27);
             this.txttestname.TabIndex = 19;
@@ -118,7 +119,7 @@
             this.txttestprice.BackColor = System.Drawing.Color.DarkGreen;
             this.txttestprice.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.txttestprice.ForeColor = System.Drawing.Color.White;
-            this.txttestprice.Location = new System.Drawing.Point(287, 380);
+            this.txttestprice.Location = new System.Drawing.Point(364, 533);
             this.txttestprice.Name = "txttestprice";
             this.txttestprice.Size = new System.Drawing.Size(253, 27);
             this.txttestprice.TabIndex = 20;
@@ -128,7 +129,7 @@
             this.lbltelno.AutoSize = true;
             this.lbltelno.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.lbltelno.ForeColor = System.Drawing.Color.White;
-            this.lbltelno.Location = new System.Drawing.Point(572, 350);
+            this.lbltelno.Location = new System.Drawing.Point(649, 503);
             this.lbltelno.Name = "lbltelno";
             this.lbltelno.Size = new System.Drawing.Size(147, 20);
             this.lbltelno.TabIndex = 13;
@@ -139,7 +140,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 350);
+            this.label2.Location = new System.Drawing.Point(89, 503);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 20);
             this.label2.TabIndex = 14;
@@ -150,7 +151,7 @@
             this.lblfname.AutoSize = true;
             this.lblfname.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.lblfname.ForeColor = System.Drawing.Color.White;
-            this.lblfname.Location = new System.Drawing.Point(287, 350);
+            this.lblfname.Location = new System.Drawing.Point(364, 503);
             this.lblfname.Name = "lblfname";
             this.lblfname.Size = new System.Drawing.Size(91, 20);
             this.lblfname.TabIndex = 16;
@@ -162,7 +163,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(488, 420);
+            this.btnDelete.Location = new System.Drawing.Point(565, 573);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(115, 33);
             this.btnDelete.TabIndex = 10;
@@ -176,7 +177,7 @@
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("DejaVu Sans Condensed", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(384, 420);
+            this.btnClear.Location = new System.Drawing.Point(461, 573);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(98, 33);
             this.btnClear.TabIndex = 21;
@@ -189,7 +190,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.ForestGreen;
-            this.ClientSize = new System.Drawing.Size(835, 467);
+            this.ClientSize = new System.Drawing.Size(1031, 631);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.txttestdescription);
             this.Controls.Add(this.txttestname);
@@ -202,6 +203,7 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_addTest";
             this.Text = "Tests";
             this.Load += new System.EventHandler(this.frm_addTest_Load);

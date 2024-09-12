@@ -132,7 +132,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(373, 7);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(119, 15);
+            this.label8.Size = new System.Drawing.Size(132, 16);
             this.label8.TabIndex = 1;
             this.label8.Text = "© asthraksha 2024";
             // 
@@ -169,7 +169,7 @@
             this.lblUserrole.ForeColor = System.Drawing.Color.White;
             this.lblUserrole.Location = new System.Drawing.Point(818, 35);
             this.lblUserrole.Name = "lblUserrole";
-            this.lblUserrole.Size = new System.Drawing.Size(85, 15);
+            this.lblUserrole.Size = new System.Drawing.Size(95, 16);
             this.lblUserrole.TabIndex = 1;
             this.lblUserrole.Text = "administrater";
             // 
@@ -180,7 +180,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(755, 35);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 15);
+            this.label6.Size = new System.Drawing.Size(45, 16);
             this.label6.TabIndex = 1;
             this.label6.Text = "role  :";
             // 
@@ -191,7 +191,7 @@
             this.lblusername.ForeColor = System.Drawing.Color.White;
             this.lblusername.Location = new System.Drawing.Point(817, 12);
             this.lblusername.Name = "lblusername";
-            this.lblusername.Size = new System.Drawing.Size(85, 15);
+            this.lblusername.Size = new System.Drawing.Size(95, 16);
             this.lblusername.TabIndex = 1;
             this.lblusername.Text = "administrater";
             // 
@@ -202,7 +202,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(728, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 15);
+            this.label4.Size = new System.Drawing.Size(74, 16);
             this.label4.TabIndex = 1;
             this.label4.Text = "Welcome :";
             // 
@@ -211,7 +211,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(98, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 16);
+            this.label3.Size = new System.Drawing.Size(0, 17);
             this.label3.TabIndex = 0;
             // 
             // panel_header
@@ -231,7 +231,7 @@
             this.label2.ForeColor = System.Drawing.Color.Ivory;
             this.label2.Location = new System.Drawing.Point(15, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(354, 26);
+            this.label2.Size = new System.Drawing.Size(376, 28);
             this.label2.TabIndex = 0;
             this.label2.Text = "Welcome To ABC Health Care ";
             // 
@@ -510,6 +510,7 @@
             this.ClientSize = new System.Drawing.Size(1327, 678);
             this.Controls.Add(this.panel_main);
             this.Controls.Add(this.panel_slide);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_main";
             this.Text = "MAIN FORM";
             this.Load += new System.EventHandler(this.frm_main_Load);

@@ -617,6 +617,7 @@
             this.ClientSize = new System.Drawing.Size(1087, 631);
             this.Controls.Add(this.panel_header);
             this.Controls.Add(this.panel_mainUser);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_invoice";
             this.Text = "INVOICE GENERATER";
             this.UseWaitCursor = true;
