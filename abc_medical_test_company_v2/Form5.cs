@@ -157,11 +157,18 @@ namespace abc_medical_test_company_v2
         {
             try
             {
+                // Define folder path and create it if it doesn't exist
+                string folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "MEDICAL TEST REPORTS");
+                if (!Directory.Exists(folderPath))
+                {
+                    Directory.CreateDirectory(folderPath);
+                }
+
                 // Define file name with test ID and timestamp
                 string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
                 string testID = txtInvoiceNo.Text; // or any other field containing test ID
                 string fileName = $"TestReport_{testID}_{timestamp}.pdf";
-                string filePath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), fileName);
+                string filePath = Path.Combine(folderPath, fileName);
 
                 // Create a document
                 Document doc = new Document(PageSize.A4);
@@ -197,10 +204,10 @@ namespace abc_medical_test_company_v2
                 PdfPTable table = new PdfPTable(2);
                 table.WidthPercentage = 100;
                 table.AddCell(new PdfPCell(new Phrase("Tested For", FontFactory.GetFont("Arial Black", 12))));
-                table.AddCell(new PdfPCell(new Phrase("Results", FontFactory.GetFont("Arial Black", 12 ))));
+                table.AddCell(new PdfPCell(new Phrase("Results", FontFactory.GetFont("Arial Black", 12))));
                 doc.Add(new Paragraph(" "));
-            
 
+                // Add test criteria and results
                 for (int i = 0; i < listBoxCritiria.Items.Count; i++)
                 {
                     table.AddCell(new PdfPCell(new Phrase(listBoxCritiria.Items[i].ToString(), FontFactory.GetFont("Arial", 12))));
@@ -208,7 +215,8 @@ namespace abc_medical_test_company_v2
                 }
 
                 doc.Add(table);
-                doc.Add(new Paragraph(" ")); doc.Add(new Paragraph(" "));
+                doc.Add(new Paragraph(" "));
+                doc.Add(new Paragraph(" "));
                 doc.Add(new Paragraph($"Technologist ID: {txtTechnologistID.Text}", FontFactory.GetFont("Arial", 12)));
                 doc.Add(new Paragraph("Authorized Signature: _____________________", FontFactory.GetFont("Arial", 12)));
                 doc.Add(new Paragraph("Date: _____________________", FontFactory.GetFont("Arial", 12)));
@@ -221,14 +229,13 @@ namespace abc_medical_test_company_v2
 
                 MessageBox.Show("PDF has been created successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 UpdateInvoice();
-                
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error generating PDF: " + ex.Message);
             }
         }
+
         private void UpdateInvoice()
         {
 

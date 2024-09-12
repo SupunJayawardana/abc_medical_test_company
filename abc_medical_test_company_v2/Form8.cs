@@ -335,10 +335,17 @@ namespace abc_medical_test_company_v2
         {
             string invoiceNo = txtInvoiceNo.Text;
             string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
-            string pdfFileName = $"Invoice_{invoiceNo}_{timestamp}.pdf";
+            string invoicesFolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "INVOICES");
+
+            // Check if the folder exists, and create it if it doesn't
+            if (!Directory.Exists(invoicesFolderPath))
+            {
+                Directory.CreateDirectory(invoicesFolderPath);
+            }
 
             // Define the file path for the PDF and assign to form-level variable
-            pdfFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), pdfFileName);
+            string pdfFileName = $"Invoice_{invoiceNo}_{timestamp}.pdf";
+            pdfFilePath = Path.Combine(invoicesFolderPath, pdfFileName);
 
             // Create a document object
             Document document = new Document(PageSize.A4, 25, 25, 30, 30);
@@ -411,7 +418,7 @@ namespace abc_medical_test_company_v2
                 document.Add(new Paragraph("Authorized Signature: _____________________", regularFont));
                 document.Add(new Paragraph("Date: _____________________", regularFont));
 
-                MessageBox.Show($"PDF Invoice '{pdfFileName}' has been generated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"PDF Invoice '{pdfFileName}' has been generated successfully in the INVOICES folder.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -422,6 +429,7 @@ namespace abc_medical_test_company_v2
                 document.Close();
             }
         }
+
 
     }
 }

@@ -107,7 +107,7 @@ namespace abc_medical_test_company_v2
             }
 
             // MessageBox for debugging purposes
-            MessageBox.Show("Username from DB: " + check1 + "\nPassword from DB: " + check2);
+           // MessageBox.Show("Username from DB: " + check1 + "\nPassword from DB: " + check2);
 
             if (check1 == username && check2 == password )
             {
