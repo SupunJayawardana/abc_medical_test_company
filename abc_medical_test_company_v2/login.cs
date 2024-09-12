@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,50 +19,10 @@ namespace abc_medical_test_company_v2
         public static string name;
         public static string userid;
 
-
         public frmlogin()
         {
             InitializeComponent();
         }
-
-        private void frmlogin_Load(object sender, EventArgs e)
-        {
-            Mysqlconnect dbObj = new Mysqlconnect();
-          // dbObj.ExecuteSetupSQL();
-
-
-            // Check if MySQL is installed
-            if (!dbObj.IsMySQLInstalled())
-            {
-                MessageBox.Show("Please install MySQL 8.0.");
-                return;
-            }
-
-            // Check if MySQL path is in environment variables
-            if (!dbObj.IsMySQLPathInEnvironment())
-            {
-                MessageBox.Show("MySQL bin path is not set in environment variables. Please add it.");
-                return;
-            }
-
-            // Try to connect and check if the database is created
-            if (!dbObj.IsDatabaseCreated())
-            {
-                var result = MessageBox.Show("Database not found. Would you like to create it now?",
-                                             "Database Setup", MessageBoxButtons.YesNo);
-                if (result == DialogResult.Yes)
-                {
-                    string setupPath = Path.Combine(Application.StartupPath, "setup.sql"); // Path to your setup.sql
-                    dbObj.ExecuteSetupSQL(setupPath); // Create the database
-                }
-                else
-                {
-                    MessageBox.Show("Database setup is required to proceed.");
-                    Application.Exit();
-                }
-            }
-        }
-
 
         private void Btn_register_Click(object sender, EventArgs e)
         {

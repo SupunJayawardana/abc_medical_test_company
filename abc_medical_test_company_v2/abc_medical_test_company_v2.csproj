@@ -215,6 +215,7 @@
     <EmbeddedResource Include="register.resx">
       <DependentUpon>register.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="abc_medical_test_company_v2_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
@@ -238,7 +239,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
-    <Content Include="setup.sql" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">

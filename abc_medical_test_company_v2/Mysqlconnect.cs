@@ -1,9 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.Collections.Generic;
 using System.Data;
-using System.Diagnostics;
-using System.IO;
-using System.util;
 using System.Windows.Forms;
 
 namespace WindowsFormsApplication11
@@ -22,11 +20,10 @@ namespace WindowsFormsApplication11
             Initialize();
         }
 
-        // Initialize connection details
         private void Initialize()
         {
             server = "localhost";
-            database = "test1.2"; // This is the database we will check
+            database = "test1.2";
             uid = "root";
             password = "1234";
 
@@ -41,42 +38,6 @@ namespace WindowsFormsApplication11
             connection = new MySqlConnection(connectionString);
         }
 
-        // Check if MySQL is installed by verifying the 'mysql' command is recognized
-        public bool IsMySQLInstalled()
-        {
-            try
-            {
-                var process = new Process
-                {
-                    StartInfo = new ProcessStartInfo
-                    {
-                        FileName = "mysql",
-                        Arguments = "--version",
-                        RedirectStandardOutput = true,
-                        UseShellExecute = false,
-                        CreateNoWindow = true,
-                    }
-                };
-                process.Start();
-                string output = process.StandardOutput.ReadToEnd();
-                process.WaitForExit();
-                return output.Contains("mysql");
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("MySQL is not installed. Please install MySQL 8.0.");
-                return false;
-            }
-        }
-
-        // Check if MySQL bin folder is in the system's PATH environment variable
-        public bool IsMySQLPathInEnvironment()
-        {
-            string pathVariable = Environment.GetEnvironmentVariable("PATH");
-            return pathVariable != null && pathVariable.Contains("MySQL");
-        }
-
-        // Open connection to the database
         private bool OpenConnection()
         {
             try
@@ -104,7 +65,6 @@ namespace WindowsFormsApplication11
             }
         }
 
-        // Close connection to the database
         private bool CloseConnection()
         {
             try
@@ -119,57 +79,7 @@ namespace WindowsFormsApplication11
             }
         }
 
-        // Check if the specified database exists
-        public bool IsDatabaseCreated()
-        {
-            try
-            {
-                using (var cmd = new MySqlCommand($"SHOW DATABASES LIKE '{database}';", connection))
-                {
-                    OpenConnection();
-                    object result = cmd.ExecuteScalar();
-                    CloseConnection();
-                    return result != null;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error checking database: '" + ex.Message + "'");
-                return false;
-            }
-        }
-
-        // Execute SQL setup file if the database is not found
-        public void ExecuteSetupSQL()
-        {
-            try
-            {
-                // Access the setup.sql from Resources
-                string script = Properties.Resources.setup; // Assuming 'setup' is the name of the embedded SQL resource
-
-                if (!string.IsNullOrEmpty(script))
-                {
-                    using (var cmd = new MySqlCommand(script, connection))
-                    {
-                        OpenConnection();
-                        cmd.ExecuteNonQuery();
-                        CloseConnection();
-                        MessageBox.Show("Database setup completed successfully.");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("SQL setup script not found in resources.");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error executing SQL setup: '" + ex.Message + "'");
-            }
-        }
-
-
-        // Insert data into the database
+       
         public void Insert(string query)
         {
             if (this.OpenConnection())
@@ -196,7 +106,6 @@ namespace WindowsFormsApplication11
             }
         }
 
-        // Update data in the database
         public void Update(string query)
         {
             if (this.OpenConnection())
@@ -223,7 +132,6 @@ namespace WindowsFormsApplication11
             }
         }
 
-        // Delete data from the database
         public void Delete(string query)
         {
             if (this.OpenConnection())
@@ -250,7 +158,6 @@ namespace WindowsFormsApplication11
             }
         }
 
-        // Select data from the database
         public void Select(string query)
         {
             if (this.OpenConnection())
